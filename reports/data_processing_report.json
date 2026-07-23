@@ -1,0 +1,18 @@
+{
+  "input_rows": 9982,
+  "output_rows": 9982,
+  "rows_removed": 0,
+  "canonical_smiles_changed": 84,
+  "official_benchmark_scope": 9982,
+  "druglike_scope": 8721,
+  "outside_druglike_scope": 1261,
+  "failed_fragment_rule": 1098,
+  "failed_element_rule": 873,
+  "failed_molecular_weight_rule": 136,
+  "failed_carbon_rule": 325,
+  "chemical_changes": {
+    "fragments_removed": false,
+    "charges_neutralized": false,
+    "stereochemistry_preserved": true
+  }
+}

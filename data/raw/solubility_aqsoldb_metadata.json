@@ -1,0 +1,26 @@
+{
+  "dataset_name": "Solubility_AqSolDB",
+  "task": "ADME aqueous solubility regression",
+  "source": "Therapeutics Data Commons",
+  "source_url": "https://tdcommons.ai/single_pred_tasks/adme/",
+  "downloaded_at_utc": "2026-07-23T12:12:32.396365+00:00",
+  "raw_file": "data/raw/solubility_aqsoldb_raw.csv",
+  "number_of_rows": 9982,
+  "number_of_columns": 3,
+  "columns": [
+    "Drug_ID",
+    "Drug",
+    "Y"
+  ],
+  "dtypes": {
+    "Drug_ID": "object",
+    "Drug": "object",
+    "Y": "float64"
+  },
+  "missing_values": {
+    "Drug_ID": 0,
+    "Drug": 0,
+    "Y": 0
+  },
+  "sha256": "d44e597cd899e16c61cca40edb5ca2cca2c69ee8e84125f9d68e7c4c8464430b"
+}

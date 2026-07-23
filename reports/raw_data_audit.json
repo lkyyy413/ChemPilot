@@ -1,0 +1,30 @@
+{
+  "dataset": "Solubility_AqSolDB",
+  "label_name": "LogS",
+  "label_unit": "log10(mol/L)",
+  "total_rows": 9982,
+  "missing_drug_id": 0,
+  "missing_smiles": 0,
+  "missing_label": 0,
+  "invalid_smiles": 0,
+  "valid_smiles": 9982,
+  "raw_smiles_duplicate_rows": 0,
+  "canonical_duplicate_groups": 0,
+  "canonical_duplicate_rows": 0,
+  "conflicting_label_groups": 0,
+  "multifragment_molecules": 1098,
+  "nonzero_formal_charge": 132,
+  "uncommon_element_molecules": 873,
+  "label_statistics": {
+    "minimum": -13.1719,
+    "maximum": 2.1376816201,
+    "mean": -2.8899088047869865,
+    "median": -2.61817341795,
+    "standard_deviation": 2.368154448407012
+  },
+  "molecular_weight_statistics_valid_only": {
+    "minimum": 9.012,
+    "maximum": 5299.455999999999,
+    "median": 228.682
+  }
+}

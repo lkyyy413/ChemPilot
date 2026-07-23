@@ -1,0 +1,43 @@
+dataset:
+  name: Solubility_AqSolDB
+  task: regression
+  input_column: Drug
+  id_column: Drug_ID
+  label_column: Y
+  label_name: LogS
+  label_unit: log10(mol/L)
+
+standardization:
+  canonicalize_smiles: true
+  preserve_stereochemistry: true
+  remove_fragments: false
+  neutralize_charges: false
+  remove_isotopes: false
+
+druglike_scope:
+  require_valid_smiles: true
+  require_single_fragment: true
+  require_carbon: true
+  require_common_elements_only: true
+  minimum_molecular_weight: 50.0
+  maximum_molecular_weight: 1000.0
+
+paths:
+  raw_data: data/raw/solubility_aqsoldb_raw.csv
+  audit_flags: data/interim/raw_audit_flags.csv
+  processed_data: data/processed/solubility_aqsoldb_processed.csv
+  processing_report: reports/data_processing_report.json
+
+splits:
+  random_seed: 42
+  random_fractions:
+    train: 0.70
+    valid: 0.10
+    test: 0.20
+  official_development_seed: 42
+  official_final_seeds:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5

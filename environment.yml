@@ -1,0 +1,20 @@
+name: chempilot
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip
+  - rdkit
+  - pip:
+      - PyTDC
+      - matplotlib
+      - numpy
+      - pandas
+      - pyarrow
+      - PyYAML
+      - scikit-learn
+      - seaborn
+      - setuptools<81
+      - tqdm

@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments and secrets
+.env
+.venv/
+venv/
+*.env
+
+# IDE and notebook cache
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+
+# Raw and generated datasets
+data/raw/*
+data/interim/*
+data/processed/*
+data/splits/*
+
+# Preserve the small provenance metadata file
+!data/raw/solubility_aqsoldb_metadata.json
+
+# Model outputs
+checkpoints/
+outputs/
+wandb/
+mlruns/
+
+# Packaging
+build/
+dist/
+*.egg-info/

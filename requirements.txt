@@ -1,0 +1,11 @@
+PyTDC
+matplotlib
+numpy
+pandas
+pyarrow
+PyYAML
+rdkit
+scikit-learn
+seaborn
+setuptools<81
+tqdm
