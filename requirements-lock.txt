@@ -41,6 +41,7 @@ h5py==3.16.0
 hf-xet==1.5.2
 huggingface_hub==0.36.2
 idna==3.18
+iniconfig==2.3.0
 ipython==8.39.0
 ipywidgets==8.1.8
 jedi==0.20.0
@@ -75,6 +76,7 @@ nvidia-curand==10.4.0.35
 nvidia-cusolver==12.0.4.66
 nvidia-cusparse==12.6.3.3
 nvidia-cusparselt-cu13==0.8.1
+nvidia-nccl-cu12==2.30.7
 nvidia-nccl-cu13==2.29.7
 nvidia-nvjitlink==13.3.33
 nvidia-nvshmem-cu13==3.4.5
@@ -86,6 +88,7 @@ parso==0.8.7
 patsy==1.0.2
 pexpect==4.9.0
 pillow @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pillow_1782912080/work
+pluggy==1.6.0
 prompt_toolkit==3.0.52
 propcache==0.5.2
 psutil==7.2.2
@@ -100,6 +103,7 @@ Pygments==2.20.0
 pynndescent==0.6.0
 pyparsing @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pyparsing_1769003998/work
 pytdc==1.1.15
+pytest==9.1.1
 python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
 pytz @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pytz_1777892201/work
 PyYAML==6.0.3
@@ -126,6 +130,7 @@ threadpoolctl==3.6.0
 tiledb==0.29.1
 tiledbsoma==1.11.4
 tokenizers==0.21.4
+tomli==2.4.1
 torch==2.13.0
 tqdm==4.69.0
 traitlets==5.15.1
@@ -140,5 +145,6 @@ urllib3==2.7.0
 wcwidth==0.8.2
 widgetsnbextension==4.0.15
 wrapt==1.17.3
+xgboost==3.2.0
 xxhash==3.8.1
 yarl==1.24.5

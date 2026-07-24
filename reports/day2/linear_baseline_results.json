@@ -1,0 +1,256 @@
+{
+  "alpha_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "selection_metric": "validation MAE",
+  "refit_for_test": "train plus validation",
+  "software_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2"
+  },
+  "results": [
+    {
+      "split_type": "random",
+      "model": "mean",
+      "representation": "none",
+      "selected_alpha": null,
+      "validation_train_seconds": 0.0002770228311419487,
+      "final_train_seconds": 0.00017934013158082962,
+      "valid": {
+        "n_samples": 999,
+        "mae": 1.9087005566352993,
+        "rmse": 2.4091818564419785,
+        "r2": -0.00013234916661053475,
+        "spearman": NaN,
+        "prediction_seconds": 2.9013492166996002e-05,
+        "milliseconds_per_sample": 2.90425347016977e-05
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 1.8811782642540933,
+        "rmse": 2.3540907188536586,
+        "r2": -1.322374975121221e-05,
+        "spearman": NaN,
+        "prediction_seconds": 2.3455359041690826e-05,
+        "milliseconds_per_sample": 1.1745297467045982e-05
+      },
+      "prediction_file": "reports/day2/predictions/random_mean_test.csv",
+      "model_file": "artifacts/models/day2/random_mean.joblib"
+    },
+    {
+      "split_type": "random",
+      "model": "ridge",
+      "representation": "descriptors",
+      "selected_alpha": 10.0,
+      "validation_train_seconds": 0.0031295744702219963,
+      "final_train_seconds": 0.0035831108689308167,
+      "valid": {
+        "n_samples": 999,
+        "mae": 1.2881745930979713,
+        "rmse": 1.6901451360362827,
+        "r2": 0.5077720087111828,
+        "spearman": 0.7626648451732244,
+        "prediction_seconds": 0.0002823946997523308,
+        "milliseconds_per_sample": 0.00028267737712946026
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 1.2437916721066233,
+        "rmse": 1.7562700217465652,
+        "r2": 0.44340163102722163,
+        "spearman": 0.7600956748360439,
+        "prediction_seconds": 0.0003307657316327095,
+        "milliseconds_per_sample": 0.00016563131278553306
+      },
+      "search_file": "reports/day2/search/random_ridge_descriptors.csv",
+      "valid_prediction_file": "reports/day2/predictions/random_ridge_descriptors_valid.csv",
+      "test_prediction_file": "reports/day2/predictions/random_ridge_descriptors_test.csv",
+      "model_file": "artifacts/models/day2/random_ridge_descriptors.joblib"
+    },
+    {
+      "split_type": "random",
+      "model": "ridge",
+      "representation": "ecfp",
+      "selected_alpha": 10.0,
+      "validation_train_seconds": 0.23147605080157518,
+      "final_train_seconds": 0.27428574953228235,
+      "valid": {
+        "n_samples": 999,
+        "mae": 1.1545100250266012,
+        "rmse": 1.5235633203556869,
+        "r2": 0.6000190347986379,
+        "spearman": 0.7615831530796561,
+        "prediction_seconds": 0.001320759765803814,
+        "milliseconds_per_sample": 0.0013220818476514654
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 1.1149565383148812,
+        "rmse": 1.4883838004244303,
+        "r2": 0.6002493102352601,
+        "spearman": 0.7730331019731415,
+        "prediction_seconds": 0.002347390167415142,
+        "milliseconds_per_sample": 0.0011754582711142425
+      },
+      "search_file": "reports/day2/search/random_ridge_ecfp.csv",
+      "valid_prediction_file": "reports/day2/predictions/random_ridge_ecfp_valid.csv",
+      "test_prediction_file": "reports/day2/predictions/random_ridge_ecfp_test.csv",
+      "model_file": "artifacts/models/day2/random_ridge_ecfp.joblib"
+    },
+    {
+      "split_type": "random",
+      "model": "ridge",
+      "representation": "combined",
+      "selected_alpha": 100.0,
+      "validation_train_seconds": 0.5350630786269903,
+      "final_train_seconds": 0.3620430873706937,
+      "valid": {
+        "n_samples": 999,
+        "mae": 1.0682266794419657,
+        "rmse": 1.4252134805694538,
+        "r2": 0.6499918556375696,
+        "spearman": 0.8127653037464742,
+        "prediction_seconds": 0.011832233518362045,
+        "milliseconds_per_sample": 0.011844077595958003
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 1.0200748983595724,
+        "rmse": 1.462935356125503,
+        "r2": 0.613802351729092,
+        "spearman": 0.8214514362588353,
+        "prediction_seconds": 0.017961951903998852,
+        "milliseconds_per_sample": 0.008994467653479646
+      },
+      "search_file": "reports/day2/search/random_ridge_combined.csv",
+      "valid_prediction_file": "reports/day2/predictions/random_ridge_combined_valid.csv",
+      "test_prediction_file": "reports/day2/predictions/random_ridge_combined_test.csv",
+      "model_file": "artifacts/models/day2/random_ridge_combined.joblib"
+    },
+    {
+      "split_type": "scaffold",
+      "model": "mean",
+      "representation": "none",
+      "selected_alpha": null,
+      "validation_train_seconds": 0.00032525788992643356,
+      "final_train_seconds": 0.00030191149562597275,
+      "valid": {
+        "n_samples": 2940,
+        "mae": 2.3887507548195,
+        "rmse": 2.7359684954810155,
+        "r2": -0.29000492725264304,
+        "spearman": NaN,
+        "prediction_seconds": 3.6164186894893646e-05,
+        "milliseconds_per_sample": 1.230074384180056e-05
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 1.8539530688392056,
+        "rmse": 2.3824676721162246,
+        "r2": -0.07800984003838773,
+        "spearman": NaN,
+        "prediction_seconds": 3.059115260839462e-05,
+        "milliseconds_per_sample": 1.5318554135400412e-05
+      },
+      "prediction_file": "reports/day2/predictions/scaffold_mean_test.csv",
+      "model_file": "artifacts/models/day2/scaffold_mean.joblib"
+    },
+    {
+      "split_type": "scaffold",
+      "model": "ridge",
+      "representation": "descriptors",
+      "selected_alpha": 1000.0,
+      "validation_train_seconds": 0.002454499714076519,
+      "final_train_seconds": 0.0030575301498174667,
+      "valid": {
+        "n_samples": 2940,
+        "mae": 1.5028848982036358,
+        "rmse": 1.9908475564357468,
+        "r2": 0.31696147824328413,
+        "spearman": 0.6792985347870282,
+        "prediction_seconds": 0.00034679193049669266,
+        "milliseconds_per_sample": 0.00011795643894445329
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 1.2883223999017321,
+        "rmse": 1.8393063910154654,
+        "r2": 0.35749449639869646,
+        "spearman": 0.7166695848388221,
+        "prediction_seconds": 0.00031614769250154495,
+        "milliseconds_per_sample": 0.00015831131322060338
+      },
+      "search_file": "reports/day2/search/scaffold_ridge_descriptors.csv",
+      "valid_prediction_file": "reports/day2/predictions/scaffold_ridge_descriptors_valid.csv",
+      "test_prediction_file": "reports/day2/predictions/scaffold_ridge_descriptors_test.csv",
+      "model_file": "artifacts/models/day2/scaffold_ridge_descriptors.joblib"
+    },
+    {
+      "split_type": "scaffold",
+      "model": "ridge",
+      "representation": "ecfp",
+      "selected_alpha": 10.0,
+      "validation_train_seconds": 0.15485686995089054,
+      "final_train_seconds": 0.28190297447144985,
+      "valid": {
+        "n_samples": 2940,
+        "mae": 1.4579601608502257,
+        "rmse": 1.9704002682213324,
+        "r2": 0.3309199193019634,
+        "spearman": 0.6084916702326151,
+        "prediction_seconds": 0.0032637370750308037,
+        "milliseconds_per_sample": 0.0011101146513710217
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 1.319316174890172,
+        "rmse": 1.675311874103985,
+        "r2": 0.46695972336383174,
+        "spearman": 0.6765590604746877,
+        "prediction_seconds": 0.002386219799518585,
+        "milliseconds_per_sample": 0.0011949022531390012
+      },
+      "search_file": "reports/day2/search/scaffold_ridge_ecfp.csv",
+      "valid_prediction_file": "reports/day2/predictions/scaffold_ridge_ecfp_valid.csv",
+      "test_prediction_file": "reports/day2/predictions/scaffold_ridge_ecfp_test.csv",
+      "model_file": "artifacts/models/day2/scaffold_ridge_ecfp.joblib"
+    },
+    {
+      "split_type": "scaffold",
+      "model": "ridge",
+      "representation": "combined",
+      "selected_alpha": 100.0,
+      "validation_train_seconds": 0.14480132330209017,
+      "final_train_seconds": 0.79657466057688,
+      "valid": {
+        "n_samples": 2940,
+        "mae": 1.4572415507177199,
+        "rmse": 2.03134603918734,
+        "r2": 0.2888896364358793,
+        "spearman": 0.6659337075201479,
+        "prediction_seconds": 0.032168442383408546,
+        "milliseconds_per_sample": 0.01094164706918658
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 1.104561704872878,
+        "rmse": 1.621749858625306,
+        "r2": 0.5004989220092342,
+        "spearman": 0.7704710772966111,
+        "prediction_seconds": 0.021597670391201973,
+        "milliseconds_per_sample": 0.010815057782274397
+      },
+      "search_file": "reports/day2/search/scaffold_ridge_combined.csv",
+      "valid_prediction_file": "reports/day2/predictions/scaffold_ridge_combined_valid.csv",
+      "test_prediction_file": "reports/day2/predictions/scaffold_ridge_combined_test.csv",
+      "model_file": "artifacts/models/day2/scaffold_ridge_combined.joblib"
+    }
+  ]
+}

@@ -9,3 +9,6 @@ scikit-learn
 seaborn
 setuptools<81
 tqdm
+joblib
+pytest
+xgboost

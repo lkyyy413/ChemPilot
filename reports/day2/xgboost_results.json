@@ -1,0 +1,251 @@
+{
+  "selection_metric": "validation MAE",
+  "early_stopping_rounds": 75,
+  "software_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "xgboost": "3.2.0"
+  },
+  "results": [
+    {
+      "split_type": "random",
+      "model": "xgboost",
+      "representation": "descriptors",
+      "selected_candidate": 4,
+      "selected_parameters": {
+        "max_depth": 8,
+        "learning_rate": 0.03,
+        "min_child_weight": 1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0
+      },
+      "selected_rounds": 728,
+      "device": "cuda:0",
+      "validation_train_seconds": 1.4902548249810934,
+      "final_train_seconds": 1.2554367017000914,
+      "valid": {
+        "n_samples": 999,
+        "mae": 0.76189194288542,
+        "rmse": 1.096337620623045,
+        "r2": 0.7928871994221244,
+        "spearman": 0.8867161690113308,
+        "prediction_seconds": 0.016321243718266487,
+        "milliseconds_per_sample": 0.016337581299566053
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 0.7581043610315253,
+        "rmse": 1.16149768657926,
+        "r2": 0.7565576952280011,
+        "spearman": 0.8756264226727057,
+        "prediction_seconds": 0.01650816109031439,
+        "milliseconds_per_sample": 0.008266480265555527
+      },
+      "search_file": "reports/day2/search/random_xgboost_descriptors.csv",
+      "importance_file": "reports/day2/feature_importance/random_xgboost_descriptors.csv",
+      "failure_file": "reports/day2/failures/random_xgboost_descriptors_top50.csv",
+      "model_file": "artifacts/models/day2/random_xgboost_descriptors.joblib"
+    },
+    {
+      "split_type": "random",
+      "model": "xgboost",
+      "representation": "ecfp",
+      "selected_candidate": 4,
+      "selected_parameters": {
+        "max_depth": 8,
+        "learning_rate": 0.03,
+        "min_child_weight": 1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0
+      },
+      "selected_rounds": 1914,
+      "device": "cuda:0",
+      "validation_train_seconds": 9.09079890884459,
+      "final_train_seconds": 8.804748048074543,
+      "valid": {
+        "n_samples": 999,
+        "mae": 0.9659548105899938,
+        "rmse": 1.3192753285528924,
+        "r2": 0.7000912140417108,
+        "spearman": 0.826855838886424,
+        "prediction_seconds": 0.052560482174158096,
+        "milliseconds_per_sample": 0.05261309526942752
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 0.9325168867680371,
+        "rmse": 1.2956856134714025,
+        "r2": 0.6970586014373505,
+        "spearman": 0.8331601332255627,
+        "prediction_seconds": 0.06168882176280022,
+        "milliseconds_per_sample": 0.030890747001902964
+      },
+      "search_file": "reports/day2/search/random_xgboost_ecfp.csv",
+      "importance_file": "reports/day2/feature_importance/random_xgboost_ecfp.csv",
+      "failure_file": "reports/day2/failures/random_xgboost_ecfp_top50.csv",
+      "model_file": "artifacts/models/day2/random_xgboost_ecfp.joblib"
+    },
+    {
+      "split_type": "random",
+      "model": "xgboost",
+      "representation": "combined",
+      "selected_candidate": 4,
+      "selected_parameters": {
+        "max_depth": 8,
+        "learning_rate": 0.03,
+        "min_child_weight": 1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0
+      },
+      "selected_rounds": 1560,
+      "device": "cuda:0",
+      "validation_train_seconds": 8.246514718979597,
+      "final_train_seconds": 7.935073752887547,
+      "valid": {
+        "n_samples": 999,
+        "mae": 0.6855089353461348,
+        "rmse": 0.9921549993986786,
+        "r2": 0.8303798834683238,
+        "spearman": 0.9080286784919014,
+        "prediction_seconds": 0.0449382159858942,
+        "milliseconds_per_sample": 0.04498319918507928
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 0.6741843178570289,
+        "rmse": 1.0256955864555195,
+        "r2": 0.8101562402362972,
+        "spearman": 0.9031958925303721,
+        "prediction_seconds": 0.058908830396831036,
+        "milliseconds_per_sample": 0.029498663193205325
+      },
+      "search_file": "reports/day2/search/random_xgboost_combined.csv",
+      "importance_file": "reports/day2/feature_importance/random_xgboost_combined.csv",
+      "failure_file": "reports/day2/failures/random_xgboost_combined_top50.csv",
+      "model_file": "artifacts/models/day2/random_xgboost_combined.joblib"
+    },
+    {
+      "split_type": "scaffold",
+      "model": "xgboost",
+      "representation": "descriptors",
+      "selected_candidate": 5,
+      "selected_parameters": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "min_child_weight": 5,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 10.0
+      },
+      "selected_rounds": 324,
+      "device": "cuda:0",
+      "validation_train_seconds": 0.31132660433650017,
+      "final_train_seconds": 0.20889191143214703,
+      "valid": {
+        "n_samples": 2940,
+        "mae": 1.0852964680829185,
+        "rmse": 1.6632131519639461,
+        "r2": 0.5232782070385119,
+        "spearman": 0.7332015577204769,
+        "prediction_seconds": 0.006548884324729443,
+        "milliseconds_per_sample": 0.002227511675078042
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 0.8969749050952552,
+        "rmse": 1.23987471950437,
+        "r2": 0.7080393630947359,
+        "spearman": 0.8169694897274679,
+        "prediction_seconds": 0.0065008485689759254,
+        "milliseconds_per_sample": 0.0032553072453559966
+      },
+      "search_file": "reports/day2/search/scaffold_xgboost_descriptors.csv",
+      "importance_file": "reports/day2/feature_importance/scaffold_xgboost_descriptors.csv",
+      "failure_file": "reports/day2/failures/scaffold_xgboost_descriptors_top50.csv",
+      "model_file": "artifacts/models/day2/scaffold_xgboost_descriptors.joblib"
+    },
+    {
+      "split_type": "scaffold",
+      "model": "xgboost",
+      "representation": "ecfp",
+      "selected_candidate": 5,
+      "selected_parameters": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "min_child_weight": 5,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 10.0
+      },
+      "selected_rounds": 785,
+      "device": "cuda:0",
+      "validation_train_seconds": 1.1734329471364617,
+      "final_train_seconds": 1.073178630322218,
+      "valid": {
+        "n_samples": 2940,
+        "mae": 1.4381512504381835,
+        "rmse": 1.9796184469185178,
+        "r2": 0.3246449231933646,
+        "spearman": 0.6162765133487759,
+        "prediction_seconds": 0.05248467531055212,
+        "milliseconds_per_sample": 0.017851930377738818
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 1.250828234663685,
+        "rmse": 1.5845135586931471,
+        "r2": 0.5231732493461753,
+        "spearman": 0.686474615247415,
+        "prediction_seconds": 0.03240662720054388,
+        "milliseconds_per_sample": 0.016227655082896284
+      },
+      "search_file": "reports/day2/search/scaffold_xgboost_ecfp.csv",
+      "importance_file": "reports/day2/feature_importance/scaffold_xgboost_ecfp.csv",
+      "failure_file": "reports/day2/failures/scaffold_xgboost_ecfp_top50.csv",
+      "model_file": "artifacts/models/day2/scaffold_xgboost_ecfp.joblib"
+    },
+    {
+      "split_type": "scaffold",
+      "model": "xgboost",
+      "representation": "combined",
+      "selected_candidate": 4,
+      "selected_parameters": {
+        "max_depth": 8,
+        "learning_rate": 0.03,
+        "min_child_weight": 1,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1.0
+      },
+      "selected_rounds": 817,
+      "device": "cuda:0",
+      "validation_train_seconds": 4.8837813045829535,
+      "final_train_seconds": 4.638849114999175,
+      "valid": {
+        "n_samples": 2940,
+        "mae": 1.023657994282465,
+        "rmse": 1.6466891941837283,
+        "r2": 0.5327035777837525,
+        "spearman": 0.7503526928490594,
+        "prediction_seconds": 0.09727961663156748,
+        "milliseconds_per_sample": 0.03308830497672363
+      },
+      "test": {
+        "n_samples": 1997,
+        "mae": 0.7943780689054781,
+        "rmse": 1.1066483244009264,
+        "r2": 0.7674116520748357,
+        "spearman": 0.8559340603703033,
+        "prediction_seconds": 0.03969455882906914,
+        "milliseconds_per_sample": 0.01987709505712025
+      },
+      "search_file": "reports/day2/search/scaffold_xgboost_combined.csv",
+      "importance_file": "reports/day2/feature_importance/scaffold_xgboost_combined.csv",
+      "failure_file": "reports/day2/failures/scaffold_xgboost_combined_top50.csv",
+      "model_file": "artifacts/models/day2/scaffold_xgboost_combined.joblib"
+    }
+  ]
+}

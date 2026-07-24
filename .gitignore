@@ -38,3 +38,14 @@ mlruns/
 build/
 dist/
 *.egg-info/
+
+# Model
+artifacts/
+
+# Test and coverage cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Reproducible sample-level predictions
+reports/day2/predictions/

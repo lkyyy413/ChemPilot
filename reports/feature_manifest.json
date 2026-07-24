@@ -1,0 +1,48 @@
+{
+  "created_at_utc": "2026-07-24T08:13:39.038739+00:00",
+  "input_file": "data/processed/solubility_aqsoldb_processed.csv",
+  "output_file": "data/processed/solubility_aqsoldb_features.npz",
+  "input_sha256": "5ed2b3ef954dcd9f0c737d231eda340e7a7e5191bd0818e8c552db0dc4d45864",
+  "output_sha256": "fc67669cfa4b12d98fe0c1228e5a4f0ae73ea1d1c9e616d1ceae55e3b1cf1550",
+  "number_of_samples": 9982,
+  "descriptor_shape": [
+    9982,
+    10
+  ],
+  "descriptor_dtype": "float32",
+  "descriptor_names": [
+    "molecular_weight",
+    "logp",
+    "tpsa",
+    "hbd",
+    "hba",
+    "rotatable_bonds",
+    "ring_count",
+    "fraction_csp3",
+    "heavy_atom_count",
+    "formal_charge"
+  ],
+  "ecfp_shape": [
+    9982,
+    2048
+  ],
+  "ecfp_dtype": "uint8",
+  "ecfp_configuration": {
+    "name": "Morgan/ECFP4",
+    "radius": 2,
+    "diameter": 4,
+    "n_bits": 2048,
+    "include_chirality": true,
+    "use_counts": false
+  },
+  "zero_fingerprint_rows": 0,
+  "chemical_changes": {
+    "performed_during_featurization": false,
+    "input_column": "smiles_canonical"
+  },
+  "software_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "rdkit": "2023.09.6"
+  }
+}

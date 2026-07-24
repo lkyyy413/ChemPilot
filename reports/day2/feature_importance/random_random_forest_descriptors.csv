@@ -1,0 +1,11 @@
+feature,importance,feature_group
+logp,0.4157383969792056,descriptor
+molecular_weight,0.1618703047102958,descriptor
+heavy_atom_count,0.1228843436287654,descriptor
+tpsa,0.0868310853981705,descriptor
+fraction_csp3,0.0549783309905149,descriptor
+hba,0.0491926450319468,descriptor
+ring_count,0.0447829437975597,descriptor
+rotatable_bonds,0.0343556734772732,descriptor
+hbd,0.0272629050623031,descriptor
+formal_charge,0.0021033709239645,descriptor
