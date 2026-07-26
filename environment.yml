@@ -21,3 +21,5 @@ dependencies:
       - joblib
       - pytest
       - xgboost
+      - torch==2.6.0
+      - torch_geometric==2.8.0.post1

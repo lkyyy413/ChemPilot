@@ -1,0 +1,20 @@
+{
+  "random": {
+    "n_samples": 1997,
+    "gine_ensemble_mae": 0.7846549672697674,
+    "xgboost_mae": 0.6741843202928407,
+    "gine_minus_xgboost_mae": 0.11047064697692666,
+    "gine_sample_win_rate": 0.4586880320480721,
+    "nearest_similarity_mean": 0.611059814364565,
+    "nearest_similarity_median": 0.6071428571428571
+  },
+  "scaffold": {
+    "n_samples": 1997,
+    "gine_ensemble_mae": 0.8879116442089837,
+    "xgboost_mae": 0.794378066188395,
+    "gine_minus_xgboost_mae": 0.0935335780205887,
+    "gine_sample_win_rate": 0.4732098147220831,
+    "nearest_similarity_mean": 0.4703250506231223,
+    "nearest_similarity_median": 0.4642857142857143
+  }
+}

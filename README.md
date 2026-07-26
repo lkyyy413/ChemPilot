@@ -167,6 +167,96 @@ Run tests:
 python -m pytest -v
 ```
 
+## Day 3: molecular graph neural network
+
+Day 3 implements an edge-aware GINE regressor using PyTorch
+Geometric. Canonical SMILES are represented as molecular graphs
+with atoms as nodes and directed chemical bonds as edges.
+
+Node features include atomic number, degree, valence, formal
+charge, hybridization, aromaticity, and chirality. Edge features
+include bond type, conjugation, ring membership, and
+stereochemistry.
+
+The graph cache contains 9,982 graphs, 173,500 atoms, and 352,000
+directed edges. The main four-layer GINE model contains 305,541
+trainable parameters.
+
+Development epochs were selected using validation MAE. Fresh
+models were then trained on train plus validation for the fixed
+selected epoch count and evaluated on the untouched test set
+using seeds 1, 2, and 3.
+
+### GINE versus XGBoost
+
+| Protocol | XGBoost MAE | GINE three-seed MAE | GINE ensemble MAE |
+|---|---:|---:|---:|
+| Random | **0.6742** | 0.8232 ± 0.0495 | 0.7847 |
+| Scaffold | **0.7944** | 0.9264 ± 0.1040 | 0.8879 |
+
+The intervals shown for GINE are 95% Student-t confidence
+intervals across three initialization seeds. The ensemble result
+is the MAE after averaging the three GINE predictions.
+
+Paired bootstrap analysis confirmed that the ensemble GINE MAE
+was higher than XGBoost by 0.1105 on random data
+(95% CI 0.0692–0.1575) and by 0.0935 on scaffold data
+(95% CI 0.0522–0.1377).
+
+GINE learned meaningful molecular rankings but produced unstable
+extreme predictions for very large, multi-fragment, inorganic,
+and non-drug-like structures. For this approximately 10,000
+sample task, XGBoost with ECFP and explicit physicochemical
+descriptors is therefore the preferred production model.
+
+See the
+[complete Day 3 report](reports/day3/day3_gine_report.md).
+
+## Reproduce Day 3
+
+Build the tensor-only molecular graph cache:
+
+```bash
+python scripts/build_graph_cache.py
+```
+
+Run validation-based development training:
+```bash
+CUDA_VISIBLE_DEVICES=0 \
+python scripts/train_gine_development.py \
+  --protocol random \
+  --device cuda:0
+
+CUDA_VISIBLE_DEVICES=0 \
+python scripts/train_gine_development.py \
+  --protocol scaffold \
+  --device cuda:0
+```
+
+Run three-seed fixed-epoch final refits:
+```bash
+CUDA_VISIBLE_DEVICES=0 \
+python scripts/train_gine_final.py \
+  --protocol random \
+  --device cuda:0
+
+CUDA_VISIBLE_DEVICES=0 \
+python scripts/train_gine_final.py \
+  --protocol scaffold \
+  --device cuda:0
+```
+
+Generate chemical-space analysis, figures, and the report:
+```bash
+python scripts/analyze_gine_subgroups.py
+python scripts/plot_day3.py
+python scripts/summarize_day3.py
+```
+
+For an NVIDIA driver compatible with CUDA 12.4, the tested
+environment used PyTorch 2.6.0 with the CUDA 12.4 wheel and
+PyTorch Geometric 2.8.0.post1.
+
 ## Reproducibility controls
 
 ChemPilot records dataset hashes, feature parameters, software versions, fixed sample IDs, validation searches, sample-level failure cases, and training times. Feature scaling is fitted only on training data. Test labels are not used for hyperparameter selection.
@@ -175,9 +265,9 @@ Generated datasets, feature caches, model binaries, and full sample-level predic
 
 ## Roadmap
 
-- Graph neural network property prediction
-- Reaction-condition dataset and XGBoost baseline
-- Transformer-based condition recommendation
-- Similar-reaction retrieval
-- Synthesis-feasibility and applicability-domain scoring
-- Unified inference API and demonstration interface
+- [x] Graph neural network property prediction
+- [ ] Reaction-condition dataset and XGBoost baseline
+- [ ] Transformer-based condition recommendation
+- [ ] Similar-reaction retrieval
+- [ ] Synthesis-feasibility and applicability-domain scoring
+- [ ] Unified inference API and demonstration interface

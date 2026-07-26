@@ -1,0 +1,54 @@
+experiment:
+  name: aqsol_gine_day3
+  task: aqueous_solubility_regression
+  primary_metric: mae
+  development_seed: 42
+  final_seeds:
+    - 1
+    - 2
+    - 3
+
+data:
+  graph_cache: data/processed/solubility_aqsoldb_graphs.pt
+  metadata: data/processed/solubility_aqsoldb_processed.csv
+
+  protocols:
+    random:
+      train: data/splits/random/seed_42/train.csv
+      valid: data/splits/random/seed_42/valid.csv
+      test: data/splits/random/seed_42/test.csv
+
+    scaffold:
+      train: data/splits/scaffold/seed_42/train.csv
+      valid: data/splits/scaffold/seed_42/valid.csv
+      test: data/splits/scaffold/test.csv
+
+model:
+  class_name: GINERegressor
+  hidden_dim: 128
+  num_layers: 4
+  dropout: 0.15
+  pooling: add
+
+training:
+  learning_rate: 0.0003
+  weight_decay: 0.00001
+  max_epochs: 250
+  patience: 30
+  min_delta: 0.0001
+  gradient_clip_norm: 5.0
+  scheduler_factor: 0.5
+  scheduler_patience: 10
+  minimum_learning_rate: 0.000001
+  huber_delta: 1.0
+
+loader:
+  batch_size: 128
+  num_workers: 4
+  pin_memory: true
+
+outputs:
+  checkpoint_directory: artifacts/models/day3
+  report_directory: reports/day3
+  prediction_directory: reports/day3/predictions
+  history_directory: reports/day3/history

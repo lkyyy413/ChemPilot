@@ -1,0 +1,49 @@
+{
+  "stage": "development",
+  "protocol": "scaffold",
+  "seed": 42,
+  "device": "cuda:0",
+  "train_samples": 5045,
+  "valid_samples": 2940,
+  "parameter_count": 305541,
+  "best_epoch": 62,
+  "best_valid_mae": 1.2587296775910055,
+  "epochs_completed": 92,
+  "training_seconds": 69.33172260411084,
+  "peak_gpu_memory_mb": 79.7763671875,
+  "validation_metrics": {
+    "n_samples": 2940.0,
+    "mae": 1.258729680956438,
+    "rmse": 1.7840214240312524,
+    "r2": 0.4515092401815456,
+    "spearman": 0.7227183375564278
+  },
+  "model_config": {
+    "hidden_dim": 128,
+    "num_layers": 4,
+    "dropout": 0.15,
+    "mlp_expansion": 2,
+    "train_eps": true,
+    "pooling": "add"
+  },
+  "trainer_config": {
+    "learning_rate": 0.0003,
+    "weight_decay": 1e-05,
+    "max_epochs": 250,
+    "patience": 30,
+    "min_delta": 0.0001,
+    "gradient_clip_norm": 5.0,
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 10,
+    "minimum_learning_rate": 1e-06,
+    "huber_delta": 1.0,
+    "seed": 42
+  },
+  "target_standardizer": {
+    "mean": -3.239318997657196,
+    "standard_deviation": 2.2090004668839667
+  },
+  "checkpoint": "artifacts/models/day3/scaffold_development_seed_42.pt",
+  "history_file": "reports/day3/history/scaffold_gine_development.csv",
+  "prediction_file": "reports/day3/predictions/scaffold_gine_development_valid.csv"
+}

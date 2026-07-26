@@ -1,0 +1,93 @@
+{
+  "purpose": "Pipeline overfitting diagnostic; not a benchmark result.",
+  "seed": 7,
+  "device": "cuda:0",
+  "number_of_samples": 32,
+  "parameter_count": 305541,
+  "mean_baseline_mae": 1.875787869164924,
+  "final_mae": 0.01658879971364513,
+  "final_rmse": 0.028547416609643432,
+  "maximum_absolute_error": 0.07712984085083008,
+  "peak_gpu_memory_mb": 28.0361328125,
+  "checkpoint_path": "artifacts/models/day3/gine_smoke_overfit.pt",
+  "fit_result": {
+    "best_epoch": 500,
+    "best_valid_mae": 0.01658890029648319,
+    "epochs_completed": 500,
+    "training_seconds": 7.326759763993323,
+    "target_standardizer": {
+      "mean": -2.6633134987787344,
+      "standard_deviation": 2.4176892306232918
+    },
+    "checkpoint_valid_metrics": {
+      "n_samples": 32,
+      "mae": 0.01658890029648319,
+      "rmse": 0.028547398333915106,
+      "r2": 0.9998605777400824,
+      "spearman": 0.9996334310850439
+    },
+    "history_tail": [
+      {
+        "epoch": 496,
+        "train_loss": 8.007184078451246e-05,
+        "train_mae": 0.017978020012378693,
+        "max_gradient_norm": 0.008603546768426895,
+        "valid_mae": 0.017677858530078083,
+        "valid_rmse": 0.030170053402749704,
+        "valid_r2": 0.9998442775579044,
+        "valid_spearman": 0.999266862170088,
+        "learning_rate": 0.00025,
+        "epoch_seconds": 0.012781851924955845
+      },
+      {
+        "epoch": 497,
+        "train_loss": 7.786067726556212e-05,
+        "train_mae": 0.01767783612012863,
+        "max_gradient_norm": 0.011822669766843319,
+        "valid_mae": 0.017385590879712254,
+        "valid_rmse": 0.02974139396742742,
+        "valid_r2": 0.9998486711653062,
+        "valid_spearman": 0.999266862170088,
+        "learning_rate": 0.00025,
+        "epoch_seconds": 0.012724540196359158
+      },
+      {
+        "epoch": 498,
+        "train_loss": 7.566387648694217e-05,
+        "train_mae": 0.017385661602020264,
+        "max_gradient_norm": 0.007051287218928337,
+        "valid_mae": 0.017143607197795063,
+        "valid_rmse": 0.029346527522931504,
+        "valid_r2": 0.9998526627742821,
+        "valid_spearman": 0.999266862170088,
+        "learning_rate": 0.00025,
+        "epoch_seconds": 0.012731809169054031
+      },
+      {
+        "epoch": 499,
+        "train_loss": 7.366873614955693e-05,
+        "train_mae": 0.01714368909597397,
+        "max_gradient_norm": 0.015374462120234966,
+        "valid_mae": 0.016833514033351094,
+        "valid_rmse": 0.028952580499155244,
+        "valid_r2": 0.9998565919258481,
+        "valid_spearman": 0.9996334310850439,
+        "learning_rate": 0.00025,
+        "epoch_seconds": 0.012830805964767933
+      },
+      {
+        "epoch": 500,
+        "train_loss": 7.170360186137259e-05,
+        "train_mae": 0.016833331435918808,
+        "max_gradient_norm": 0.020656809210777283,
+        "valid_mae": 0.01658890029648319,
+        "valid_rmse": 0.028547398333915106,
+        "valid_r2": 0.9998605777400824,
+        "valid_spearman": 0.9996334310850439,
+        "learning_rate": 0.00025,
+        "epoch_seconds": 0.012823939323425293
+      }
+    ]
+  },
+  "passed": true
+}

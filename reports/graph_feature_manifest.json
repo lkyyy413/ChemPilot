@@ -1,0 +1,112 @@
+{
+  "created_at_utc": "2026-07-26T08:47:14.207973+00:00",
+  "input_file": "data/processed/solubility_aqsoldb_processed.csv",
+  "output_file": "data/processed/solubility_aqsoldb_graphs.pt",
+  "input_sha256": "5ed2b3ef954dcd9f0c737d231eda340e7a7e5191bd0818e8c552db0dc4d45864",
+  "output_sha256": "05d8027c860bd74d482ffb9e6b321797b515dc0f23156a60b90192b8a7f84919",
+  "number_of_graphs": 9982,
+  "total_nodes": 173500,
+  "total_directed_edges": 352000,
+  "node_count_statistics": {
+    "minimum": 1,
+    "p50": 15.0,
+    "p90": 28.0,
+    "p95": 36.0,
+    "p99": 62.0,
+    "maximum": 388,
+    "mean": 17.38128631536766
+  },
+  "directed_edge_count_statistics": {
+    "minimum": 0,
+    "p50": 30.0,
+    "p90": 60.0,
+    "p95": 74.0,
+    "p99": 128.0,
+    "maximum": 800,
+    "mean": 35.26347425365658
+  },
+  "zero_edge_graphs": 149,
+  "zero_edge_sample_id_examples": [
+    "AQSOL_00038",
+    "AQSOL_00071",
+    "AQSOL_00138",
+    "AQSOL_00143",
+    "AQSOL_00151",
+    "AQSOL_00162",
+    "AQSOL_00165",
+    "AQSOL_00199",
+    "AQSOL_00263",
+    "AQSOL_00281",
+    "AQSOL_00296",
+    "AQSOL_00314",
+    "AQSOL_00359",
+    "AQSOL_00419",
+    "AQSOL_00427",
+    "AQSOL_00487",
+    "AQSOL_00632",
+    "AQSOL_00636",
+    "AQSOL_00801",
+    "AQSOL_00814"
+  ],
+  "multi_fragment_graphs": 1098,
+  "atom_feature_names": [
+    "atomic_number",
+    "degree",
+    "total_valence",
+    "formal_charge",
+    "hybridization",
+    "aromatic",
+    "chirality"
+  ],
+  "atom_feature_cardinalities": [
+    119,
+    12,
+    14,
+    12,
+    9,
+    2,
+    5
+  ],
+  "bond_feature_names": [
+    "bond_type",
+    "conjugated",
+    "in_ring",
+    "stereo"
+  ],
+  "bond_feature_cardinalities": [
+    5,
+    2,
+    2,
+    7
+  ],
+  "atom_unknown_or_overflow_counts": {
+    "atomic_number_unknown": 0,
+    "degree_overflow": 0,
+    "total_valence_overflow": 0,
+    "formal_charge_overflow": 0,
+    "hybridization_unknown": 0,
+    "chirality_unknown": 0
+  },
+  "bond_unknown_counts": {
+    "bond_type_unknown": 0,
+    "stereo_unknown": 0
+  },
+  "boolean_feature_counts": {
+    "aromatic_atoms": 59974,
+    "conjugated_directed_edges": 191104,
+    "ring_directed_edges": 166716
+  },
+  "cache_security": {
+    "contains_pyg_data_objects": false,
+    "contains_python_object_arrays": false,
+    "load_with_weights_only": true
+  },
+  "row_alignment": "Cache graph index matches the row order of the processed input CSV.",
+  "software_versions": {
+    "torch": "2.6.0+cu124",
+    "torch_geometric": "2.8.0.post1",
+    "rdkit": "2023.09.6",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  }
+}

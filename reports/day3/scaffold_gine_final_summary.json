@@ -1,0 +1,121 @@
+{
+  "stage": "final_refit",
+  "protocol": "scaffold",
+  "development_summary": "reports/day3/scaffold_gine_development.json",
+  "epoch_selection_rule": "Best validation MAE from the seed-42 development run.",
+  "selected_epochs": 62,
+  "final_train_samples": 7985,
+  "test_samples": 1997,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "model_config": {
+    "hidden_dim": 128,
+    "num_layers": 4,
+    "dropout": 0.15,
+    "mlp_expansion": 2,
+    "train_eps": true,
+    "pooling": "add"
+  },
+  "individual_results": [
+    {
+      "protocol": "scaffold",
+      "seed": 1,
+      "selected_epochs": 62,
+      "train_samples": 7985,
+      "test_samples": 1997,
+      "parameter_count": 305541,
+      "training_seconds": 46.584416701458395,
+      "peak_gpu_memory_mb": 69.3671875,
+      "test_n_samples": 1997.0,
+      "test_mae": 0.9666034412219011,
+      "test_rmse": 1.4112650523686043,
+      "test_r2": 0.6217439644058729,
+      "test_spearman": 0.8445003899173554,
+      "checkpoint": "artifacts/models/day3/scaffold_final_seed_1.pt",
+      "history_file": "reports/day3/history/scaffold_gine_final_seed_1.csv",
+      "prediction_file": "reports/day3/predictions/scaffold_gine_final_seed_1_test.csv"
+    },
+    {
+      "protocol": "scaffold",
+      "seed": 2,
+      "selected_epochs": 62,
+      "train_samples": 7985,
+      "test_samples": 1997,
+      "parameter_count": 305541,
+      "training_seconds": 46.794496931135654,
+      "peak_gpu_memory_mb": 69.44384765625,
+      "test_n_samples": 1997.0,
+      "test_mae": 0.9294893841793048,
+      "test_rmse": 1.4610964708610772,
+      "test_r2": 0.594560109546557,
+      "test_spearman": 0.8503247751279885,
+      "checkpoint": "artifacts/models/day3/scaffold_final_seed_2.pt",
+      "history_file": "reports/day3/history/scaffold_gine_final_seed_2.csv",
+      "prediction_file": "reports/day3/predictions/scaffold_gine_final_seed_2_test.csv"
+    },
+    {
+      "protocol": "scaffold",
+      "seed": 3,
+      "selected_epochs": 62,
+      "train_samples": 7985,
+      "test_samples": 1997,
+      "parameter_count": 305541,
+      "training_seconds": 47.66122602671385,
+      "peak_gpu_memory_mb": 69.33154296875,
+      "test_n_samples": 1997.0,
+      "test_mae": 0.8830613526575707,
+      "test_rmse": 1.4413568158593315,
+      "test_r2": 0.6054412267730526,
+      "test_spearman": 0.8545013901346045,
+      "checkpoint": "artifacts/models/day3/scaffold_final_seed_3.pt",
+      "history_file": "reports/day3/history/scaffold_gine_final_seed_3.csv",
+      "prediction_file": "reports/day3/predictions/scaffold_gine_final_seed_3_test.csv"
+    }
+  ],
+  "aggregate": {
+    "test_mae": {
+      "mean": 0.9263847260195922,
+      "standard_deviation": 0.04185748818478135,
+      "ci95_lower": 0.8224049610967226,
+      "ci95_upper": 1.0303644909424619,
+      "ci95_half_width": 0.10397976492286966,
+      "number_of_seeds": 3
+    },
+    "test_rmse": {
+      "mean": 1.4379061130296709,
+      "standard_deviation": 0.025094283806416186,
+      "ci95_lower": 1.3755684562744424,
+      "ci95_upper": 1.5002437697848994,
+      "ci95_half_width": 0.06233765675522844,
+      "number_of_seeds": 3
+    },
+    "test_r2": {
+      "mean": 0.6072484335751609,
+      "standard_deviation": 0.01368173923784097,
+      "ci95_lower": 0.5732611091708277,
+      "ci95_upper": 0.6412357579794941,
+      "ci95_half_width": 0.03398732440433316,
+      "number_of_seeds": 3
+    },
+    "test_spearman": {
+      "mean": 0.8497755183933161,
+      "standard_deviation": 0.005023073118797998,
+      "ci95_lower": 0.8372975130295613,
+      "ci95_upper": 0.8622535237570709,
+      "ci95_half_width": 0.012478005363754721,
+      "number_of_seeds": 3
+    },
+    "training_seconds": {
+      "mean": 47.01337988643596,
+      "standard_deviation": 0.5707993446299889,
+      "ci95_lower": 45.59543570854491,
+      "ci95_upper": 48.431324064327015,
+      "ci95_half_width": 1.4179441778910542,
+      "number_of_seeds": 3
+    }
+  },
+  "test_usage": "The fixed test set was used only for final evaluation and did not affect model selection."
+}

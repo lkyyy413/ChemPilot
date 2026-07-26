@@ -49,3 +49,7 @@ htmlcov/
 
 # Reproducible sample-level predictions
 reports/day2/predictions/
+
+# Reconstructable Day 3 sample-level outputs
+reports/day3/predictions/
+reports/day3/subgroups/*_sample_analysis.csv

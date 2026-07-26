@@ -1,0 +1,121 @@
+{
+  "stage": "final_refit",
+  "protocol": "random",
+  "development_summary": "reports/day3/random_gine_development.json",
+  "epoch_selection_rule": "Best validation MAE from the seed-42 development run.",
+  "selected_epochs": 159,
+  "final_train_samples": 7985,
+  "test_samples": 1997,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "model_config": {
+    "hidden_dim": 128,
+    "num_layers": 4,
+    "dropout": 0.15,
+    "mlp_expansion": 2,
+    "train_eps": true,
+    "pooling": "add"
+  },
+  "individual_results": [
+    {
+      "protocol": "random",
+      "seed": 1,
+      "selected_epochs": 159,
+      "train_samples": 7985,
+      "test_samples": 1997,
+      "parameter_count": 305541,
+      "training_seconds": 118.64748449251056,
+      "peak_gpu_memory_mb": 73.69677734375,
+      "test_n_samples": 1997.0,
+      "test_mae": 0.8162795348094313,
+      "test_rmse": 1.5337563467900543,
+      "test_r2": 0.5755054698160094,
+      "test_spearman": 0.8797957438341656,
+      "checkpoint": "artifacts/models/day3/random_final_seed_1.pt",
+      "history_file": "reports/day3/history/random_gine_final_seed_1.csv",
+      "prediction_file": "reports/day3/predictions/random_gine_final_seed_1_test.csv"
+    },
+    {
+      "protocol": "random",
+      "seed": 2,
+      "selected_epochs": 159,
+      "train_samples": 7985,
+      "test_samples": 1997,
+      "parameter_count": 305541,
+      "training_seconds": 119.32034602854401,
+      "peak_gpu_memory_mb": 73.71142578125,
+      "test_n_samples": 1997.0,
+      "test_mae": 0.8456805463995491,
+      "test_rmse": 1.4034025673626933,
+      "test_r2": 0.6445947113116142,
+      "test_spearman": 0.8661398842409113,
+      "checkpoint": "artifacts/models/day3/random_final_seed_2.pt",
+      "history_file": "reports/day3/history/random_gine_final_seed_2.csv",
+      "prediction_file": "reports/day3/predictions/random_gine_final_seed_2_test.csv"
+    },
+    {
+      "protocol": "random",
+      "seed": 3,
+      "selected_epochs": 159,
+      "train_samples": 7985,
+      "test_samples": 1997,
+      "parameter_count": 305541,
+      "training_seconds": 118.09708383772522,
+      "peak_gpu_memory_mb": 73.68505859375,
+      "test_n_samples": 1997.0,
+      "test_mae": 0.8076577258508971,
+      "test_rmse": 1.3768267530892218,
+      "test_r2": 0.6579276705661508,
+      "test_spearman": 0.8814140471667716,
+      "checkpoint": "artifacts/models/day3/random_final_seed_3.pt",
+      "history_file": "reports/day3/history/random_gine_final_seed_3.csv",
+      "prediction_file": "reports/day3/predictions/random_gine_final_seed_3_test.csv"
+    }
+  ],
+  "aggregate": {
+    "test_mae": {
+      "mean": 0.8232059356866258,
+      "standard_deviation": 0.01993527006219003,
+      "ci95_lower": 0.7736839795293498,
+      "ci95_upper": 0.8727278918439019,
+      "ci95_half_width": 0.049521956157276004,
+      "number_of_seeds": 3
+    },
+    "test_rmse": {
+      "mean": 1.4379952224139896,
+      "standard_deviation": 0.08398936350753344,
+      "ci95_lower": 1.2293540771311722,
+      "ci95_upper": 1.646636367696807,
+      "ci95_half_width": 0.20864114528281733,
+      "number_of_seeds": 3
+    },
+    "test_r2": {
+      "mean": 0.6260092838979248,
+      "standard_deviation": 0.044242721189324354,
+      "ci95_lower": 0.5161042717169355,
+      "ci95_upper": 0.735914296078914,
+      "ci95_half_width": 0.1099050121809893,
+      "number_of_seeds": 3
+    },
+    "test_spearman": {
+      "mean": 0.8757832250806161,
+      "standard_deviation": 0.00839048528585333,
+      "ci95_lower": 0.8549401041613578,
+      "ci95_upper": 0.8966263459998745,
+      "ci95_half_width": 0.020843120919258367,
+      "number_of_seeds": 3
+    },
+    "training_seconds": {
+      "mean": 118.68830478625993,
+      "standard_deviation": 0.6126518743609891,
+      "ci95_lower": 117.16639316092804,
+      "ci95_upper": 120.21021641159183,
+      "ci95_half_width": 1.5219116253318938,
+      "number_of_seeds": 3
+    }
+  },
+  "test_usage": "The fixed test set was used only for final evaluation and did not affect model selection."
+}

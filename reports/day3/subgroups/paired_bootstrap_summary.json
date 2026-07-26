@@ -1,0 +1,36 @@
+{
+  "random": {
+    "n_samples": 1997,
+    "mean_paired_mae_difference": 0.11047064697692666,
+    "median_paired_absolute_error_difference": 0.0454373413289382,
+    "bootstrap_ci95_lower": 0.06916034924464111,
+    "bootstrap_ci95_upper": 0.157472791043144,
+    "probability_bootstrap_difference_above_zero": 1.0,
+    "gine_sample_win_rate": 0.4586880320480721,
+    "top20_failure_audit": {
+      "outside_druglike_scope": 16,
+      "multi_fragment": 14,
+      "molecular_weight_at_least_600": 6,
+      "median_molecular_weight": 349.4015,
+      "median_nearest_similarity": 0.5071428571428571,
+      "median_seed_disagreement": 0.7701946566228527
+    }
+  },
+  "scaffold": {
+    "n_samples": 1997,
+    "mean_paired_mae_difference": 0.09353357802058856,
+    "median_paired_absolute_error_difference": 0.03512546360270191,
+    "bootstrap_ci95_lower": 0.052201599965549864,
+    "bootstrap_ci95_upper": 0.13774459786404358,
+    "probability_bootstrap_difference_above_zero": 1.0,
+    "gine_sample_win_rate": 0.4732098147220831,
+    "top20_failure_audit": {
+      "outside_druglike_scope": 15,
+      "multi_fragment": 12,
+      "molecular_weight_at_least_600": 14,
+      "median_molecular_weight": 875.682,
+      "median_nearest_similarity": 0.38055555555555554,
+      "median_seed_disagreement": 0.8865341490929248
+    }
+  }
+}

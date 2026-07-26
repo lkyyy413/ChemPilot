@@ -1,0 +1,49 @@
+{
+  "stage": "development",
+  "protocol": "random",
+  "seed": 42,
+  "device": "cuda:0",
+  "train_samples": 6986,
+  "valid_samples": 999,
+  "parameter_count": 305541,
+  "best_epoch": 159,
+  "best_valid_mae": 0.7803463924145261,
+  "epochs_completed": 189,
+  "training_seconds": 145.75237125344574,
+  "peak_gpu_memory_mb": 73.82421875,
+  "validation_metrics": {
+    "n_samples": 999.0,
+    "mae": 0.7803463955170702,
+    "rmse": 1.1744613099712413,
+    "r2": 0.7623183049652058,
+    "spearman": 0.8998654976348925
+  },
+  "model_config": {
+    "hidden_dim": 128,
+    "num_layers": 4,
+    "dropout": 0.15,
+    "mlp_expansion": 2,
+    "train_eps": true,
+    "pooling": "add"
+  },
+  "trainer_config": {
+    "learning_rate": 0.0003,
+    "weight_decay": 1e-05,
+    "max_epochs": 250,
+    "patience": 30,
+    "min_delta": 0.0001,
+    "gradient_clip_norm": 5.0,
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 10,
+    "minimum_learning_rate": 1e-06,
+    "huber_delta": 1.0,
+    "seed": 42
+  },
+  "target_standardizer": {
+    "mean": -2.884728914440505,
+    "standard_deviation": 2.366078366104583
+  },
+  "checkpoint": "artifacts/models/day3/random_development_seed_42.pt",
+  "history_file": "reports/day3/history/random_gine_development.csv",
+  "prediction_file": "reports/day3/predictions/random_gine_development_valid.csv"
+}
