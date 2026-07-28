@@ -1,0 +1,139 @@
+{
+  "input_file": "data/processed/reactions/d9297630_condition_pairs.parquet",
+  "input_sha256": "2dc3457de3a640bcc01e3d6c7349ad88647f068fa21b2b57cb77129f22ba6f1b",
+  "seed": 42,
+  "target_proportions": {
+    "train": 0.7,
+    "valid": 0.15,
+    "test": 0.15
+  },
+  "selection_policy": "Candidate assignments are selected using only group sizes and row counts. Reaction scores and condition ranks are not used to select the split.",
+  "protocols": {
+    "transformation": {
+      "group_column": "transformation_signature",
+      "seed": 42,
+      "candidate_assignments_evaluated": 20000,
+      "search_score": 0.009320087355634776,
+      "splits": {
+        "train": {
+          "condition_pairs": 24191,
+          "condition_pair_proportion": 0.6998495631545449,
+          "transformations": 421,
+          "reaction_centers": 372,
+          "reaction_types": 38,
+          "represented_experiments": 27594,
+          "rankable_transformations": 271,
+          "all_zero_transformations": 127,
+          "file": "data/splits/reactions/transformation/seed_42/train.parquet",
+          "sha256": "9a8a54f45f8f92367de70d8c8b04c08dcab7a5841004d0837e72e11443fb8173"
+        },
+        "valid": {
+          "condition_pairs": 5193,
+          "condition_pair_proportion": 0.15023433431695887,
+          "transformations": 90,
+          "reaction_centers": 85,
+          "reaction_types": 23,
+          "represented_experiments": 5825,
+          "rankable_transformations": 52,
+          "all_zero_transformations": 36,
+          "file": "data/splits/reactions/transformation/seed_42/valid.parquet",
+          "sha256": "d7dc949020f5a678a78dbc8a2a7d398d0416e71870dfdecd31868a76d2f7ab0a"
+        },
+        "test": {
+          "condition_pairs": 5182,
+          "condition_pair_proportion": 0.14991610252849621,
+          "transformations": 91,
+          "reaction_centers": 87,
+          "reaction_types": 22,
+          "represented_experiments": 5928,
+          "rankable_transformations": 58,
+          "all_zero_transformations": 28,
+          "file": "data/splits/reactions/transformation/seed_42/test.parquet",
+          "sha256": "b813a0fa619ebc5430233e38b55e5beeafb6b9d2c2718041e17d41dd839d484f"
+        }
+      },
+      "overlap_audit": {
+        "train_valid": {
+          "transformation_overlap": 0,
+          "reaction_center_overlap": 16,
+          "condition_signature_overlap": 2448
+        },
+        "train_test": {
+          "transformation_overlap": 0,
+          "reaction_center_overlap": 9,
+          "condition_signature_overlap": 2329
+        },
+        "valid_test": {
+          "transformation_overlap": 0,
+          "reaction_center_overlap": 6,
+          "condition_signature_overlap": 911
+        }
+      },
+      "assignment_file": "data/splits/reactions/transformation/seed_42/split_assignments.csv",
+      "assignment_sha256": "abb25e4a03da180f990ae5229d2a0ce32eb08deb5836bdb355502740aea89b79"
+    },
+    "reaction_center": {
+      "group_column": "reaction_center_signature",
+      "seed": 42,
+      "candidate_assignments_evaluated": 20000,
+      "search_score": 0.015838579965312627,
+      "splits": {
+        "train": {
+          "condition_pairs": 24174,
+          "condition_pair_proportion": 0.6993577503905571,
+          "transformations": 422,
+          "reaction_centers": 360,
+          "reaction_types": 37,
+          "represented_experiments": 27410,
+          "rankable_transformations": 263,
+          "all_zero_transformations": 141,
+          "file": "data/splits/reactions/reaction_center/seed_42/train.parquet",
+          "sha256": "6b8e6ee346bef702e67920522edea8ce094d5a1ad5d5a9320c93d709ab40e21e"
+        },
+        "valid": {
+          "condition_pairs": 5195,
+          "condition_pair_proportion": 0.1502921946421339,
+          "transformations": 89,
+          "reaction_centers": 77,
+          "reaction_types": 23,
+          "represented_experiments": 5745,
+          "rankable_transformations": 53,
+          "all_zero_transformations": 28,
+          "file": "data/splits/reactions/reaction_center/seed_42/valid.parquet",
+          "sha256": "c73782508f3c2edc6435dfd67435501977c94df36f72739d111eb70ad4604fc7"
+        },
+        "test": {
+          "condition_pairs": 5197,
+          "condition_pair_proportion": 0.1503500549673089,
+          "transformations": 91,
+          "reaction_centers": 77,
+          "reaction_types": 23,
+          "represented_experiments": 6192,
+          "rankable_transformations": 65,
+          "all_zero_transformations": 22,
+          "file": "data/splits/reactions/reaction_center/seed_42/test.parquet",
+          "sha256": "d947e3bff339f6c2e249f6e6b0223b11c6136e6e002b496b36a1d48895e92927"
+        }
+      },
+      "overlap_audit": {
+        "train_valid": {
+          "transformation_overlap": 0,
+          "reaction_center_overlap": 0,
+          "condition_signature_overlap": 1808
+        },
+        "train_test": {
+          "transformation_overlap": 0,
+          "reaction_center_overlap": 0,
+          "condition_signature_overlap": 2051
+        },
+        "valid_test": {
+          "transformation_overlap": 0,
+          "reaction_center_overlap": 0,
+          "condition_signature_overlap": 435
+        }
+      },
+      "assignment_file": "data/splits/reactions/reaction_center/seed_42/split_assignments.csv",
+      "assignment_sha256": "3156ffb2545a8b7d05c72f82b0785bab30409e76cc2d22fe42284fb1996e7c61"
+    }
+  }
+}

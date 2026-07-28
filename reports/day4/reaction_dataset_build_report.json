@@ -1,0 +1,70 @@
+{
+  "created_at_utc": "2026-07-28T10:27:39.609050+00:00",
+  "dataset": {
+    "name": "d9297630",
+    "source": "Open Reaction Database",
+    "source_repository": "https://github.com/open-reaction-database/ord-data",
+    "source_repository_commit": "ad4a2e12efacc9641ec14e7b2403acfd882bfe31",
+    "source_license": "CC-BY-SA-4.0",
+    "source_article": "Probing the chemical 'reactome' with high-throughput experimentation data",
+    "source_doi": "10.1038/s41557-023-01393-w",
+    "score_definition": "LC area percent at 280 nm; a semi-quantitative analytical response, not isolated yield"
+  },
+  "files": {
+    "source": "/tmp/ord-data-source/data/d9/ord_dataset-d92976309c3a48a3a64a4cf5e7048086.parquet",
+    "source_lfs_oid": "sha256:78c17145099d29458960ffcb6cec7a8987efeae06b100004be2255ff28e54994",
+    "source_size_bytes": 3784674,
+    "standardized": "data/interim/reactions/d9297630_standardized_experiments.parquet",
+    "aggregated": "data/processed/reactions/d9297630_condition_pairs.parquet",
+    "source_sha256": "78c17145099d29458960ffcb6cec7a8987efeae06b100004be2255ff28e54994",
+    "standardized_sha256": "99515aa6783af9a5b1e69259324f9a345e502446d8230e91118217b36688f0de",
+    "aggregated_sha256": "2dc3457de3a640bcc01e3d6c7349ad88647f068fa21b2b57cb77129f22ba6f1b"
+  },
+  "standardized_experiments": {
+    "rows": 39347,
+    "unique_reaction_ids": 39347,
+    "unique_transformations": 602,
+    "missing_temperature": 711,
+    "missing_reaction_time": 1738,
+    "zero_score_rows": 22401,
+    "unique_solvent_labels": 52,
+    "unique_catalyst_labels": 779,
+    "unique_reagent_labels": 421,
+    "name_only_solvent_labels": 0,
+    "name_only_catalyst_labels": 312
+  },
+  "aggregated_condition_pairs": {
+    "rows": 34566,
+    "unique_transformations": 602,
+    "removed_replicate_rows": 4781,
+    "maximum_replicate_count": 66,
+    "rankable_transformations": 381,
+    "all_zero_transformations": 191,
+    "top_quartile_pairs": 6429,
+    "best_condition_pairs": 704,
+    "reaction_centers": {
+      "unique_raw_signatures": 516,
+      "unique_consensus_signatures": 514,
+      "missing_raw_signatures": 0,
+      "missing_consensus_signatures": 0,
+      "conflicting_transformations": 2,
+      "condition_pairs_in_conflicts": 234,
+      "condition_pairs_changed_by_consensus": 73,
+      "zero_feature_condition_pairs": 132,
+      "maximum_variants_per_transformation": 2
+    }
+  },
+  "leakage_control": {
+    "primary_split_unit": "transformation_signature",
+    "hard_split_unit": "reaction_center_signature",
+    "reaction_center_policy": "Weighted-majority consensus within each standardized transformation; weights are raw experiment replicate counts.",
+    "condition_fields": [
+      "solvent",
+      "catalyst",
+      "reagent",
+      "temperature_celsius",
+      "reaction_time_hours"
+    ],
+    "test_labels_used_for_selection": false
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "protocol": "reaction_center",
+  "target": "solvent",
+  "evaluation_split": "valid",
+  "model": "one_vs_rest_logistic_regression",
+  "feature_representation": "reaction_combined",
+  "classes": 20,
+  "train_samples": 219,
+  "evaluation_samples": 48,
+  "training_seconds": 0.032111856155097485,
+  "regularization_c": 10.0,
+  "class_weight": "balanced",
+  "maximum_iterations": 2000,
+  "maximum_iterations_used": 10,
+  "converged": true,
+  "model_metrics": {
+    "samples": 48,
+    "classes": 20,
+    "classes_with_positive_examples": 19,
+    "micro_average_precision": 0.5990185100806102,
+    "macro_average_precision_observed": 0.5552649343042224,
+    "mean_reciprocal_rank": 0.7967592592592592,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 48,
+        "hit_rate": 0.7083333333333334,
+        "precision": 0.7083333333333334,
+        "recall": 0.3781828703703704
+      },
+      "3": {
+        "k": 3,
+        "samples": 48,
+        "hit_rate": 0.8333333333333334,
+        "precision": 0.4861111111111111,
+        "recall": 0.6653356481481482
+      },
+      "5": {
+        "k": 5,
+        "samples": 48,
+        "hit_rate": 0.9375,
+        "precision": 0.3541666666666667,
+        "recall": 0.7952546296296297
+      }
+    }
+  },
+  "frequency_baseline_metrics": {
+    "samples": 48,
+    "classes": 20,
+    "classes_with_positive_examples": 19,
+    "micro_average_precision": 0.26002562143116564,
+    "macro_average_precision_observed": 0.13377192982456143,
+    "mean_reciprocal_rank": 0.5039723875661376,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 48,
+        "hit_rate": 0.3333333333333333,
+        "precision": 0.3333333333333333,
+        "recall": 0.14930555555555555
+      },
+      "3": {
+        "k": 3,
+        "samples": 48,
+        "hit_rate": 0.5625,
+        "precision": 0.2916666666666667,
+        "recall": 0.33449074074074076
+      },
+      "5": {
+        "k": 5,
+        "samples": 48,
+        "hit_rate": 0.75,
+        "precision": 0.28750000000000003,
+        "recall": 0.5629050925925926
+      }
+    }
+  },
+  "target_coverage": {
+    "evaluation_transformations": 53,
+    "evaluated_with_known_target": 48,
+    "all_targets_known": 47,
+    "contains_unknown_targets": 1
+  },
+  "model_file": "artifacts/models/day4/reaction_center/solvent_logistic.joblib",
+  "prediction_file": "reports/day4/classification/reaction_center/solvent_valid_top5.csv"
+}

@@ -1,0 +1,969 @@
+{
+  "number_of_files": 5,
+  "files": [
+    {
+      "path": "/tmp/ord-data-source/data/48/ord_dataset-488402f6ec0d441ca2f7d6fabea7c220.parquet",
+      "number_of_reactions": 40000,
+      "integrity": {
+        "partial_deserialization": 0,
+        "reaction_id_mismatch": 0
+      },
+      "coverage": {
+        "has_reactant": {
+          "count": 40000,
+          "rate": 1.0
+        },
+        "has_reactant_smiles": {
+          "count": 40000,
+          "rate": 1.0
+        },
+        "has_reagent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_reagent_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_solvent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_solvent_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_catalyst": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_catalyst_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_temperature": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_reaction_time": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_desired_product": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_desired_product_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_desired_yield": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "unique_labels": {
+        "reactant": 44089,
+        "reagent": 0,
+        "solvent": 0,
+        "catalyst": 0
+      },
+      "top_labels": {
+        "reactant": [
+          [
+            "SMILES:[Na+]",
+            8758
+          ],
+          [
+            "SMILES:O",
+            8696
+          ],
+          [
+            "SMILES:Cl",
+            6054
+          ],
+          [
+            "SMILES:C1CCOC1",
+            6008
+          ],
+          [
+            "SMILES:ClCCl",
+            5422
+          ],
+          [
+            "SMILES:CN(C)C=O",
+            4904
+          ],
+          [
+            "SMILES:CO",
+            4282
+          ],
+          [
+            "SMILES:[OH-]",
+            3893
+          ],
+          [
+            "SMILES:O=C([O-])[O-]",
+            3797
+          ],
+          [
+            "SMILES:[K+]",
+            3796
+          ]
+        ],
+        "reagent": [],
+        "solvent": [],
+        "catalyst": []
+      },
+      "role_cardinality": {
+        "reactant": {
+          "1": 3,
+          "2": 6189,
+          "3": 6947,
+          "4": 7342,
+          "5": 7779,
+          "6": 5876,
+          "7": 3374,
+          "8": 1597,
+          "9": 562,
+          "10": 225,
+          "11": 72,
+          "12": 26,
+          "13": 3,
+          "14": 3,
+          "15": 2
+        },
+        "reagent": {
+          "0": 40000
+        },
+        "solvent": {
+          "0": 40000
+        },
+        "catalyst": {
+          "0": 40000
+        }
+      },
+      "temperature_units": {},
+      "top_yield_methods": []
+    },
+    {
+      "path": "/tmp/ord-data-source/data/47/ord_dataset-47eaacc46c3a4487bbdf99adb1a15e41.parquet",
+      "number_of_reactions": 47015,
+      "integrity": {
+        "partial_deserialization": 0,
+        "reaction_id_mismatch": 0
+      },
+      "coverage": {
+        "has_reactant": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_reactant_smiles": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_reagent": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_reagent_smiles": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_solvent": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_solvent_smiles": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_catalyst": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_catalyst_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_temperature": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_reaction_time": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_desired_product": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_desired_product_smiles": {
+          "count": 47015,
+          "rate": 1.0
+        },
+        "has_desired_yield": {
+          "count": 47015,
+          "rate": 1.0
+        }
+      },
+      "unique_labels": {
+        "reactant": 136,
+        "reagent": 57,
+        "solvent": 1,
+        "catalyst": 0
+      },
+      "top_labels": {
+        "reactant": [
+          [
+            "SMILES:O=C(O)Cc1ccc2c(c1)OCO2",
+            3322
+          ],
+          [
+            "SMILES:CNOC",
+            2751
+          ],
+          [
+            "SMILES:Cc1ccc(CN)cc1",
+            2291
+          ],
+          [
+            "SMILES:Cc1ccc2cccc(N)c2n1",
+            2219
+          ],
+          [
+            "SMILES:COc1ccc(N)cn1",
+            2131
+          ],
+          [
+            "SMILES:CC(=O)c1ccc(N)cc1",
+            2091
+          ],
+          [
+            "SMILES:Cc1cc(C(=O)O)cc(Cl)n1",
+            1918
+          ],
+          [
+            "SMILES:O=C(O)Cc1ccc2c(c1)C(=O)c1ccccc1CO2",
+            1880
+          ],
+          [
+            "SMILES:NCc1cccc2ccccc12",
+            1847
+          ],
+          [
+            "SMILES:Cc1ccc(CC(=O)O)cc1",
+            1840
+          ]
+        ],
+        "reagent": [
+          [
+            "SMILES:CCN(C(C)C)C(C)C",
+            24178
+          ],
+          [
+            "SMILES:CCN=C=NCCCN(C)C.Cl",
+            9991
+          ],
+          [
+            "SMILES:C1CCC(CC1)N=C=NC2CCCCC2",
+            8065
+          ],
+          [
+            "SMILES:CN1CCOCC1",
+            7557
+          ],
+          [
+            "SMILES:C1=CC=C2C(=C1)N=NN2O",
+            5988
+          ],
+          [
+            "SMILES:CCN(CC)CC",
+            3314
+          ],
+          [
+            "SMILES:C1=CC2=C(N=C1)N(N=N2)O",
+            3195
+          ],
+          [
+            "SMILES:C1(=C(C(=C(C(=C1F)F)F)F)F)O",
+            3157
+          ],
+          [
+            "SMILES:CC(C)N=C=NC(C)C",
+            2795
+          ],
+          [
+            "SMILES:C1=CC=C2C(=C1)C(=O)N(C2=O)O",
+            2649
+          ]
+        ],
+        "solvent": [
+          [
+            "SMILES:CN(C)C=O",
+            47015
+          ]
+        ],
+        "catalyst": []
+      },
+      "role_cardinality": {
+        "reactant": {
+          "2": 47015
+        },
+        "reagent": {
+          "1": 2551,
+          "2": 27804,
+          "3": 16660
+        },
+        "solvent": {
+          "1": 47015
+        },
+        "catalyst": {
+          "0": 47015
+        }
+      },
+      "temperature_units": {
+        "CELSIUS": 47015
+      },
+      "top_yield_methods": [
+        [
+          "UPLC",
+          47015
+        ]
+      ]
+    },
+    {
+      "path": "/tmp/ord-data-source/data/54/ord_dataset-5481550056a14935b76e031fb94b88be.parquet",
+      "number_of_reactions": 30000,
+      "integrity": {
+        "partial_deserialization": 0,
+        "reaction_id_mismatch": 0
+      },
+      "coverage": {
+        "has_reactant": {
+          "count": 30000,
+          "rate": 1.0
+        },
+        "has_reactant_smiles": {
+          "count": 30000,
+          "rate": 1.0
+        },
+        "has_reagent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_reagent_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_solvent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_solvent_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_catalyst": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_catalyst_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_temperature": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_reaction_time": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_desired_product": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_desired_product_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_desired_yield": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "unique_labels": {
+        "reactant": 34538,
+        "reagent": 0,
+        "solvent": 0,
+        "catalyst": 0
+      },
+      "top_labels": {
+        "reactant": [
+          [
+            "SMILES:O",
+            6571
+          ],
+          [
+            "SMILES:[Na+]",
+            6383
+          ],
+          [
+            "SMILES:C1CCOC1",
+            4375
+          ],
+          [
+            "SMILES:Cl",
+            4371
+          ],
+          [
+            "SMILES:ClCCl",
+            4055
+          ],
+          [
+            "SMILES:CN(C)C=O",
+            3819
+          ],
+          [
+            "SMILES:CO",
+            3155
+          ],
+          [
+            "SMILES:[OH-]",
+            2957
+          ],
+          [
+            "SMILES:[K+]",
+            2848
+          ],
+          [
+            "SMILES:O=C([O-])[O-]",
+            2762
+          ]
+        ],
+        "reagent": [],
+        "solvent": [],
+        "catalyst": []
+      },
+      "role_cardinality": {
+        "reactant": {
+          "1": 3,
+          "2": 4632,
+          "3": 5309,
+          "4": 5506,
+          "5": 5916,
+          "6": 4410,
+          "7": 2409,
+          "8": 1100,
+          "9": 475,
+          "10": 159,
+          "11": 51,
+          "12": 20,
+          "13": 9,
+          "14": 1
+        },
+        "reagent": {
+          "0": 30000
+        },
+        "solvent": {
+          "0": 30000
+        },
+        "catalyst": {
+          "0": 30000
+        }
+      },
+      "temperature_units": {},
+      "top_yield_methods": []
+    },
+    {
+      "path": "/tmp/ord-data-source/data/80/ord_dataset-805ad863feef48579d95d86a728035f4.parquet",
+      "number_of_reactions": 50688,
+      "integrity": {
+        "partial_deserialization": 0,
+        "reaction_id_mismatch": 0
+      },
+      "coverage": {
+        "has_reactant": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_reactant_smiles": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_reagent": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_reagent_smiles": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_solvent": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_solvent_smiles": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_catalyst": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_catalyst_smiles": {
+          "count": 50556,
+          "rate": 0.9973958333333334
+        },
+        "has_temperature": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_reaction_time": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_desired_product": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_desired_product_smiles": {
+          "count": 50688,
+          "rate": 1.0
+        },
+        "has_desired_yield": {
+          "count": 50688,
+          "rate": 1.0
+        }
+      },
+      "unique_labels": {
+        "reactant": 6,
+        "reagent": 17,
+        "solvent": 4,
+        "catalyst": 196
+      },
+      "top_labels": {
+        "reactant": [
+          [
+            "SMILES:C1COCCN1",
+            33792
+          ],
+          [
+            "SMILES:FC(F)(F)C1=CC=C(Br)C=C1",
+            27648
+          ],
+          [
+            "SMILES:C1=CC=C(C2CCNCC2)C=C1",
+            16896
+          ],
+          [
+            "SMILES:BrC1=CN=CC=C1",
+            13824
+          ],
+          [
+            "SMILES:FC(F)(F)C1=CC=C(I)C=C1",
+            6144
+          ],
+          [
+            "SMILES:IC1=CC=CN=C1",
+            3072
+          ]
+        ],
+        "reagent": [
+          [
+            "SMILES:CC(C)(C)[O-].[Na+]",
+            11136
+          ],
+          [
+            "SMILES:C[Si](C)(C)[O-].[Na+]",
+            7680
+          ],
+          [
+            "SMILES:CC(C)(C)[O-].[K+]",
+            6528
+          ],
+          [
+            "SMILES:O=P([O-])([O-])[O-].[K+]",
+            5376
+          ],
+          [
+            "SMILES:O=C([O-])[O-].[Cs+]",
+            3072
+          ],
+          [
+            "SMILES:CCN=P(N=P(N(C)C)(N(C)C)N(C)C)(N(C)C)N(C)C",
+            2688
+          ],
+          [
+            "SMILES:CC(=O)[O-].[Cs+]",
+            2304
+          ],
+          [
+            "SMILES:CC(C)(C)N=P(N1CCCC1)(N1CCCC1)N1CCCC1",
+            1920
+          ],
+          [
+            "SMILES:C[Si](C)(C)[O-].[Li+]",
+            1536
+          ],
+          [
+            "SMILES:C[Si](C)(C)[N-][Si](C)(C)C.[Li+]",
+            1536
+          ]
+        ],
+        "solvent": [
+          [
+            "SMILES:CS(C)=O",
+            35328
+          ],
+          [
+            "SMILES:COCCOCCOC",
+            18432
+          ],
+          [
+            "SMILES:CC1=CC(C)=CC=C1",
+            3072
+          ],
+          [
+            "SMILES:CS(C)=O.CC1=CC(C)=CC=C1",
+            768
+          ]
+        ],
+        "catalyst": [
+          [
+            "NAME:none",
+            7260
+          ],
+          [
+            "SMILES:I[Cu]",
+            4800
+          ],
+          [
+            "SMILES:O=C(C)O[Pd]OC(C)=O",
+            4416
+          ],
+          [
+            "SMILES:Cl[Cu]",
+            4032
+          ],
+          [
+            "SMILES:Br[Cu]",
+            2880
+          ],
+          [
+            "SMILES:CO1->[Ni](Br)(Br)<-O(C)CC1",
+            2880
+          ],
+          [
+            "SMILES:CC(C)(C)C1=CC=C(C=C(C2=CC=C(C(C)(C)C)C=C2)->[Ni](<-C(=CC2=CC=C(C(C)(C)C)C=C2)C2=CC=C(C(C)(C)C)C=C2)<-C(=CC2=CC=C(C(C)(C)C)C=C2)C2=CC=C(C(C)(C)C)C=C2)C=C1",
+            2688
+          ],
+          [
+            "SMILES:O=C(C)O[Cu]",
+            1920
+          ],
+          [
+            "SMILES:C1=C2->[Ni]3(<-C(=CCC2)CC1)<-C1=CCCC->3=CCC1",
+            1920
+          ],
+          [
+            "SMILES:C=C(C)->[Pd]1<-Cl[Pd](<-C(=C)C)<-Cl1",
+            1536
+          ]
+        ]
+      },
+      "role_cardinality": {
+        "reactant": {
+          "2": 50688
+        },
+        "reagent": {
+          "1": 50688
+        },
+        "solvent": {
+          "1": 44544,
+          "2": 5376,
+          "3": 768
+        },
+        "catalyst": {
+          "1": 132,
+          "2": 50556
+        }
+      },
+      "temperature_units": {
+        "CELSIUS": 50688
+      },
+      "top_yield_methods": [
+        [
+          "UPLC analysis",
+          50688
+        ]
+      ]
+    },
+    {
+      "path": "/tmp/ord-data-source/data/d9/ord_dataset-d92976309c3a48a3a64a4cf5e7048086.parquet",
+      "number_of_reactions": 39347,
+      "integrity": {
+        "partial_deserialization": 0,
+        "reaction_id_mismatch": 0
+      },
+      "coverage": {
+        "has_reactant": {
+          "count": 39347,
+          "rate": 1.0
+        },
+        "has_reactant_smiles": {
+          "count": 39347,
+          "rate": 1.0
+        },
+        "has_reagent": {
+          "count": 32051,
+          "rate": 0.814572902635525
+        },
+        "has_reagent_smiles": {
+          "count": 31986,
+          "rate": 0.8129209342516583
+        },
+        "has_solvent": {
+          "count": 38985,
+          "rate": 0.9907998068467736
+        },
+        "has_solvent_smiles": {
+          "count": 38985,
+          "rate": 0.9907998068467736
+        },
+        "has_catalyst": {
+          "count": 29301,
+          "rate": 0.7446819325488602
+        },
+        "has_catalyst_smiles": {
+          "count": 23503,
+          "rate": 0.5973263527079574
+        },
+        "has_temperature": {
+          "count": 38636,
+          "rate": 0.9819300073703204
+        },
+        "has_reaction_time": {
+          "count": 39347,
+          "rate": 1.0
+        },
+        "has_desired_product": {
+          "count": 39347,
+          "rate": 1.0
+        },
+        "has_desired_product_smiles": {
+          "count": 39347,
+          "rate": 1.0
+        },
+        "has_desired_yield": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "unique_labels": {
+        "reactant": 563,
+        "reagent": 439,
+        "solvent": 53,
+        "catalyst": 782
+      },
+      "top_labels": {
+        "reactant": [
+          [
+            "SMILES:c12c(ccc(c1)Br)nccc2",
+            2243
+          ],
+          [
+            "SMILES:C=C",
+            960
+          ],
+          [
+            "SMILES:C1(C(OB(O1)B1OC(C(O1)(C)C)(C)C)(C)C)(C)C",
+            957
+          ],
+          [
+            "SMILES:c1(cn(nn1)C)C",
+            940
+          ],
+          [
+            "SMILES:c1(c(n[nH]c1)O)C(OCC)=O",
+            807
+          ],
+          [
+            "SMILES:C(OC(NNC(OC(C)(C)C)=O)=O)(C)(C)C",
+            792
+          ],
+          [
+            "SMILES:[Si](CC)(CC)CC",
+            790
+          ],
+          [
+            "SMILES:[C-]#[N+]C(C)(C)C",
+            780
+          ],
+          [
+            "SMILES:c1(ccccc1)CC[Zn]Br",
+            780
+          ],
+          [
+            "SMILES:C1(CO1)C",
+            776
+          ]
+        ],
+        "reagent": [
+          [
+            "SMILES:O",
+            4611
+          ],
+          [
+            "SMILES:CCN(C(C)C)C(C)C",
+            2395
+          ],
+          [
+            "SMILES:[O-]P(=O)([O-])[O-].[K+].[K+].[K+]",
+            2059
+          ],
+          [
+            "SMILES:C(=O)([O-])[O-].[K+].[K+]",
+            1899
+          ],
+          [
+            "SMILES:CCC(C)(C)[O-].[K+]Â Â",
+            1726
+          ],
+          [
+            "SMILES:[F-].[Cs+]",
+            1669
+          ],
+          [
+            "SMILES:C(=O)([O-])[O-].[Cs+].[Cs+]",
+            1629
+          ],
+          [
+            "SMILES:Cl",
+            1258
+          ],
+          [
+            "SMILES:[Li+].CC(C)(C)[O-]",
+            1223
+          ],
+          [
+            "SMILES:[OH-].[Na+]Â Â",
+            973
+          ]
+        ],
+        "solvent": [
+          [
+            "SMILES:CC1=CC=CC=C1",
+            5113
+          ],
+          [
+            "SMILES:C1CCOC1",
+            4746
+          ],
+          [
+            "SMILES:CC#N",
+            4250
+          ],
+          [
+            "SMILES:C1COCCO1",
+            3617
+          ],
+          [
+            "SMILES:CO",
+            3416
+          ],
+          [
+            "SMILES:CCC(C)(C)O",
+            2500
+          ],
+          [
+            "SMILES:CN(C)C=O",
+            2432
+          ],
+          [
+            "SMILES:C(CCl)Cl",
+            2316
+          ],
+          [
+            "SMILES:CC(=O)N(C)C",
+            1567
+          ],
+          [
+            "SMILES:CS(=O)C",
+            1364
+          ]
+        ],
+        "catalyst": [
+          [
+            "SMILES:C(O[Pd]OC(C)=O)(C)=O",
+            6795
+          ],
+          [
+            "SMILES:[Cu]I",
+            1430
+          ],
+          [
+            "SMILES:P([C@]12C[C@@H]3C[C@H](C2)C[C@@H](C1)C3)([C@]12C[C@@H]3C[C@@H](C2)C[C@@H](C1)C3)CCCC",
+            1311
+          ],
+          [
+            "SMILES:C1(C(C(C(C1C)C)C)C)C.C1(C(C(C(C1C)C)C)C)C.[Rh](Cl)Cl.[Rh](Cl)Cl",
+            1272
+          ],
+          [
+            "SMILES:[Pd].C(P(C(C)(C)C)C(C)(C)C)(C)(C)C.C(P(C(C)(C)C)C(C)(C)C)(C)(C)C",
+            1069
+          ],
+          [
+            "SMILES:[Ir-]12[Ir-]([O+]1C)[O+]2C.C1=CCCC=CCC1.C1=CCCC=CCC1",
+            1024
+          ],
+          [
+            "SMILES:[Pd].P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1",
+            752
+          ],
+          [
+            "SMILES:c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2cccc3)c(P(c2ccccc2)c2ccccc2)ccc2c1cccc2",
+            628
+          ],
+          [
+            "SMILES:P(C1CCCC1)(c1ccccc1)c1ccccc1.P(C1CCCC1)(c1ccccc1)c1ccccc1.C(Cl)Cl.[Pd](Cl)Cl.[Fe]",
+            587
+          ],
+          [
+            "SMILES:[Pd](Cl)Cl.P(C(C)(C)C)(C(C)(C)C)c1ccc(N(C)C)cc1.P(C(C)(C)C)(C(C)(C)C)c1ccc(N(C)C)cc1",
+            536
+          ]
+        ]
+      },
+      "role_cardinality": {
+        "reactant": {
+          "1": 7474,
+          "2": 28277,
+          "3": 3596
+        },
+        "reagent": {
+          "0": 7296,
+          "1": 24663,
+          "2": 7074,
+          "3": 314
+        },
+        "solvent": {
+          "0": 362,
+          "1": 36614,
+          "2": 2371
+        },
+        "catalyst": {
+          "0": 10046,
+          "1": 15389,
+          "2": 13912
+        }
+      },
+      "temperature_units": {
+        "CELSIUS": 38636
+      },
+      "top_yield_methods": []
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+rank,identifier_type,label,reaction_count
+1,SMILES,CS(C)=O,35328
+2,SMILES,COCCOCCOC,18432
+3,SMILES,CC1=CC(C)=CC=C1,3072
+4,SMILES,CS(C)=O.CC1=CC(C)=CC=C1,768

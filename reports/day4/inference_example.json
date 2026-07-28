@@ -1,0 +1,99 @@
+{
+  "protocol": "reaction_center",
+  "input": {
+    "reactant_smiles": [
+      "Brc1ccc2ncccc2c1",
+      "O=S([O-])C1CC1.[Na+]"
+    ],
+    "product_smiles": [
+      "c1cnc2ccc(C3CC3)cc2c1"
+    ]
+  },
+  "predictions": {
+    "solvent": {
+      "target": "solvent",
+      "top_k": [
+        {
+          "rank": 1,
+          "label": "SMILES:CCC(C)(C)O",
+          "score": 0.8547998522561148
+        },
+        {
+          "rank": 2,
+          "label": "SMILES:Cc1ccccc1",
+          "score": 0.5132065270646876
+        },
+        {
+          "rank": 3,
+          "label": "SMILES:CC#N",
+          "score": 0.5064579657942625
+        },
+        {
+          "rank": 4,
+          "label": "SMILES:C1COCCO1",
+          "score": 0.5034145977243932
+        },
+        {
+          "rank": 5,
+          "label": "SMILES:C1CCOC1",
+          "score": 0.28325600334210144
+        }
+      ],
+      "score_interpretation": "Uncalibrated ranking score; not a calibrated probability.",
+      "applicability_domain": {
+        "in_domain": true,
+        "nearest_similarity": 0.5609756112098694,
+        "threshold": 0.2212880551815033,
+        "threshold_definition": "5th percentile of final training-set leave-one-out nearest-neighbor Tanimoto similarity",
+        "nearest_train_transformation": "SMILES:Brc1ccc2ncccc2c1.SMILES:O=S([O-])c1ccccn1.[Na+]>>SMILES:c1ccc(-c2ccc3ncccc3c2)nc1",
+        "nearest_train_reaction_center": "4bd8250f86ff7286",
+        "nearest_train_reaction_type": "NI COUPLING"
+      }
+    },
+    "catalyst": {
+      "target": "catalyst",
+      "top_k": [
+        {
+          "rank": 1,
+          "label": "SMILES:C1CCC(P(C2CCCCC2)C2CCCC2)CC1.C1CCC(P(C2CCCCC2)C2CCCC2)CC1.[Fe]",
+          "score": 0.7897079005436763
+        },
+        {
+          "rank": 2,
+          "label": "SMILES:CC(C)(C)c1ccnc(-c2cc(C(C)(C)C)ccn2)c1",
+          "score": 0.6323820379693069
+        },
+        {
+          "rank": 3,
+          "label": "SMILES:C1CCC([P+](CC[P+](C2CCCC2)C2CCCC2)C2CCCC2)C1.F[B-](F)(F)F.F[B-](F)(F)F",
+          "score": 0.5463585815394721
+        },
+        {
+          "rank": 4,
+          "label": "SMILES:CC(C)(C)P(C1CCCC1)C(C)(C)C.CC(C)(C)P(C1CCCC1)C(C)(C)C.[Fe]",
+          "score": 0.4470738533658619
+        },
+        {
+          "rank": 5,
+          "label": "SMILES:CN(C)c1ccc(P(C(C)(C)C)C(C)(C)C)cc1",
+          "score": 0.4470738533658619
+        }
+      ],
+      "score_interpretation": "Uncalibrated ranking score; not a calibrated probability.",
+      "applicability_domain": {
+        "in_domain": true,
+        "nearest_similarity": 0.5609756112098694,
+        "threshold": 0.2159789353609085,
+        "threshold_definition": "5th percentile of final training-set leave-one-out nearest-neighbor Tanimoto similarity",
+        "nearest_train_transformation": "SMILES:Brc1ccc2ncccc2c1.SMILES:O=S([O-])c1ccccn1.[Na+]>>SMILES:c1ccc(-c2ccc3ncccc3c2)nc1",
+        "nearest_train_reaction_center": "4bd8250f86ff7286",
+        "nearest_train_reaction_type": "NI COUPLING"
+      }
+    }
+  },
+  "interpretation": {
+    "solvent_and_catalyst_are_independent": true,
+    "joint_condition_ranking_available": false,
+    "applicability_note": "in_domain indicates structural coverage relative to training reactions; it does not guarantee prediction correctness."
+  }
+}

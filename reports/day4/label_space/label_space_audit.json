@@ -1,0 +1,1036 @@
+{
+  "metadata_file": "data/processed/reactions/features/feature_metadata.parquet",
+  "seed": 42,
+  "positive_condition_policy": "Rankable transformations and top-quartile condition pairs only.",
+  "frequency_definition": "Number of unique training transformations containing the label.",
+  "thresholds": [
+    1,
+    2,
+    3,
+    5,
+    10,
+    20
+  ],
+  "protocols": {
+    "transformation": {
+      "group_column": "transformation_signature",
+      "eligible_condition_pairs": 6429,
+      "targets": {
+        "solvent": {
+          "training_unique_labels": 39,
+          "frequency_file": "reports/day4/label_space/transformation_solvent_frequency.csv",
+          "thresholds": {
+            "1": {
+              "retained_classes": 39,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 4267,
+                  "rows_with_any_known_label": 4267,
+                  "rows_with_all_labels_known": 4267,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 1.0,
+                  "label_assignments": 4688,
+                  "known_label_assignments": 4688,
+                  "label_assignment_coverage": 1.0,
+                  "unique_unknown_labels": 0
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 971,
+                  "rows_with_any_known_label": 971,
+                  "rows_with_all_labels_known": 967,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 0.995880535530381,
+                  "label_assignments": 1038,
+                  "known_label_assignments": 1034,
+                  "label_assignment_coverage": 0.9961464354527938,
+                  "unique_unknown_labels": 1
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 1124,
+                  "rows_with_any_known_label": 1124,
+                  "rows_with_all_labels_known": 1093,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 0.9724199288256228,
+                  "label_assignments": 1187,
+                  "known_label_assignments": 1156,
+                  "label_assignment_coverage": 0.9738837405223252,
+                  "unique_unknown_labels": 1
+                }
+              }
+            },
+            "2": {
+              "retained_classes": 25,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 4267,
+                  "rows_with_any_known_label": 4205,
+                  "rows_with_all_labels_known": 4156,
+                  "any_known_row_coverage": 0.9854698851652215,
+                  "all_known_row_coverage": 0.9739864073119288,
+                  "label_assignments": 4688,
+                  "known_label_assignments": 4577,
+                  "label_assignment_coverage": 0.9763225255972696,
+                  "unique_unknown_labels": 14
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 971,
+                  "rows_with_any_known_label": 971,
+                  "rows_with_all_labels_known": 967,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 0.995880535530381,
+                  "label_assignments": 1038,
+                  "known_label_assignments": 1034,
+                  "label_assignment_coverage": 0.9961464354527938,
+                  "unique_unknown_labels": 1
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 1124,
+                  "rows_with_any_known_label": 1119,
+                  "rows_with_all_labels_known": 1088,
+                  "any_known_row_coverage": 0.9955516014234875,
+                  "all_known_row_coverage": 0.9679715302491103,
+                  "label_assignments": 1187,
+                  "known_label_assignments": 1151,
+                  "label_assignment_coverage": 0.9696714406065712,
+                  "unique_unknown_labels": 2
+                }
+              }
+            },
+            "3": {
+              "retained_classes": 23,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 4267,
+                  "rows_with_any_known_label": 4191,
+                  "rows_with_all_labels_known": 4142,
+                  "any_known_row_coverage": 0.9821888914928522,
+                  "all_known_row_coverage": 0.9707054136395594,
+                  "label_assignments": 4688,
+                  "known_label_assignments": 4563,
+                  "label_assignment_coverage": 0.9733361774744027,
+                  "unique_unknown_labels": 16
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 971,
+                  "rows_with_any_known_label": 971,
+                  "rows_with_all_labels_known": 967,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 0.995880535530381,
+                  "label_assignments": 1038,
+                  "known_label_assignments": 1034,
+                  "label_assignment_coverage": 0.9961464354527938,
+                  "unique_unknown_labels": 1
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 1124,
+                  "rows_with_any_known_label": 1119,
+                  "rows_with_all_labels_known": 1088,
+                  "any_known_row_coverage": 0.9955516014234875,
+                  "all_known_row_coverage": 0.9679715302491103,
+                  "label_assignments": 1187,
+                  "known_label_assignments": 1151,
+                  "label_assignment_coverage": 0.9696714406065712,
+                  "unique_unknown_labels": 2
+                }
+              }
+            },
+            "5": {
+              "retained_classes": 20,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 4267,
+                  "rows_with_any_known_label": 4138,
+                  "rows_with_all_labels_known": 4089,
+                  "any_known_row_coverage": 0.9697679868760253,
+                  "all_known_row_coverage": 0.9582845090227325,
+                  "label_assignments": 4688,
+                  "known_label_assignments": 4510,
+                  "label_assignment_coverage": 0.9620307167235495,
+                  "unique_unknown_labels": 19
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 971,
+                  "rows_with_any_known_label": 971,
+                  "rows_with_all_labels_known": 967,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 0.995880535530381,
+                  "label_assignments": 1038,
+                  "known_label_assignments": 1034,
+                  "label_assignment_coverage": 0.9961464354527938,
+                  "unique_unknown_labels": 1
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 1124,
+                  "rows_with_any_known_label": 1098,
+                  "rows_with_all_labels_known": 1067,
+                  "any_known_row_coverage": 0.9768683274021353,
+                  "all_known_row_coverage": 0.949288256227758,
+                  "label_assignments": 1187,
+                  "known_label_assignments": 1130,
+                  "label_assignment_coverage": 0.9519797809604044,
+                  "unique_unknown_labels": 3
+                }
+              }
+            },
+            "10": {
+              "retained_classes": 15,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 4267,
+                  "rows_with_any_known_label": 3912,
+                  "rows_with_all_labels_known": 3831,
+                  "any_known_row_coverage": 0.9168033747363488,
+                  "all_known_row_coverage": 0.8978204827747832,
+                  "label_assignments": 4688,
+                  "known_label_assignments": 4252,
+                  "label_assignment_coverage": 0.9069965870307167,
+                  "unique_unknown_labels": 24
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 971,
+                  "rows_with_any_known_label": 911,
+                  "rows_with_all_labels_known": 899,
+                  "any_known_row_coverage": 0.9382080329557158,
+                  "all_known_row_coverage": 0.925849639546859,
+                  "label_assignments": 1038,
+                  "known_label_assignments": 966,
+                  "label_assignment_coverage": 0.930635838150289,
+                  "unique_unknown_labels": 5
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 1124,
+                  "rows_with_any_known_label": 1011,
+                  "rows_with_all_labels_known": 980,
+                  "any_known_row_coverage": 0.8994661921708185,
+                  "all_known_row_coverage": 0.8718861209964412,
+                  "label_assignments": 1187,
+                  "known_label_assignments": 1043,
+                  "label_assignment_coverage": 0.8786857624262847,
+                  "unique_unknown_labels": 7
+                }
+              }
+            },
+            "20": {
+              "retained_classes": 12,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 4267,
+                  "rows_with_any_known_label": 3733,
+                  "rows_with_all_labels_known": 3521,
+                  "any_known_row_coverage": 0.8748535270681977,
+                  "all_known_row_coverage": 0.8251699086008906,
+                  "label_assignments": 4688,
+                  "known_label_assignments": 3894,
+                  "label_assignment_coverage": 0.8306313993174061,
+                  "unique_unknown_labels": 27
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 971,
+                  "rows_with_any_known_label": 889,
+                  "rows_with_all_labels_known": 860,
+                  "any_known_row_coverage": 0.9155509783728115,
+                  "all_known_row_coverage": 0.8856848609680742,
+                  "label_assignments": 1038,
+                  "known_label_assignments": 920,
+                  "label_assignment_coverage": 0.8863198458574181,
+                  "unique_unknown_labels": 8
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 1124,
+                  "rows_with_any_known_label": 967,
+                  "rows_with_all_labels_known": 957,
+                  "any_known_row_coverage": 0.8603202846975089,
+                  "all_known_row_coverage": 0.8514234875444839,
+                  "label_assignments": 1187,
+                  "known_label_assignments": 988,
+                  "label_assignment_coverage": 0.8323504633529908,
+                  "unique_unknown_labels": 10
+                }
+              }
+            }
+          }
+        },
+        "catalyst": {
+          "training_unique_labels": 442,
+          "frequency_file": "reports/day4/label_space/transformation_catalyst_frequency.csv",
+          "thresholds": {
+            "1": {
+              "retained_classes": 442,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 3221,
+                  "rows_with_any_known_label": 3221,
+                  "rows_with_all_labels_known": 3221,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 1.0,
+                  "label_assignments": 4592,
+                  "known_label_assignments": 4592,
+                  "label_assignment_coverage": 1.0,
+                  "unique_unknown_labels": 0
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 841,
+                  "rows_with_any_known_label": 804,
+                  "rows_with_all_labels_known": 735,
+                  "any_known_row_coverage": 0.9560047562425684,
+                  "all_known_row_coverage": 0.8739595719381689,
+                  "label_assignments": 1296,
+                  "known_label_assignments": 1165,
+                  "label_assignment_coverage": 0.8989197530864198,
+                  "unique_unknown_labels": 38
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 785,
+                  "rows_with_any_known_label": 738,
+                  "rows_with_all_labels_known": 668,
+                  "any_known_row_coverage": 0.9401273885350319,
+                  "all_known_row_coverage": 0.8509554140127389,
+                  "label_assignments": 1141,
+                  "known_label_assignments": 1007,
+                  "label_assignment_coverage": 0.8825591586327782,
+                  "unique_unknown_labels": 45
+                }
+              }
+            },
+            "2": {
+              "retained_classes": 248,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 3221,
+                  "rows_with_any_known_label": 2970,
+                  "rows_with_all_labels_known": 2682,
+                  "any_known_row_coverage": 0.9220738900962434,
+                  "all_known_row_coverage": 0.832660664389941,
+                  "label_assignments": 4592,
+                  "known_label_assignments": 4007,
+                  "label_assignment_coverage": 0.8726045296167247,
+                  "unique_unknown_labels": 194
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 841,
+                  "rows_with_any_known_label": 774,
+                  "rows_with_all_labels_known": 651,
+                  "any_known_row_coverage": 0.920332936979786,
+                  "all_known_row_coverage": 0.7740784780023782,
+                  "label_assignments": 1296,
+                  "known_label_assignments": 1061,
+                  "label_assignment_coverage": 0.8186728395061729,
+                  "unique_unknown_labels": 89
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 785,
+                  "rows_with_any_known_label": 681,
+                  "rows_with_all_labels_known": 589,
+                  "any_known_row_coverage": 0.867515923566879,
+                  "all_known_row_coverage": 0.7503184713375797,
+                  "label_assignments": 1141,
+                  "known_label_assignments": 902,
+                  "label_assignment_coverage": 0.7905346187554777,
+                  "unique_unknown_labels": 92
+                }
+              }
+            },
+            "3": {
+              "retained_classes": 148,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 3221,
+                  "rows_with_any_known_label": 2734,
+                  "rows_with_all_labels_known": 2363,
+                  "any_known_row_coverage": 0.8488047190313567,
+                  "all_known_row_coverage": 0.7336230984166408,
+                  "label_assignments": 4592,
+                  "known_label_assignments": 3585,
+                  "label_assignment_coverage": 0.7807055749128919,
+                  "unique_unknown_labels": 294
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 841,
+                  "rows_with_any_known_label": 701,
+                  "rows_with_all_labels_known": 595,
+                  "any_known_row_coverage": 0.8335315101070154,
+                  "all_known_row_coverage": 0.7074910820451843,
+                  "label_assignments": 1296,
+                  "known_label_assignments": 954,
+                  "label_assignment_coverage": 0.7361111111111112,
+                  "unique_unknown_labels": 122
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 785,
+                  "rows_with_any_known_label": 620,
+                  "rows_with_all_labels_known": 535,
+                  "any_known_row_coverage": 0.7898089171974523,
+                  "all_known_row_coverage": 0.6815286624203821,
+                  "label_assignments": 1141,
+                  "known_label_assignments": 815,
+                  "label_assignment_coverage": 0.7142857142857143,
+                  "unique_unknown_labels": 127
+                }
+              }
+            },
+            "5": {
+              "retained_classes": 73,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 3221,
+                  "rows_with_any_known_label": 2390,
+                  "rows_with_all_labels_known": 1945,
+                  "any_known_row_coverage": 0.7420055883266067,
+                  "all_known_row_coverage": 0.6038497361067992,
+                  "label_assignments": 4592,
+                  "known_label_assignments": 3051,
+                  "label_assignment_coverage": 0.6644163763066202,
+                  "unique_unknown_labels": 369
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 841,
+                  "rows_with_any_known_label": 633,
+                  "rows_with_all_labels_known": 522,
+                  "any_known_row_coverage": 0.7526753864447087,
+                  "all_known_row_coverage": 0.6206896551724138,
+                  "label_assignments": 1296,
+                  "known_label_assignments": 854,
+                  "label_assignment_coverage": 0.6589506172839507,
+                  "unique_unknown_labels": 156
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 785,
+                  "rows_with_any_known_label": 546,
+                  "rows_with_all_labels_known": 430,
+                  "any_known_row_coverage": 0.6955414012738853,
+                  "all_known_row_coverage": 0.5477707006369427,
+                  "label_assignments": 1141,
+                  "known_label_assignments": 691,
+                  "label_assignment_coverage": 0.6056091148115688,
+                  "unique_unknown_labels": 167
+                }
+              }
+            },
+            "10": {
+              "retained_classes": 18,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 3221,
+                  "rows_with_any_known_label": 1608,
+                  "rows_with_all_labels_known": 1043,
+                  "any_known_row_coverage": 0.499223843526855,
+                  "all_known_row_coverage": 0.3238124805960882,
+                  "label_assignments": 4592,
+                  "known_label_assignments": 1851,
+                  "label_assignment_coverage": 0.4030923344947735,
+                  "unique_unknown_labels": 424
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 841,
+                  "rows_with_any_known_label": 418,
+                  "rows_with_all_labels_known": 264,
+                  "any_known_row_coverage": 0.49702734839476814,
+                  "all_known_row_coverage": 0.31391200951248516,
+                  "label_assignments": 1296,
+                  "known_label_assignments": 500,
+                  "label_assignment_coverage": 0.38580246913580246,
+                  "unique_unknown_labels": 200
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 785,
+                  "rows_with_any_known_label": 360,
+                  "rows_with_all_labels_known": 249,
+                  "any_known_row_coverage": 0.4585987261146497,
+                  "all_known_row_coverage": 0.31719745222929935,
+                  "label_assignments": 1141,
+                  "known_label_assignments": 434,
+                  "label_assignment_coverage": 0.3803680981595092,
+                  "unique_unknown_labels": 200
+                }
+              }
+            },
+            "20": {
+              "retained_classes": 6,
+              "coverage": {
+                "train": {
+                  "rows": 4306,
+                  "nonempty_target_rows": 3221,
+                  "rows_with_any_known_label": 1116,
+                  "rows_with_all_labels_known": 485,
+                  "any_known_row_coverage": 0.34647624961192175,
+                  "all_known_row_coverage": 0.1505743557901273,
+                  "label_assignments": 4592,
+                  "known_label_assignments": 1261,
+                  "label_assignment_coverage": 0.27460801393728224,
+                  "unique_unknown_labels": 436
+                },
+                "valid": {
+                  "rows": 993,
+                  "nonempty_target_rows": 841,
+                  "rows_with_any_known_label": 333,
+                  "rows_with_all_labels_known": 168,
+                  "any_known_row_coverage": 0.39595719381688466,
+                  "all_known_row_coverage": 0.19976218787158145,
+                  "label_assignments": 1296,
+                  "known_label_assignments": 383,
+                  "label_assignment_coverage": 0.29552469135802467,
+                  "unique_unknown_labels": 212
+                },
+                "test": {
+                  "rows": 1130,
+                  "nonempty_target_rows": 785,
+                  "rows_with_any_known_label": 286,
+                  "rows_with_all_labels_known": 135,
+                  "any_known_row_coverage": 0.3643312101910828,
+                  "all_known_row_coverage": 0.17197452229299362,
+                  "label_assignments": 1141,
+                  "known_label_assignments": 315,
+                  "label_assignment_coverage": 0.27607361963190186,
+                  "unique_unknown_labels": 211
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "reaction_center": {
+      "group_column": "reaction_center_signature",
+      "eligible_condition_pairs": 6429,
+      "targets": {
+        "solvent": {
+          "training_unique_labels": 41,
+          "frequency_file": "reports/day4/label_space/reaction_center_solvent_frequency.csv",
+          "thresholds": {
+            "1": {
+              "retained_classes": 41,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 4179,
+                  "rows_with_any_known_label": 4179,
+                  "rows_with_all_labels_known": 4179,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 1.0,
+                  "label_assignments": 4567,
+                  "known_label_assignments": 4567,
+                  "label_assignment_coverage": 1.0,
+                  "unique_unknown_labels": 0
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 1053,
+                  "rows_with_any_known_label": 1053,
+                  "rows_with_all_labels_known": 1053,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 1.0,
+                  "label_assignments": 1143,
+                  "known_label_assignments": 1143,
+                  "label_assignment_coverage": 1.0,
+                  "unique_unknown_labels": 0
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 1130,
+                  "rows_with_any_known_label": 1130,
+                  "rows_with_all_labels_known": 1130,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 1.0,
+                  "label_assignments": 1203,
+                  "known_label_assignments": 1203,
+                  "label_assignment_coverage": 1.0,
+                  "unique_unknown_labels": 0
+                }
+              }
+            },
+            "2": {
+              "retained_classes": 24,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 4179,
+                  "rows_with_any_known_label": 4109,
+                  "rows_with_all_labels_known": 4025,
+                  "any_known_row_coverage": 0.983249581239531,
+                  "all_known_row_coverage": 0.9631490787269682,
+                  "label_assignments": 4567,
+                  "known_label_assignments": 4413,
+                  "label_assignment_coverage": 0.9662798335887891,
+                  "unique_unknown_labels": 17
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 1053,
+                  "rows_with_any_known_label": 1050,
+                  "rows_with_all_labels_known": 1050,
+                  "any_known_row_coverage": 0.9971509971509972,
+                  "all_known_row_coverage": 0.9971509971509972,
+                  "label_assignments": 1143,
+                  "known_label_assignments": 1140,
+                  "label_assignment_coverage": 0.9973753280839895,
+                  "unique_unknown_labels": 1
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 1130,
+                  "rows_with_any_known_label": 1128,
+                  "rows_with_all_labels_known": 1128,
+                  "any_known_row_coverage": 0.9982300884955753,
+                  "all_known_row_coverage": 0.9982300884955753,
+                  "label_assignments": 1203,
+                  "known_label_assignments": 1201,
+                  "label_assignment_coverage": 0.99833748960931,
+                  "unique_unknown_labels": 1
+                }
+              }
+            },
+            "3": {
+              "retained_classes": 21,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 4179,
+                  "rows_with_any_known_label": 4076,
+                  "rows_with_all_labels_known": 3992,
+                  "any_known_row_coverage": 0.9753529552524527,
+                  "all_known_row_coverage": 0.9552524527398899,
+                  "label_assignments": 4567,
+                  "known_label_assignments": 4380,
+                  "label_assignment_coverage": 0.9590540836435296,
+                  "unique_unknown_labels": 20
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 1053,
+                  "rows_with_any_known_label": 1048,
+                  "rows_with_all_labels_known": 1048,
+                  "any_known_row_coverage": 0.9952516619183286,
+                  "all_known_row_coverage": 0.9952516619183286,
+                  "label_assignments": 1143,
+                  "known_label_assignments": 1138,
+                  "label_assignment_coverage": 0.9956255468066492,
+                  "unique_unknown_labels": 2
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 1130,
+                  "rows_with_any_known_label": 1099,
+                  "rows_with_all_labels_known": 1099,
+                  "any_known_row_coverage": 0.9725663716814159,
+                  "all_known_row_coverage": 0.9725663716814159,
+                  "label_assignments": 1203,
+                  "known_label_assignments": 1172,
+                  "label_assignment_coverage": 0.9742310889443059,
+                  "unique_unknown_labels": 3
+                }
+              }
+            },
+            "5": {
+              "retained_classes": 20,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 4179,
+                  "rows_with_any_known_label": 4062,
+                  "rows_with_all_labels_known": 3978,
+                  "any_known_row_coverage": 0.9720028715003589,
+                  "all_known_row_coverage": 0.9519023689877961,
+                  "label_assignments": 4567,
+                  "known_label_assignments": 4366,
+                  "label_assignment_coverage": 0.9559886139697832,
+                  "unique_unknown_labels": 21
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 1053,
+                  "rows_with_any_known_label": 1046,
+                  "rows_with_all_labels_known": 1046,
+                  "any_known_row_coverage": 0.99335232668566,
+                  "all_known_row_coverage": 0.99335232668566,
+                  "label_assignments": 1143,
+                  "known_label_assignments": 1136,
+                  "label_assignment_coverage": 0.9938757655293088,
+                  "unique_unknown_labels": 3
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 1130,
+                  "rows_with_any_known_label": 1099,
+                  "rows_with_all_labels_known": 1099,
+                  "any_known_row_coverage": 0.9725663716814159,
+                  "all_known_row_coverage": 0.9725663716814159,
+                  "label_assignments": 1203,
+                  "known_label_assignments": 1172,
+                  "label_assignment_coverage": 0.9742310889443059,
+                  "unique_unknown_labels": 3
+                }
+              }
+            },
+            "10": {
+              "retained_classes": 16,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 4179,
+                  "rows_with_any_known_label": 3852,
+                  "rows_with_all_labels_known": 3760,
+                  "any_known_row_coverage": 0.9217516152189519,
+                  "all_known_row_coverage": 0.899736779133764,
+                  "label_assignments": 4567,
+                  "known_label_assignments": 4148,
+                  "label_assignment_coverage": 0.90825487190716,
+                  "unique_unknown_labels": 25
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 1053,
+                  "rows_with_any_known_label": 993,
+                  "rows_with_all_labels_known": 961,
+                  "any_known_row_coverage": 0.9430199430199431,
+                  "all_known_row_coverage": 0.912630579297246,
+                  "label_assignments": 1143,
+                  "known_label_assignments": 1051,
+                  "label_assignment_coverage": 0.9195100612423447,
+                  "unique_unknown_labels": 6
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 1130,
+                  "rows_with_any_known_label": 1065,
+                  "rows_with_all_labels_known": 1065,
+                  "any_known_row_coverage": 0.9424778761061947,
+                  "all_known_row_coverage": 0.9424778761061947,
+                  "label_assignments": 1203,
+                  "known_label_assignments": 1138,
+                  "label_assignment_coverage": 0.9459684123025769,
+                  "unique_unknown_labels": 6
+                }
+              }
+            },
+            "20": {
+              "retained_classes": 10,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 4179,
+                  "rows_with_any_known_label": 3396,
+                  "rows_with_all_labels_known": 3203,
+                  "any_known_row_coverage": 0.8126346015793252,
+                  "all_known_row_coverage": 0.7664513041397464,
+                  "label_assignments": 4567,
+                  "known_label_assignments": 3469,
+                  "label_assignment_coverage": 0.7595795927304576,
+                  "unique_unknown_labels": 31
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 1053,
+                  "rows_with_any_known_label": 959,
+                  "rows_with_all_labels_known": 875,
+                  "any_known_row_coverage": 0.9107312440645774,
+                  "all_known_row_coverage": 0.8309591642924976,
+                  "label_assignments": 1143,
+                  "known_label_assignments": 959,
+                  "label_assignment_coverage": 0.8390201224846894,
+                  "unique_unknown_labels": 12
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 1130,
+                  "rows_with_any_known_label": 881,
+                  "rows_with_all_labels_known": 840,
+                  "any_known_row_coverage": 0.779646017699115,
+                  "all_known_row_coverage": 0.7433628318584071,
+                  "label_assignments": 1203,
+                  "known_label_assignments": 881,
+                  "label_assignment_coverage": 0.7323358270989194,
+                  "unique_unknown_labels": 12
+                }
+              }
+            }
+          }
+        },
+        "catalyst": {
+          "training_unique_labels": 461,
+          "frequency_file": "reports/day4/label_space/reaction_center_catalyst_frequency.csv",
+          "thresholds": {
+            "1": {
+              "retained_classes": 461,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 3129,
+                  "rows_with_any_known_label": 3129,
+                  "rows_with_all_labels_known": 3129,
+                  "any_known_row_coverage": 1.0,
+                  "all_known_row_coverage": 1.0,
+                  "label_assignments": 4588,
+                  "known_label_assignments": 4588,
+                  "label_assignment_coverage": 1.0,
+                  "unique_unknown_labels": 0
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 774,
+                  "rows_with_any_known_label": 697,
+                  "rows_with_all_labels_known": 548,
+                  "any_known_row_coverage": 0.900516795865633,
+                  "all_known_row_coverage": 0.7080103359173127,
+                  "label_assignments": 1135,
+                  "known_label_assignments": 860,
+                  "label_assignment_coverage": 0.7577092511013216,
+                  "unique_unknown_labels": 34
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 944,
+                  "rows_with_any_known_label": 895,
+                  "rows_with_all_labels_known": 848,
+                  "any_known_row_coverage": 0.948093220338983,
+                  "all_known_row_coverage": 0.8983050847457628,
+                  "label_assignments": 1306,
+                  "known_label_assignments": 1210,
+                  "label_assignment_coverage": 0.9264931087289433,
+                  "unique_unknown_labels": 29
+                }
+              }
+            },
+            "2": {
+              "retained_classes": 241,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 3129,
+                  "rows_with_any_known_label": 2900,
+                  "rows_with_all_labels_known": 2663,
+                  "any_known_row_coverage": 0.9268136784915308,
+                  "all_known_row_coverage": 0.8510706295941195,
+                  "label_assignments": 4588,
+                  "known_label_assignments": 4078,
+                  "label_assignment_coverage": 0.8888404533565823,
+                  "unique_unknown_labels": 220
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 774,
+                  "rows_with_any_known_label": 642,
+                  "rows_with_all_labels_known": 524,
+                  "any_known_row_coverage": 0.8294573643410853,
+                  "all_known_row_coverage": 0.6770025839793282,
+                  "label_assignments": 1135,
+                  "known_label_assignments": 804,
+                  "label_assignment_coverage": 0.7083700440528634,
+                  "unique_unknown_labels": 61
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 944,
+                  "rows_with_any_known_label": 840,
+                  "rows_with_all_labels_known": 689,
+                  "any_known_row_coverage": 0.8898305084745762,
+                  "all_known_row_coverage": 0.7298728813559322,
+                  "label_assignments": 1306,
+                  "known_label_assignments": 1050,
+                  "label_assignment_coverage": 0.8039816232771823,
+                  "unique_unknown_labels": 82
+                }
+              }
+            },
+            "3": {
+              "retained_classes": 149,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 3129,
+                  "rows_with_any_known_label": 2738,
+                  "rows_with_all_labels_known": 2395,
+                  "any_known_row_coverage": 0.8750399488654522,
+                  "all_known_row_coverage": 0.7654202620645574,
+                  "label_assignments": 4588,
+                  "known_label_assignments": 3748,
+                  "label_assignment_coverage": 0.8169136878814298,
+                  "unique_unknown_labels": 312
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 774,
+                  "rows_with_any_known_label": 575,
+                  "rows_with_all_labels_known": 485,
+                  "any_known_row_coverage": 0.7428940568475452,
+                  "all_known_row_coverage": 0.6266149870801033,
+                  "label_assignments": 1135,
+                  "known_label_assignments": 729,
+                  "label_assignment_coverage": 0.6422907488986784,
+                  "unique_unknown_labels": 85
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 944,
+                  "rows_with_any_known_label": 791,
+                  "rows_with_all_labels_known": 604,
+                  "any_known_row_coverage": 0.8379237288135594,
+                  "all_known_row_coverage": 0.6398305084745762,
+                  "label_assignments": 1306,
+                  "known_label_assignments": 944,
+                  "label_assignment_coverage": 0.7228177641653905,
+                  "unique_unknown_labels": 122
+                }
+              }
+            },
+            "5": {
+              "retained_classes": 67,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 3129,
+                  "rows_with_any_known_label": 2313,
+                  "rows_with_all_labels_known": 1914,
+                  "any_known_row_coverage": 0.7392138063279002,
+                  "all_known_row_coverage": 0.6116970278044104,
+                  "label_assignments": 4588,
+                  "known_label_assignments": 3065,
+                  "label_assignment_coverage": 0.6680470793374019,
+                  "unique_unknown_labels": 394
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 774,
+                  "rows_with_any_known_label": 494,
+                  "rows_with_all_labels_known": 426,
+                  "any_known_row_coverage": 0.6382428940568475,
+                  "all_known_row_coverage": 0.5503875968992248,
+                  "label_assignments": 1135,
+                  "known_label_assignments": 638,
+                  "label_assignment_coverage": 0.5621145374449339,
+                  "unique_unknown_labels": 122
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 944,
+                  "rows_with_any_known_label": 646,
+                  "rows_with_all_labels_known": 510,
+                  "any_known_row_coverage": 0.684322033898305,
+                  "all_known_row_coverage": 0.5402542372881356,
+                  "label_assignments": 1306,
+                  "known_label_assignments": 763,
+                  "label_assignment_coverage": 0.5842266462480857,
+                  "unique_unknown_labels": 167
+                }
+              }
+            },
+            "10": {
+              "retained_classes": 19,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 3129,
+                  "rows_with_any_known_label": 1411,
+                  "rows_with_all_labels_known": 941,
+                  "any_known_row_coverage": 0.4509427932246724,
+                  "all_known_row_coverage": 0.30073505912432086,
+                  "label_assignments": 4588,
+                  "known_label_assignments": 1774,
+                  "label_assignment_coverage": 0.3866608544027899,
+                  "unique_unknown_labels": 442
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 774,
+                  "rows_with_any_known_label": 284,
+                  "rows_with_all_labels_known": 209,
+                  "any_known_row_coverage": 0.3669250645994832,
+                  "all_known_row_coverage": 0.27002583979328165,
+                  "label_assignments": 1135,
+                  "known_label_assignments": 373,
+                  "label_assignment_coverage": 0.32863436123348017,
+                  "unique_unknown_labels": 165
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 944,
+                  "rows_with_any_known_label": 458,
+                  "rows_with_all_labels_known": 301,
+                  "any_known_row_coverage": 0.4851694915254237,
+                  "all_known_row_coverage": 0.3188559322033898,
+                  "label_assignments": 1306,
+                  "known_label_assignments": 545,
+                  "label_assignment_coverage": 0.41730474732006123,
+                  "unique_unknown_labels": 197
+                }
+              }
+            },
+            "20": {
+              "retained_classes": 7,
+              "coverage": {
+                "train": {
+                  "rows": 4230,
+                  "nonempty_target_rows": 3129,
+                  "rows_with_any_known_label": 1154,
+                  "rows_with_all_labels_known": 569,
+                  "any_known_row_coverage": 0.36880792585490574,
+                  "all_known_row_coverage": 0.1818472355385107,
+                  "label_assignments": 4588,
+                  "known_label_assignments": 1354,
+                  "label_assignment_coverage": 0.2951176983435048,
+                  "unique_unknown_labels": 454
+                },
+                "valid": {
+                  "rows": 1058,
+                  "nonempty_target_rows": 774,
+                  "rows_with_any_known_label": 214,
+                  "rows_with_all_labels_known": 118,
+                  "any_known_row_coverage": 0.27648578811369506,
+                  "all_known_row_coverage": 0.1524547803617571,
+                  "label_assignments": 1135,
+                  "known_label_assignments": 271,
+                  "label_assignment_coverage": 0.23876651982378855,
+                  "unique_unknown_labels": 177
+                },
+                "test": {
+                  "rows": 1141,
+                  "nonempty_target_rows": 944,
+                  "rows_with_any_known_label": 369,
+                  "rows_with_all_labels_known": 181,
+                  "any_known_row_coverage": 0.3908898305084746,
+                  "all_known_row_coverage": 0.1917372881355932,
+                  "label_assignments": 1306,
+                  "known_label_assignments": 419,
+                  "label_assignment_coverage": 0.3208269525267994,
+                  "unique_unknown_labels": 206
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

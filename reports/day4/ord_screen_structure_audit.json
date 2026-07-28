@@ -1,0 +1,62 @@
+{
+  "805ad863": {
+    "total_reactions": 50688,
+    "usable_reactions": 50688,
+    "unique_transformations": 4,
+    "transformations_with_multiple_experiments": 4,
+    "transformations_with_multiple_conditions": 4,
+    "experiment_multiplicity_bins": {
+      ">100": 4
+    },
+    "condition_count_bins": {
+      ">100": 4
+    },
+    "unique_transformation_condition_pairs": 5592,
+    "repeated_exact_pairs": 5592,
+    "reactions_in_repeated_exact_pairs": 50688,
+    "score_count": 50688,
+    "score_statistics": {
+      "minimum": 0.0,
+      "p25": 0.0,
+      "median": 0.0,
+      "p75": 1.4700000286102295,
+      "p90": 8.430000305175781,
+      "maximum": 147.37290954589844,
+      "zero_count": 36433
+    }
+  },
+  "d9297630": {
+    "total_reactions": 39347,
+    "usable_reactions": 39347,
+    "unique_transformations": 602,
+    "transformations_with_multiple_experiments": 567,
+    "transformations_with_multiple_conditions": 454,
+    "experiment_multiplicity_bins": {
+      "1": 35,
+      "2-5": 195,
+      "21-100": 135,
+      "6-20": 105,
+      ">100": 132
+    },
+    "condition_count_bins": {
+      "1": 148,
+      "2-5": 184,
+      "21-100": 124,
+      "6-20": 120,
+      ">100": 26
+    },
+    "unique_transformation_condition_pairs": 13191,
+    "repeated_exact_pairs": 6208,
+    "reactions_in_repeated_exact_pairs": 32364,
+    "score_count": 39347,
+    "score_statistics": {
+      "minimum": 0.0,
+      "p25": 0.0,
+      "median": 0.0,
+      "p75": 10.0,
+      "p90": 53.0,
+      "maximum": 100.0,
+      "zero_count": 22401
+    }
+  }
+}

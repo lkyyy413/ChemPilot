@@ -1,0 +1,92 @@
+{
+  "protocol": "reaction_center",
+  "target": "catalyst",
+  "stage": "final",
+  "training_splits": [
+    "train",
+    "valid"
+  ],
+  "label_vocabulary_policy": "Vocabulary remains fixed from the original training split.",
+  "evaluation_split": "test",
+  "model": "one_vs_rest_logistic_regression",
+  "feature_representation": "reaction_combined",
+  "classes": 241,
+  "train_samples": 209,
+  "evaluation_samples": 49,
+  "training_seconds": 1.1937475837767124,
+  "regularization_c": 1.0,
+  "class_weight": "balanced",
+  "maximum_iterations": 2000,
+  "maximum_iterations_used": 9,
+  "converged": true,
+  "model_metrics": {
+    "samples": 49,
+    "classes": 241,
+    "classes_with_positive_examples": 131,
+    "micro_average_precision": 0.2655399967406028,
+    "macro_average_precision_observed": 0.4996073960493036,
+    "mean_reciprocal_rank": 0.6726776466854489,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 49,
+        "hit_rate": 0.6326530612244898,
+        "precision": 0.6326530612244898,
+        "recall": 0.23417339685931335
+      },
+      "3": {
+        "k": 3,
+        "samples": 49,
+        "hit_rate": 0.673469387755102,
+        "precision": 0.3877551020408163,
+        "recall": 0.32741344612577317
+      },
+      "5": {
+        "k": 5,
+        "samples": 49,
+        "hit_rate": 0.7142857142857143,
+        "precision": 0.34285714285714286,
+        "recall": 0.4254781570864847
+      }
+    }
+  },
+  "frequency_baseline_metrics": {
+    "samples": 49,
+    "classes": 241,
+    "classes_with_positive_examples": 131,
+    "micro_average_precision": 0.13683158852021082,
+    "macro_average_precision_observed": 0.044711014176663025,
+    "mean_reciprocal_rank": 0.46395401790413754,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 49,
+        "hit_rate": 0.42857142857142855,
+        "precision": 0.42857142857142855,
+        "recall": 0.09477592358428903
+      },
+      "3": {
+        "k": 3,
+        "samples": 49,
+        "hit_rate": 0.42857142857142855,
+        "precision": 0.2925170068027211,
+        "recall": 0.1732034463363837
+      },
+      "5": {
+        "k": 5,
+        "samples": 49,
+        "hit_rate": 0.5102040816326531,
+        "precision": 0.2653061224489796,
+        "recall": 0.27819695889292145
+      }
+    }
+  },
+  "target_coverage": {
+    "evaluation_transformations": 65,
+    "evaluated_with_known_target": 49,
+    "all_targets_known": 29,
+    "contains_unknown_targets": 20
+  },
+  "model_file": "artifacts/models/day4/reaction_center/catalyst_logistic_final.joblib",
+  "prediction_file": "reports/day4/classification/reaction_center/catalyst_final_test_top5.csv"
+}

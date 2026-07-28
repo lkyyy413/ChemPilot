@@ -1,0 +1,413 @@
+{
+  "805ad863": {
+    "number_of_reactions": 50688,
+    "reactions_with_any_measurement": 50688,
+    "reactions_with_desired_measurement": 50688,
+    "measurement_counts": [
+      {
+        "scope": "desired",
+        "type": "AREA",
+        "count": 101376
+      },
+      {
+        "scope": "desired",
+        "type": "YIELD",
+        "count": 50688
+      },
+      {
+        "scope": "other",
+        "type": "AREA",
+        "count": 50688
+      },
+      {
+        "scope": "other",
+        "type": "YIELD",
+        "count": 50688
+      }
+    ],
+    "payload_field_counts": [
+      {
+        "scope": "desired",
+        "type": "AREA",
+        "fields": [
+          "analysis_key",
+          "details",
+          "float_value",
+          "is_normalized",
+          "type",
+          "uses_authentic_standard",
+          "uses_internal_standard"
+        ],
+        "count": 101376
+      },
+      {
+        "scope": "desired",
+        "type": "YIELD",
+        "fields": [
+          "analysis_key",
+          "details",
+          "is_normalized",
+          "percentage",
+          "type",
+          "uses_authentic_standard",
+          "uses_internal_standard"
+        ],
+        "count": 50688
+      },
+      {
+        "scope": "other",
+        "type": "AREA",
+        "fields": [
+          "analysis_key",
+          "details",
+          "float_value",
+          "type",
+          "uses_authentic_standard"
+        ],
+        "count": 50688
+      },
+      {
+        "scope": "other",
+        "type": "YIELD",
+        "fields": [
+          "analysis_key",
+          "details",
+          "is_normalized",
+          "percentage",
+          "type",
+          "uses_authentic_standard",
+          "uses_internal_standard"
+        ],
+        "count": 50688
+      }
+    ],
+    "top_analysis_keys": [
+      {
+        "scope": "desired",
+        "type": "AREA",
+        "analysis_key": "UPLC analysis",
+        "count": 101376
+      },
+      {
+        "scope": "desired",
+        "type": "YIELD",
+        "analysis_key": "UPLC analysis",
+        "count": 50688
+      },
+      {
+        "scope": "other",
+        "type": "AREA",
+        "analysis_key": "UPLC analysis",
+        "count": 50688
+      },
+      {
+        "scope": "other",
+        "type": "YIELD",
+        "analysis_key": "UPLC analysis",
+        "count": 50688
+      }
+    ],
+    "top_details": [
+      {
+        "scope": "desired",
+        "type": "AREA",
+        "details": "TWC peak area",
+        "count": 50688
+      },
+      {
+        "scope": "desired",
+        "type": "AREA",
+        "details": "TWC peak area / IS",
+        "count": 50688
+      },
+      {
+        "scope": "desired",
+        "type": "YIELD",
+        "details": "assay yield from calibration curve",
+        "count": 50688
+      },
+      {
+        "scope": "other",
+        "type": "AREA",
+        "details": "TWC peak area",
+        "count": 50688
+      },
+      {
+        "scope": "other",
+        "type": "YIELD",
+        "details": "assay yield from calibration curve",
+        "count": 50688
+      }
+    ],
+    "examples": {
+      "desired|AREA": [
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "AREA",
+          "details": "TWC peak area",
+          "uses_internal_standard": false,
+          "is_normalized": false,
+          "uses_authentic_standard": false,
+          "float_value": {
+            "value": 0.0
+          }
+        },
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "AREA",
+          "details": "TWC peak area / IS",
+          "uses_internal_standard": true,
+          "is_normalized": true,
+          "uses_authentic_standard": false,
+          "float_value": {
+            "value": 0.0
+          }
+        },
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "AREA",
+          "details": "TWC peak area",
+          "uses_internal_standard": false,
+          "is_normalized": false,
+          "uses_authentic_standard": false,
+          "float_value": {
+            "value": 0.0
+          }
+        }
+      ],
+      "desired|YIELD": [
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "YIELD",
+          "details": "assay yield from calibration curve",
+          "uses_internal_standard": true,
+          "is_normalized": true,
+          "uses_authentic_standard": true,
+          "percentage": {
+            "value": 0.0
+          }
+        },
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "YIELD",
+          "details": "assay yield from calibration curve",
+          "uses_internal_standard": true,
+          "is_normalized": true,
+          "uses_authentic_standard": true,
+          "percentage": {
+            "value": 0.0
+          }
+        },
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "YIELD",
+          "details": "assay yield from calibration curve",
+          "uses_internal_standard": true,
+          "is_normalized": true,
+          "uses_authentic_standard": true,
+          "percentage": {
+            "value": 4.12659
+          }
+        }
+      ],
+      "other|AREA": [
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "AREA",
+          "details": "TWC peak area",
+          "uses_authentic_standard": false,
+          "float_value": {
+            "value": 98580.16
+          }
+        },
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "AREA",
+          "details": "TWC peak area",
+          "uses_authentic_standard": false,
+          "float_value": {
+            "value": 77383.19
+          }
+        },
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "AREA",
+          "details": "TWC peak area",
+          "uses_authentic_standard": false,
+          "float_value": {
+            "value": 99101.66
+          }
+        }
+      ],
+      "other|YIELD": [
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "YIELD",
+          "details": "assay yield from calibration curve",
+          "uses_internal_standard": true,
+          "is_normalized": true,
+          "uses_authentic_standard": true,
+          "percentage": {
+            "value": 0.0
+          }
+        },
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "YIELD",
+          "details": "assay yield from calibration curve",
+          "uses_internal_standard": true,
+          "is_normalized": true,
+          "uses_authentic_standard": true,
+          "percentage": {
+            "value": 0.0
+          }
+        },
+        {
+          "analysis_key": "UPLC analysis",
+          "type": "YIELD",
+          "details": "assay yield from calibration curve",
+          "uses_internal_standard": true,
+          "is_normalized": true,
+          "uses_authentic_standard": true,
+          "percentage": {
+            "value": 0.0
+          }
+        }
+      ]
+    }
+  },
+  "d9297630": {
+    "number_of_reactions": 39347,
+    "reactions_with_any_measurement": 39347,
+    "reactions_with_desired_measurement": 39347,
+    "measurement_counts": [
+      {
+        "scope": "desired",
+        "type": "COUNTS",
+        "count": 39347
+      },
+      {
+        "scope": "desired",
+        "type": "CUSTOM",
+        "count": 39347
+      }
+    ],
+    "payload_field_counts": [
+      {
+        "scope": "desired",
+        "type": "COUNTS",
+        "fields": [
+          "analysis_key",
+          "float_value",
+          "is_normalized",
+          "type"
+        ],
+        "count": 39347
+      },
+      {
+        "scope": "desired",
+        "type": "CUSTOM",
+        "fields": [
+          "analysis_key",
+          "details",
+          "is_normalized",
+          "percentage",
+          "type",
+          "wavelength"
+        ],
+        "count": 39347
+      }
+    ],
+    "top_analysis_keys": [
+      {
+        "scope": "desired",
+        "type": "COUNTS",
+        "analysis_key": "LCMS",
+        "count": 39347
+      },
+      {
+        "scope": "desired",
+        "type": "CUSTOM",
+        "analysis_key": "LCMS",
+        "count": 39347
+      }
+    ],
+    "top_details": [
+      {
+        "scope": "desired",
+        "type": "CUSTOM",
+        "details": "LC area percent",
+        "count": 39347
+      }
+    ],
+    "examples": {
+      "desired|COUNTS": [
+        {
+          "analysis_key": "LCMS",
+          "type": "COUNTS",
+          "is_normalized": false,
+          "float_value": {
+            "value": 547137.9
+          }
+        },
+        {
+          "analysis_key": "LCMS",
+          "type": "COUNTS",
+          "is_normalized": false,
+          "float_value": {
+            "value": 810670.44
+          }
+        },
+        {
+          "analysis_key": "LCMS",
+          "type": "COUNTS",
+          "is_normalized": false,
+          "float_value": {
+            "value": 48737.926
+          }
+        }
+      ],
+      "desired|CUSTOM": [
+        {
+          "analysis_key": "LCMS",
+          "type": "CUSTOM",
+          "details": "LC area percent",
+          "is_normalized": true,
+          "percentage": {
+            "value": 20.0
+          },
+          "wavelength": {
+            "value": 280.0,
+            "units": "NANOMETER"
+          }
+        },
+        {
+          "analysis_key": "LCMS",
+          "type": "CUSTOM",
+          "details": "LC area percent",
+          "is_normalized": true,
+          "percentage": {
+            "value": 19.0
+          },
+          "wavelength": {
+            "value": 280.0,
+            "units": "NANOMETER"
+          }
+        },
+        {
+          "analysis_key": "LCMS",
+          "type": "CUSTOM",
+          "details": "LC area percent",
+          "is_normalized": true,
+          "percentage": {
+            "value": 19.0
+          },
+          "wavelength": {
+            "value": 280.0,
+            "units": "NANOMETER"
+          }
+        }
+      ]
+    }
+  }
+}

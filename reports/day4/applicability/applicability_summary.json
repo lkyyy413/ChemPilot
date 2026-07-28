@@ -1,0 +1,243 @@
+{
+  "method": {
+    "representation": "Concatenated binary Morgan fingerprints of reactants and products",
+    "similarity": "Binary Tanimoto",
+    "threshold_source": "Final train+validation subset; test labels were not used",
+    "threshold_percentile": 5.0,
+    "confidence_note": "Logistic-regression scores are ranking confidence proxies and are not calibrated probabilities."
+  },
+  "tasks": {
+    "transformation|solvent": {
+      "protocol": "transformation",
+      "target": "solvent",
+      "threshold_definition": "5th percentile of final training-set leave-one-out nearest-neighbor binary Tanimoto similarity",
+      "ad_percentile": 5.0,
+      "binary_structure_dimension": 4096,
+      "final_training_samples": 272,
+      "complete_test_samples": 58,
+      "evaluated_test_samples": 51,
+      "ad_threshold": 0.22202488780021667,
+      "training_loo_similarity": {
+        "minimum": 0.1428571492433548,
+        "median": 0.6469907164573669,
+        "mean": 0.6254503726959229,
+        "maximum": 0.9918032884597778
+      },
+      "complete_test_applicability": {
+        "in_domain_samples": 55,
+        "out_of_domain_samples": 3,
+        "in_domain_rate": 0.9482758620689655,
+        "mean_nearest_similarity": 0.567534327507019,
+        "median_nearest_similarity": 0.5366278886795044,
+        "same_reaction_type_rate": 0.5172413793103449
+      },
+      "evaluated_test_metrics": {
+        "samples": 51,
+        "hit_rate_at_1": 0.5098039215686274,
+        "hit_rate_at_3": 0.7647058823529411,
+        "hit_rate_at_5": 0.8823529411764706,
+        "recall_at_5": 0.7667600373482727,
+        "mean_reciprocal_rank": 0.6549019607843137,
+        "mean_top1_confidence": 0.7285273334989055
+      },
+      "in_domain_test_metrics": {
+        "samples": 50,
+        "hit_rate_at_1": 0.5,
+        "hit_rate_at_3": 0.76,
+        "hit_rate_at_5": 0.88,
+        "recall_at_5": 0.7687619047619049,
+        "mean_reciprocal_rank": 0.648,
+        "mean_top1_confidence": 0.7276428750692523
+      },
+      "out_of_domain_test_metrics": {
+        "samples": 1,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "recall_at_5": 0.6666666666666666,
+        "mean_reciprocal_rank": 1.0,
+        "mean_top1_confidence": 0.7727502549815642
+      },
+      "unknown_target_audit": {
+        "evaluated_with_unknown_targets": 3,
+        "in_domain_with_unknown_targets": 3,
+        "out_of_domain_with_unknown_targets": 0
+      },
+      "output_file": "reports/day4/applicability/transformation_solvent_test_ad.csv"
+    },
+    "transformation|catalyst": {
+      "protocol": "transformation",
+      "target": "catalyst",
+      "threshold_definition": "5th percentile of final training-set leave-one-out nearest-neighbor binary Tanimoto similarity",
+      "ad_percentile": 5.0,
+      "binary_structure_dimension": 4096,
+      "final_training_samples": 220,
+      "complete_test_samples": 58,
+      "evaluated_test_samples": 36,
+      "ad_threshold": 0.21534743905067444,
+      "training_loo_similarity": {
+        "minimum": 0.1411764770746231,
+        "median": 0.6339285373687744,
+        "mean": 0.6015112996101379,
+        "maximum": 0.9918032884597778
+      },
+      "complete_test_applicability": {
+        "in_domain_samples": 53,
+        "out_of_domain_samples": 5,
+        "in_domain_rate": 0.9137931034482759,
+        "mean_nearest_similarity": 0.5155244469642639,
+        "median_nearest_similarity": 0.47767817974090576,
+        "same_reaction_type_rate": 0.43103448275862066
+      },
+      "evaluated_test_metrics": {
+        "samples": 36,
+        "hit_rate_at_1": 0.5,
+        "hit_rate_at_3": 0.75,
+        "hit_rate_at_5": 0.8611111111111112,
+        "recall_at_5": 0.45841558133224797,
+        "mean_reciprocal_rank": 0.6282407407407407,
+        "mean_top1_confidence": 0.803864199431966
+      },
+      "in_domain_test_metrics": {
+        "samples": 35,
+        "hit_rate_at_1": 0.4857142857142857,
+        "hit_rate_at_3": 0.7428571428571429,
+        "hit_rate_at_5": 0.8571428571428571,
+        "recall_at_5": 0.45518663875806725,
+        "mean_reciprocal_rank": 0.6176190476190475,
+        "mean_top1_confidence": 0.8071132017536564
+      },
+      "out_of_domain_test_metrics": {
+        "samples": 1,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "recall_at_5": 0.5714285714285714,
+        "mean_reciprocal_rank": 1.0,
+        "mean_top1_confidence": 0.6901491181728003
+      },
+      "unknown_target_audit": {
+        "evaluated_with_unknown_targets": 10,
+        "in_domain_with_unknown_targets": 10,
+        "out_of_domain_with_unknown_targets": 0
+      },
+      "output_file": "reports/day4/applicability/transformation_catalyst_test_ad.csv"
+    },
+    "reaction_center|solvent": {
+      "protocol": "reaction_center",
+      "target": "solvent",
+      "threshold_definition": "5th percentile of final training-set leave-one-out nearest-neighbor binary Tanimoto similarity",
+      "ad_percentile": 5.0,
+      "binary_structure_dimension": 4096,
+      "final_training_samples": 267,
+      "complete_test_samples": 65,
+      "evaluated_test_samples": 56,
+      "ad_threshold": 0.2212880551815033,
+      "training_loo_similarity": {
+        "minimum": 0.17142857611179352,
+        "median": 0.6666666865348816,
+        "mean": 0.6236697435379028,
+        "maximum": 0.9918032884597778
+      },
+      "complete_test_applicability": {
+        "in_domain_samples": 55,
+        "out_of_domain_samples": 10,
+        "in_domain_rate": 0.8461538461538461,
+        "mean_nearest_similarity": 0.47925707697868347,
+        "median_nearest_similarity": 0.37956205010414124,
+        "same_reaction_type_rate": 0.36923076923076925
+      },
+      "evaluated_test_metrics": {
+        "samples": 56,
+        "hit_rate_at_1": 0.5178571428571429,
+        "hit_rate_at_3": 0.8035714285714286,
+        "hit_rate_at_5": 0.9464285714285714,
+        "recall_at_5": 0.7635416666666667,
+        "mean_reciprocal_rank": 0.6758928571428571,
+        "mean_top1_confidence": 0.7123671560198355
+      },
+      "in_domain_test_metrics": {
+        "samples": 48,
+        "hit_rate_at_1": 0.5416666666666666,
+        "hit_rate_at_3": 0.8333333333333334,
+        "hit_rate_at_5": 0.9375,
+        "recall_at_5": 0.7467013888888889,
+        "mean_reciprocal_rank": 0.6940972222222221,
+        "mean_top1_confidence": 0.7502186654743869
+      },
+      "out_of_domain_test_metrics": {
+        "samples": 8,
+        "hit_rate_at_1": 0.375,
+        "hit_rate_at_3": 0.625,
+        "hit_rate_at_5": 1.0,
+        "recall_at_5": 0.8645833333333333,
+        "mean_reciprocal_rank": 0.5666666666666667,
+        "mean_top1_confidence": 0.485258099292527
+      },
+      "unknown_target_audit": {
+        "evaluated_with_unknown_targets": 3,
+        "in_domain_with_unknown_targets": 3,
+        "out_of_domain_with_unknown_targets": 0
+      },
+      "output_file": "reports/day4/applicability/reaction_center_solvent_test_ad.csv"
+    },
+    "reaction_center|catalyst": {
+      "protocol": "reaction_center",
+      "target": "catalyst",
+      "threshold_definition": "5th percentile of final training-set leave-one-out nearest-neighbor binary Tanimoto similarity",
+      "ad_percentile": 5.0,
+      "binary_structure_dimension": 4096,
+      "final_training_samples": 209,
+      "complete_test_samples": 65,
+      "evaluated_test_samples": 49,
+      "ad_threshold": 0.2159789353609085,
+      "training_loo_similarity": {
+        "minimum": 0.17721518874168396,
+        "median": 0.6428571343421936,
+        "mean": 0.60356605052948,
+        "maximum": 0.9918032884597778
+      },
+      "complete_test_applicability": {
+        "in_domain_samples": 53,
+        "out_of_domain_samples": 12,
+        "in_domain_rate": 0.8153846153846154,
+        "mean_nearest_similarity": 0.4566819667816162,
+        "median_nearest_similarity": 0.3581081032752991,
+        "same_reaction_type_rate": 0.36923076923076925
+      },
+      "evaluated_test_metrics": {
+        "samples": 49,
+        "hit_rate_at_1": 0.6326530612244898,
+        "hit_rate_at_3": 0.673469387755102,
+        "hit_rate_at_5": 0.7142857142857143,
+        "recall_at_5": 0.4254781570864847,
+        "mean_reciprocal_rank": 0.6578231292517007,
+        "mean_top1_confidence": 0.7572305686297882
+      },
+      "in_domain_test_metrics": {
+        "samples": 42,
+        "hit_rate_at_1": 0.6190476190476191,
+        "hit_rate_at_3": 0.6666666666666666,
+        "hit_rate_at_5": 0.7142857142857143,
+        "recall_at_5": 0.4291401010164831,
+        "mean_reciprocal_rank": 0.6484126984126984,
+        "mean_top1_confidence": 0.8198963824657759
+      },
+      "out_of_domain_test_metrics": {
+        "samples": 7,
+        "hit_rate_at_1": 0.7142857142857143,
+        "hit_rate_at_3": 0.7142857142857143,
+        "hit_rate_at_5": 0.7142857142857143,
+        "recall_at_5": 0.40350649350649354,
+        "mean_reciprocal_rank": 0.7142857142857143,
+        "mean_top1_confidence": 0.38123568561386406
+      },
+      "unknown_target_audit": {
+        "evaluated_with_unknown_targets": 20,
+        "in_domain_with_unknown_targets": 14,
+        "out_of_domain_with_unknown_targets": 6
+      },
+      "output_file": "reports/day4/applicability/reaction_center_catalyst_test_ad.csv"
+    }
+  }
+}

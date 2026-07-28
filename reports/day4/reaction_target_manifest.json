@@ -1,0 +1,177 @@
+{
+  "metadata_file": "data/processed/reactions/features/feature_metadata.parquet",
+  "seed": 42,
+  "sample_unit": "One sample per rankable transformation.",
+  "positive_label_policy": "Union of labels appearing in top-quartile condition pairs.",
+  "missing_condition_policy": "Missing solvent or catalyst is not treated as a negative or as a no-condition class.",
+  "protocols": {
+    "transformation": {
+      "solvent": {
+        "minimum_train_transformations": 5,
+        "classes": 20,
+        "target_matrix_shape": [
+          381,
+          20
+        ],
+        "target_positive_assignments": 801,
+        "target_matrix_file": "data/processed/reactions/targets/transformation/solvent/targets.npz",
+        "samples_file": "data/processed/reactions/targets/transformation/solvent/samples.parquet",
+        "vocabulary_file": "data/processed/reactions/targets/transformation/solvent/vocabulary.json",
+        "split_statistics": {
+          "train": {
+            "transformations": 271,
+            "nonempty_target_transformations": 232,
+            "transformations_with_any_known_label": 229,
+            "transformations_with_all_labels_known": 212,
+            "any_known_transformation_coverage": 0.9870689655172413,
+            "all_known_transformation_coverage": 0.9137931034482759,
+            "known_positive_assignments": 573
+          },
+          "valid": {
+            "transformations": 52,
+            "nonempty_target_transformations": 43,
+            "transformations_with_any_known_label": 43,
+            "transformations_with_all_labels_known": 42,
+            "any_known_transformation_coverage": 1.0,
+            "all_known_transformation_coverage": 0.9767441860465116,
+            "known_positive_assignments": 108
+          },
+          "test": {
+            "transformations": 58,
+            "nonempty_target_transformations": 51,
+            "transformations_with_any_known_label": 51,
+            "transformations_with_all_labels_known": 48,
+            "any_known_transformation_coverage": 1.0,
+            "all_known_transformation_coverage": 0.9411764705882353,
+            "known_positive_assignments": 120
+          }
+        }
+      },
+      "catalyst": {
+        "minimum_train_transformations": 2,
+        "classes": 248,
+        "target_matrix_shape": [
+          381,
+          248
+        ],
+        "target_positive_assignments": 1713,
+        "target_matrix_file": "data/processed/reactions/targets/transformation/catalyst/targets.npz",
+        "samples_file": "data/processed/reactions/targets/transformation/catalyst/samples.parquet",
+        "vocabulary_file": "data/processed/reactions/targets/transformation/catalyst/vocabulary.json",
+        "split_statistics": {
+          "train": {
+            "transformations": 271,
+            "nonempty_target_transformations": 188,
+            "transformations_with_any_known_label": 185,
+            "transformations_with_all_labels_known": 146,
+            "any_known_transformation_coverage": 0.9840425531914894,
+            "all_known_transformation_coverage": 0.776595744680851,
+            "known_positive_assignments": 1192
+          },
+          "valid": {
+            "transformations": 52,
+            "nonempty_target_transformations": 38,
+            "transformations_with_any_known_label": 35,
+            "transformations_with_all_labels_known": 22,
+            "any_known_transformation_coverage": 0.9210526315789473,
+            "all_known_transformation_coverage": 0.5789473684210527,
+            "known_positive_assignments": 272
+          },
+          "test": {
+            "transformations": 58,
+            "nonempty_target_transformations": 38,
+            "transformations_with_any_known_label": 36,
+            "transformations_with_all_labels_known": 26,
+            "any_known_transformation_coverage": 0.9473684210526315,
+            "all_known_transformation_coverage": 0.6842105263157895,
+            "known_positive_assignments": 249
+          }
+        }
+      }
+    },
+    "reaction_center": {
+      "solvent": {
+        "minimum_train_transformations": 5,
+        "classes": 20,
+        "target_matrix_shape": [
+          381,
+          20
+        ],
+        "target_positive_assignments": 801,
+        "target_matrix_file": "data/processed/reactions/targets/reaction_center/solvent/targets.npz",
+        "samples_file": "data/processed/reactions/targets/reaction_center/solvent/samples.parquet",
+        "vocabulary_file": "data/processed/reactions/targets/reaction_center/solvent/vocabulary.json",
+        "split_statistics": {
+          "train": {
+            "transformations": 263,
+            "nonempty_target_transformations": 222,
+            "transformations_with_any_known_label": 219,
+            "transformations_with_all_labels_known": 202,
+            "any_known_transformation_coverage": 0.9864864864864865,
+            "all_known_transformation_coverage": 0.9099099099099099,
+            "known_positive_assignments": 533
+          },
+          "valid": {
+            "transformations": 53,
+            "nonempty_target_transformations": 48,
+            "transformations_with_any_known_label": 48,
+            "transformations_with_all_labels_known": 47,
+            "any_known_transformation_coverage": 1.0,
+            "all_known_transformation_coverage": 0.9791666666666666,
+            "known_positive_assignments": 122
+          },
+          "test": {
+            "transformations": 65,
+            "nonempty_target_transformations": 56,
+            "transformations_with_any_known_label": 56,
+            "transformations_with_all_labels_known": 53,
+            "any_known_transformation_coverage": 1.0,
+            "all_known_transformation_coverage": 0.9464285714285714,
+            "known_positive_assignments": 146
+          }
+        }
+      },
+      "catalyst": {
+        "minimum_train_transformations": 2,
+        "classes": 241,
+        "target_matrix_shape": [
+          381,
+          241
+        ],
+        "target_positive_assignments": 1708,
+        "target_matrix_file": "data/processed/reactions/targets/reaction_center/catalyst/targets.npz",
+        "samples_file": "data/processed/reactions/targets/reaction_center/catalyst/samples.parquet",
+        "vocabulary_file": "data/processed/reactions/targets/reaction_center/catalyst/vocabulary.json",
+        "split_statistics": {
+          "train": {
+            "transformations": 263,
+            "nonempty_target_transformations": 177,
+            "transformations_with_any_known_label": 173,
+            "transformations_with_all_labels_known": 129,
+            "any_known_transformation_coverage": 0.9774011299435028,
+            "all_known_transformation_coverage": 0.7288135593220338,
+            "known_positive_assignments": 1171
+          },
+          "valid": {
+            "transformations": 53,
+            "nonempty_target_transformations": 38,
+            "transformations_with_any_known_label": 36,
+            "transformations_with_all_labels_known": 27,
+            "any_known_transformation_coverage": 0.9473684210526315,
+            "all_known_transformation_coverage": 0.7105263157894737,
+            "known_positive_assignments": 250
+          },
+          "test": {
+            "transformations": 65,
+            "nonempty_target_transformations": 49,
+            "transformations_with_any_known_label": 49,
+            "transformations_with_all_labels_known": 29,
+            "any_known_transformation_coverage": 1.0,
+            "all_known_transformation_coverage": 0.5918367346938775,
+            "known_positive_assignments": 287
+          }
+        }
+      }
+    }
+  }
+}

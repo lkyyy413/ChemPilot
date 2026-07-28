@@ -1,0 +1,119 @@
+{
+  "created_at_utc": "2026-07-28T08:04:31.165081+00:00",
+  "input": {
+    "file": "data/processed/reactions/d9297630_condition_pairs.parquet",
+    "sha256": "2dc3457de3a640bcc01e3d6c7349ad88647f068fa21b2b57cb77129f22ba6f1b",
+    "rows": 34566,
+    "unique_transformations": 602
+  },
+  "reaction_features": {
+    "file": "data/processed/reactions/features/reaction_combined.npz",
+    "sha256": "d76b9a58d75ca796dc1a50dab20e56f9efcc876e02aaa530eb29332275d20989",
+    "shape": [
+      34566,
+      6144
+    ],
+    "dtype": "int8",
+    "nonzero_values": 4045752,
+    "density": 0.019050173038534977,
+    "storage_format": "csr",
+    "schema": {
+      "radius": 2,
+      "number_of_bits": 2048,
+      "include_chirality": true,
+      "side_aggregation": "bitwise_or",
+      "representations": {
+        "reactant": 2048,
+        "product": 2048,
+        "difference": 2048,
+        "concatenated": 4096,
+        "combined": 6144
+      },
+      "difference_values": [
+        -1,
+        0,
+        1
+      ]
+    }
+  },
+  "condition_features": {
+    "file": "data/processed/reactions/features/condition_combined.npz",
+    "sha256": "8134756b75a1671fe9449e0cd211edc23beaa3f7c761feb229e8021a798781b7",
+    "shape": [
+      34566,
+      18439
+    ],
+    "dtype": "float32",
+    "nonzero_values": 1278145,
+    "density": 0.00200536594503052,
+    "storage_format": "csr",
+    "schema": {
+      "roles": [
+        "solvent",
+        "catalyst",
+        "reagent"
+      ],
+      "molecular_radius": 2,
+      "molecular_bits_per_role": 2048,
+      "categorical_hash_bits_per_role": 4096,
+      "categorical_hash": "sha256",
+      "combined_dimension": 18439,
+      "numeric_feature_names": [
+        "temperature_celsius_or_zero",
+        "temperature_missing",
+        "reaction_time_hours_or_zero",
+        "reaction_time_missing",
+        "solvent_missing",
+        "catalyst_missing",
+        "reagent_missing"
+      ]
+    }
+  },
+  "metadata": {
+    "file": "data/processed/reactions/features/feature_metadata.parquet",
+    "sha256": "6b5ae526f1ed626f42de05fa0897be82679b09dbdd51486074cf51402e71f59c",
+    "rows": 34566,
+    "columns": [
+      "feature_row_index",
+      "transformation_signature",
+      "reaction_center_signature",
+      "condition_signature",
+      "representative_reaction_id",
+      "source_dataset",
+      "reaction_type",
+      "solvent_labels",
+      "catalyst_labels",
+      "reagent_labels",
+      "temperature_celsius",
+      "reaction_time_hours",
+      "score_median",
+      "score_mean",
+      "score_minimum",
+      "score_maximum",
+      "score_standard_deviation",
+      "replicate_count",
+      "transformation_condition_count",
+      "transformation_experiment_count",
+      "transformation_best_score",
+      "score_rank_percentile",
+      "condition_rank",
+      "relative_to_best_score",
+      "is_rankable_transformation",
+      "is_top_quartile_condition",
+      "is_best_condition"
+    ],
+    "row_alignment": "feature_row_index equals the row index in both sparse matrices"
+  },
+  "construction": {
+    "batch_size": 256,
+    "elapsed_seconds": 13.165971477515996,
+    "labels_used_as_features": false,
+    "split_information_used": false
+  },
+  "software_versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.17.1",
+    "rdkit": "2026.03.4"
+  }
+}

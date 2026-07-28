@@ -1,0 +1,94 @@
+[
+  {
+    "protocol": "reaction_center",
+    "target": "solvent",
+    "stage": "final",
+    "training_splits": [
+      "train",
+      "valid"
+    ],
+    "label_vocabulary_policy": "Vocabulary remains fixed from the original training split.",
+    "evaluation_split": "test",
+    "model": "one_vs_rest_logistic_regression",
+    "feature_representation": "reaction_combined",
+    "classes": 20,
+    "train_samples": 267,
+    "evaluation_samples": 56,
+    "training_seconds": 1.0479285782203078,
+    "regularization_c": 0.1,
+    "class_weight": "balanced",
+    "maximum_iterations": 2000,
+    "maximum_iterations_used": 7,
+    "converged": true,
+    "model_metrics": {
+      "samples": 56,
+      "classes": 20,
+      "classes_with_positive_examples": 19,
+      "micro_average_precision": 0.5275723476964661,
+      "macro_average_precision_observed": 0.5547101196708807,
+      "mean_reciprocal_rank": 0.6848214285714286,
+      "top_k": {
+        "1": {
+          "k": 1,
+          "samples": 56,
+          "hit_rate": 0.5178571428571429,
+          "precision": 0.5178571428571429,
+          "recall": 0.2833333333333333
+        },
+        "3": {
+          "k": 3,
+          "samples": 56,
+          "hit_rate": 0.8035714285714286,
+          "precision": 0.4107142857142857,
+          "recall": 0.5488095238095237
+        },
+        "5": {
+          "k": 5,
+          "samples": 56,
+          "hit_rate": 0.9464285714285714,
+          "precision": 0.3428571428571429,
+          "recall": 0.7635416666666667
+        }
+      }
+    },
+    "frequency_baseline_metrics": {
+      "samples": 56,
+      "classes": 20,
+      "classes_with_positive_examples": 19,
+      "micro_average_precision": 0.23671061015890216,
+      "macro_average_precision_observed": 0.13721804511278193,
+      "mean_reciprocal_rank": 0.5014816532673676,
+      "top_k": {
+        "1": {
+          "k": 1,
+          "samples": 56,
+          "hit_rate": 0.32142857142857145,
+          "precision": 0.32142857142857145,
+          "recall": 0.16741071428571427
+        },
+        "3": {
+          "k": 3,
+          "samples": 56,
+          "hit_rate": 0.5714285714285714,
+          "precision": 0.2857142857142857,
+          "recall": 0.365327380952381
+        },
+        "5": {
+          "k": 5,
+          "samples": 56,
+          "hit_rate": 0.75,
+          "precision": 0.2571428571428572,
+          "recall": 0.5392857142857143
+        }
+      }
+    },
+    "target_coverage": {
+      "evaluation_transformations": 65,
+      "evaluated_with_known_target": 56,
+      "all_targets_known": 53,
+      "contains_unknown_targets": 3
+    },
+    "model_file": "artifacts/models/day4/reaction_center/solvent_logistic_final.joblib",
+    "prediction_file": "reports/day4/classification/reaction_center/solvent_final_test_top5.csv"
+  }
+]

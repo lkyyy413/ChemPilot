@@ -1,0 +1,153 @@
+{
+  "number_of_files": 1,
+  "files": [
+    {
+      "path": "/tmp/ord-data-source/data/e7/ord_dataset-e7830cd6b11158b43994ccfb5ee9acb3.parquet",
+      "number_of_reactions": 409035,
+      "integrity": {
+        "partial_deserialization": 0,
+        "reaction_id_mismatch": 0
+      },
+      "coverage": {
+        "has_reactant": {
+          "count": 409035,
+          "rate": 1.0
+        },
+        "has_reactant_smiles": {
+          "count": 409035,
+          "rate": 1.0
+        },
+        "has_reagent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_reagent_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_solvent": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_solvent_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_catalyst": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_catalyst_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_temperature": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_reaction_time": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_desired_product": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_desired_product_smiles": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "has_desired_yield": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "unique_labels": {
+        "reactant": 288931,
+        "reagent": 0,
+        "solvent": 0,
+        "catalyst": 0
+      },
+      "top_labels": {
+        "reactant": [
+          [
+            "SMILES:O",
+            88243
+          ],
+          [
+            "SMILES:[Na+]",
+            86903
+          ],
+          [
+            "SMILES:Cl",
+            59956
+          ],
+          [
+            "SMILES:C1CCOC1",
+            59724
+          ],
+          [
+            "SMILES:ClCCl",
+            55122
+          ],
+          [
+            "SMILES:CN(C)C=O",
+            51198
+          ],
+          [
+            "SMILES:CO",
+            42946
+          ],
+          [
+            "SMILES:[OH-]",
+            39301
+          ],
+          [
+            "SMILES:[K+]",
+            38902
+          ],
+          [
+            "SMILES:O=C([O-])[O-]",
+            37987
+          ]
+        ],
+        "reagent": [],
+        "solvent": [],
+        "catalyst": []
+      },
+      "role_cardinality": {
+        "reactant": {
+          "1": 28,
+          "2": 64214,
+          "3": 72504,
+          "4": 75565,
+          "5": 79338,
+          "6": 59080,
+          "7": 33410,
+          "8": 15554,
+          "9": 6124,
+          "10": 2194,
+          "11": 693,
+          "12": 219,
+          "13": 64,
+          "14": 28,
+          "15": 16,
+          "16": 2,
+          "17": 1,
+          "19": 1
+        },
+        "reagent": {
+          "0": 409035
+        },
+        "solvent": {
+          "0": 409035
+        },
+        "catalyst": {
+          "0": 409035
+        }
+      },
+      "temperature_units": {},
+      "top_yield_methods": []
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "protocol": "transformation",
+    "target": "catalyst",
+    "stage": "final",
+    "training_splits": [
+      "train",
+      "valid"
+    ],
+    "label_vocabulary_policy": "Vocabulary remains fixed from the original training split.",
+    "evaluation_split": "test",
+    "model": "one_vs_rest_logistic_regression",
+    "feature_representation": "reaction_combined",
+    "classes": 248,
+    "train_samples": 220,
+    "evaluation_samples": 36,
+    "training_seconds": 1.172211604192853,
+    "regularization_c": 0.1,
+    "class_weight": "balanced",
+    "maximum_iterations": 2000,
+    "maximum_iterations_used": 8,
+    "converged": true,
+    "model_metrics": {
+      "samples": 36,
+      "classes": 248,
+      "classes_with_positive_examples": 125,
+      "micro_average_precision": 0.326817186919993,
+      "macro_average_precision_observed": 0.556317492664364,
+      "mean_reciprocal_rank": 0.6406240273887333,
+      "top_k": {
+        "1": {
+          "k": 1,
+          "samples": 36,
+          "hit_rate": 0.5,
+          "precision": 0.5,
+          "recall": 0.10424243965910633
+        },
+        "3": {
+          "k": 3,
+          "samples": 36,
+          "hit_rate": 0.75,
+          "precision": 0.4722222222222223,
+          "recall": 0.3044511044511045
+        },
+        "5": {
+          "k": 5,
+          "samples": 36,
+          "hit_rate": 0.8611111111111112,
+          "precision": 0.44999999999999996,
+          "recall": 0.45841558133224797
+        }
+      }
+    },
+    "frequency_baseline_metrics": {
+      "samples": 36,
+      "classes": 248,
+      "classes_with_positive_examples": 125,
+      "micro_average_precision": 0.18559547143011768,
+      "macro_average_precision_observed": 0.05533333333333333,
+      "mean_reciprocal_rank": 0.5934206151339754,
+      "top_k": {
+        "1": {
+          "k": 1,
+          "samples": 36,
+          "hit_rate": 0.5277777777777778,
+          "precision": 0.5277777777777778,
+          "recall": 0.10764470868637535
+        },
+        "3": {
+          "k": 3,
+          "samples": 36,
+          "hit_rate": 0.6388888888888888,
+          "precision": 0.3888888888888889,
+          "recall": 0.2666510572760573
+        },
+        "5": {
+          "k": 5,
+          "samples": 36,
+          "hit_rate": 0.6944444444444444,
+          "precision": 0.33888888888888885,
+          "recall": 0.3692200160950161
+        }
+      }
+    },
+    "target_coverage": {
+      "evaluation_transformations": 58,
+      "evaluated_with_known_target": 36,
+      "all_targets_known": 26,
+      "contains_unknown_targets": 10
+    },
+    "model_file": "artifacts/models/day4/transformation/catalyst_logistic_final.joblib",
+    "prediction_file": "reports/day4/classification/transformation/catalyst_final_test_top5.csv"
+  }
+]

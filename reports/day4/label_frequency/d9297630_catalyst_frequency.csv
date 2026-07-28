@@ -1,0 +1,783 @@
+rank,identifier_type,label,reaction_count
+1,SMILES,C(O[Pd]OC(C)=O)(C)=O,6795
+2,SMILES,[Cu]I,1430
+3,SMILES,P([C@]12C[C@@H]3C[C@H](C2)C[C@@H](C1)C3)([C@]12C[C@@H]3C[C@@H](C2)C[C@@H](C1)C3)CCCC,1311
+4,SMILES,C1(C(C(C(C1C)C)C)C)C.C1(C(C(C(C1C)C)C)C)C.[Rh](Cl)Cl.[Rh](Cl)Cl,1272
+5,SMILES,[Pd].C(P(C(C)(C)C)C(C)(C)C)(C)(C)C.C(P(C(C)(C)C)C(C)(C)C)(C)(C)C,1069
+6,SMILES,[Ir-]12[Ir-]([O+]1C)[O+]2C.C1=CCCC=CCC1.C1=CCCC=CCC1,1024
+7,SMILES,[Pd].P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1,752
+8,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2cccc3)c(P(c2ccccc2)c2ccccc2)ccc2c1cccc2,628
+9,SMILES,P(C1CCCC1)(c1ccccc1)c1ccccc1.P(C1CCCC1)(c1ccccc1)c1ccccc1.C(Cl)Cl.[Pd](Cl)Cl.[Fe],587
+10,SMILES,[Pd](Cl)Cl.P(C(C)(C)C)(C(C)(C)C)c1ccc(N(C)C)cc1.P(C(C)(C)C)(C(C)(C)C)c1ccc(N(C)C)cc1,536
+11,SMILES,c1(c2c(P(C3CCCCC3)C3CCCCC3)cccc2)c(cc(cc1C(C)C)C(C)C)C(C)C,533
+12,SMILES,C1CC=CCCC=C1.C1CC=CCCC=C1.Cl[Ir].Cl[Ir],508
+13,SMILES,C(C=C)[Pd]Cl.C(C=C)[Pd]Cl,504
+14,SMILES,P(C1CCCC1)(C(C)(C)C)C(C)(C)C.P(C1CCCC1)(C(C)(C)C)C(C)(C)C.[Pd](Cl)Cl.[Fe],464
+15,SMILES,c1ccc(c(c1)[Ni]Cl)C.C(N(C)C)CN(C)C,432
+16,SMILES,[Fe](O/C(=C\C(C)=O)C)(O/C(=C\C(C)=O)C)O/C(=C\C(C)=O)C,418
+17,SMILES,[Fe].C1CCC(C1[C@@H](C)P(C(C)(C)C)C(C)(C)C)P(C1CCCCC1)C1CCCCC1.C1CCCC1,405
+18,SMILES,C(C[Ru]CC(C)=C)(C)=C.C1CC=CCCC=C1,390
+19,NAME,[Rh(cod)2]BF4,383
+20,NAME,5% Rh/C,381
+21,SMILES,O1c2c(C(c3c1c(ccc3)P(c1ccccc1)c1ccccc1)(C)C)cccc2P(c1ccccc1)c1ccccc1.Cl[Pd]Cl,362
+22,SMILES,C1(C(CCC1)[Pd]Cl)CN(C)C.P(C1[C@H]2C[C@@H](C1)CC2)C1[C@@H]2C[C@H](C1)CC2.C1CCCC1.[Fe],356
+23,NAME,PtO2,356
+24,SMILES,P(C1CCCC1)(c1ccccc1)c1ccccc1.P(C1CCCC1)(c1ccccc1)c1ccccc1.[Fe],354
+25,NAME,5% Pd/C,352
+26,NAME,10%% Pd/C (dry),351
+27,NAME,10% Pt/C,347
+28,SMILES,[Pd](Cl)Cl.P(C1CCCCC1)(C1CCCCC1)C1CCCCC1.P(C1CCCCC1)(C1CCCCC1)C1CCCCC1,342
+29,SMILES,[Pd](O)O,339
+30,SMILES,c1(n2c(P(C(C)(C)C)C(C)(C)C)ccn2)c(n(nc1c1ccccc1)c1ccccc1)c1ccccc1,329
+31,SMILES,c1(n(c2c(OC)cccc2)ccc1)P(C(C)(C)C)C(C)(C)C,310
+32,SMILES,c1(c(c(ccc1OC)OC)P(C1CCCCC1)C1CCCCC1)c1c(cc(cc1C(C)C)C(C)C)C(C)C.c1(ccccc1c1ccccc1N)[Pd+].[O-]S(C)(=O)=O,298
+33,SMILES,c12c(P(c3ccccc3)c3ccccc3)cccc1C(c1c(O2)c(P(c2ccccc2)c2ccccc2)ccc1)(C)C,293
+34,SMILES,[Pd](Cl)Cl.P(c1c(cccc1)C)(c1c(cccc1)C)c1c(cccc1)C.P(c1c(cccc1)C)(c1c(cccc1)C)c1c(cccc1)C,293
+35,SMILES,C1(C(C(C(C1c1ccccc1)c1ccccc1)c1ccccc1)c1ccccc1)c1ccccc1.P(C(C)(C)C)(C(C)(C)C)C1CCCC1.C1(C(C(C(C1c1ccccc1)c1ccccc1)c1ccccc1)c1ccccc1)c1ccccc1.P(C(C)(C)C)(C(C)(C)C)C1CCCC1.[Fe].[Fe].[Pd],283
+36,SMILES,P(C1CCCCC1)(C1CCCCC1)C1CCCCC1,252
+37,SMILES,[Ni].C1CC=CCCC=C1.C1CC=CCCC=C1,242
+38,NAME,Ir-93,240
+39,SMILES,C(N=NC(C#N)(C)C)(C#N)(C)C,240
+40,NAME,Xantphos Pd G4,236
+41,SMILES,C(COC)OC.[Ni](Cl)Cl,226
+42,NAME,Pd(OAc)2,225
+43,SMILES,[Zn],224
+44,SMILES,c1c(c(ccc1)[Pd+])c1ccccc1N.[O-]S(C)(=O)=O.c1c(c(c(cc1C(C)C)C(C)C)c1c(ccc(c1P(C(C)(C)C)C(C)(C)C)OC)OC)C(C)C,222
+45,NAME,[Rh(tBuCp*)(Cl)2]2,216
+46,SMILES,P(c1ccccc1)(c1ccccc1)c1ccccc1,211
+47,NAME,3G OMs XanthPhos,209
+48,SMILES,c1(c2c(P(C(C)(C)C)C(C)(C)C)cccc2)c(cc(cc1C(C)C)C(C)C)C(C)C,204
+49,SMILES,P(c1c(cccc1)C)(c1c(cccc1)C)c1c(cccc1)C,204
+50,NAME,(Ir[dF(4CF3)ppy]2(dtbpy))PF6,204
+51,SMILES,C(S(=O)(=O)[O-])(F)(F)F.[Rh+].C1CC=CCCC=C1.C1CC=CCCC=C1,199
+52,SMILES,Cl[Rh].Cl[Rh].C1=CCCC=CCC1.C1=CCCC=CCC1,185
+53,NAME,RaNi 4200,180
+54,NAME,0,173
+55,NAME,3G OMs tBuBrettPhos,165
+56,SMILES,P(C1CCCC1)(C(C)(C)C)C(C)(C)C.P(C1CCCC1)(C(C)(C)C)C(C)(C)C.[Fe],154
+57,NAME,RaNi 4100,144
+58,NAME,(Ir[dF(5CF3)ppy]2(dtbpy))PF6,144
+59,SMILES,[P+](CCC[P+](C1CCCC1)C1CCCC1)(C1CCCC1)C1CCCC1.F[B-](F)(F)F.F[B-](F)(F)F,143
+60,SMILES,n1c(c(c(n1c1ccccc1)c1ccccc1)n1nccc1P(C(C)(C)C)(C(C)(C)C)[Pd](Cl)Cl)c1ccccc1,142
+61,NAME,SPhos Pd G4,138
+62,SMILES,P(C(C)(C)C)(C(C)(C)C)c1ccc(N(C)C)cc1,132
+63,SMILES,C(P(C(C)(C)C)C(C)(C)C)(C)(C)C,128
+64,SMILES,P(c1c(Oc2c(P(c3ccccc3)c3ccccc3)cccc2)cccc1)(c1ccccc1)c1ccccc1,124
+65,SMILES,C1(C)(C)c2c(c(P(c3ccccc3)c3ccccc3)ccc2)Oc2c1cccc2P(c1ccccc1)c1ccccc1.c1ccc(c(c1)[Pd+])c1ccccc1NC.[O-]S(C)(=O)=O,124
+66,SMILES,P(c1ccccc1)(c1ccccc1)CCCP(c1ccccc1)c1ccccc1,123
+67,SMILES,c12c3c(c(c(cn3)C)C)ccc1c(c(cn2)C)C,121
+68,SMILES,P(c1ccccc1)(c1ccccc1)CCCCP(c1ccccc1)c1ccccc1,119
+69,NAME,3G OMs RockPhos,119
+70,NAME,C1-358,117
+71,SMILES,P(c1c(P(c2ccccc2)c2ccccc2)cccc1)(c1ccccc1)c1ccccc1,108
+72,SMILES,c12ccc3n2[Mn](n2c(c(c4nc(C=C4)c3c3c(c(c(c(c3F)F)F)F)F)c3c(c(c(c(c3F)F)F)F)F)ccc2c(c2C=Cc(n2)c1c1c(c(c(c(c1F)F)F)F)F)c1c(c(c(c(c1F)F)F)F)F)Cl,108
+73,SMILES,c12ccc3n2[Fe](n2c(c(c4nc(C=C4)c3c3c(c(c(c(c3F)F)F)F)F)c3c(c(c(c(c3F)F)F)F)F)ccc2c(c2C=Cc(n2)c1c1c(c(c(c(c1F)F)F)F)F)c1c(c(c(c(c1F)F)F)F)F)Cl,108
+74,SMILES,c12ccc3n2[Fe](n2c(c(c4nc(C=C4)c3c3ccccc3[N+]([O-])=O)c3c(cccc3)[N+]([O-])=O)ccc2c(c2C=Cc(n2)c1c1ccccc1[N+]([O-])=O)c1c(cccc1)[N+]([O-])=O)Cl,108
+75,SMILES,c1(c2ccccn2)ccccn1,104
+76,SMILES,c1(c2cc(ccn2)C(C)(C)C)cc(ccn1)C(C)(C)C,102
+77,SMILES,[Cu+].[P-](F)(F)(F)(F)(F)F.C(C)#N.C(C)#N.C(C)#N.C(C)#N,99
+78,SMILES,[B-](F)(F)(F)F.[Rh+].C1=CCCC=CCC1.C1=CCCC=CCC1,97
+79,SMILES,c1(c2nc(ccc2)C)nc(ccc1)C,96
+80,NAME,Rh(COD)2+BF4-,96
+81,SMILES,c12c(C(C(CS1(=O)=O)C(Nc1ccc(cc1)CCCCCCCCCC)=O)=O)cccc2,89
+82,SMILES,c1(c2c(P(C3CCCCC3)C3CCCCC3)cccc2)c(OC(C)C)cccc1OC(C)C,89
+83,SMILES,c12c(nc(cc1C(O)=O)c1ccccn1)cccc2,84
+84,SMILES,c1(c2nc3c(cc2)cccc3)nc2c(cc1)cccc2,84
+85,NAME,10% Pd/C (wet),84
+86,SMILES,C(C(F)(F)F)(O[Pd]OC(C(F)(F)F)=O)=O,84
+87,SMILES,c1(c2c(cc(cc2C(C)C)C(C)C)C(C)C)c(c(c(c(c1C)C)C)C)P(C(C)(C)C)C(C)(C)C,83
+88,SMILES,c1(c2ccccn2)nc(ccc1)C,82
+89,SMILES,C=C.C=C.C=C.C=C.Cl[Rh].Cl[Rh],82
+90,SMILES,[P+](CC[P+](C1CCCC1)C1CCCC1)(C1CCCC1)C1CCCC1.F[B-](F)(F)F.F[B-](F)(F)F,81
+91,SMILES,c1(c(P(C2CCCCC2)C2CCCCC2)cccc1)c1c(OC)cccc1OC,81
+92,SMILES,[P+](CCCC[P+](C(C)(C)C)C(C)(C)C)(C(C)(C)C)C(C)(C)C.F[B-](F)(F)F.F[B-](F)(F)F,78
+93,SMILES,c12c3c(c(c4ccccc4)ccn3)ccc1c(c1ccccc1)ccn2,76
+94,SMILES,c12c3c(ccc1c(ccn2)Cl)c(ccn3)Cl,75
+95,SMILES,C(CN(C)C)(O)=O,75
+96,SMILES,c1(cc(nc(n1)N)O)O,75
+97,SMILES,c1(cc(cc(c1c1c(ccc(c1P(C1CCCCC1)C1CCCCC1)OC)OC)C(C)C)C(C)C)C(C)C.c1(c(cccc1)[Pd]Cl)CCN,74
+98,NAME,Error: 23,74
+99,NAME,[Rh(OH)(cod)]2,74
+100,NAME,Pd(TFA)2,72
+101,SMILES,c12ccc3n2[Cu]n2c(c(c4nc(C=C4)c3c3c(c(c(c(c3F)F)F)F)F)c3c(c(c(c(c3F)F)F)F)F)ccc2c(c2C=Cc(n2)c1c1c(c(c(c(c1F)F)F)F)F)c1c(c(c(c(c1F)F)F)F)F,72
+102,SMILES,N.Cl,70
+103,SMILES,c12c3c(ccc1cccn2)cccn3,69
+104,SMILES,N([C@H]1[C@H](NC)CCCC1)C,69
+105,SMILES,N(C(C(=O)O)=O)c1c(cccc1C)C,68
+106,SMILES,N(CCN(C)C)(C)C,68
+107,SMILES,c1(ccccn1)C(N)=N.Cl,67
+108,NAME,Blank,66
+109,SMILES,c12c(cccn2)nnn1O,65
+110,SMILES,c1(P(c2ccccc2)c2ccccc2)c2Oc3c(C(C)(C)c2ccc1)cccc3P(c1ccccc1)c1ccccc1.[O-]S(C)(=O)=O.[Pd+]c1c(cccc1)c1ccccc1N.C(Cl)Cl,65
+111,SMILES,c12c3c(ccc1cccn2)cccn3.[Cu](Cl)Cl,65
+112,SMILES,c1(c2c3c(ccc2O)cccc3)c2c(ccc1O)cccc2,61
+113,SMILES,P(C(C)(C)C)(C(C)(C)C)CCCCCP(C(C)(C)C)C(C)(C)C,60
+114,SMILES,c12c3c(ccc1ccc(n2)C)ccc(n3)C,60
+115,SMILES,C([C@@H]1CCCN1)(O)=O,60
+116,SMILES,S(N[C@@H]1[C@@H](N)CCCC1)(c1ccc(cc1)C)(=O)=O,60
+117,SMILES,c12c3c(c(cc1cccn2)N)cccn3,60
+118,SMILES,c1(C(O)=O)ccc[nH]1,60
+119,SMILES,c1(c2c3c(ccc2)cccc3)c(P(C(C)(C)C)C(C)(C)C)ccc2c1cccc2,59
+120,SMILES,C(C(CC(C(C)(C)C)=O)=O)(C)(C)C,59
+121,SMILES,c1(c(cccc1)O)C=NO,59
+122,NAME,Xanthphos Pd G2,59
+123,SMILES,c1ccc(c(c1C(C)C)NC(C(=O)O)=O)C(C)C,56
+124,SMILES,P(C1CCCC1)(C1CCCCC1)C1CCCCC1.P(C1CCCC1)(C1CCCCC1)C1CCCCC1.[Fe],54
+125,SMILES,c1cnc(cc1)c1c(cccc1)[Ir](c1c(cccc1)c1ccccn1)c1ccccc1c1ccccn1,54
+126,SMILES,[Ir](c1c(c(cc(c1)F)F)c1ncccc1)(c1c(c(cc(c1)F)F)c1ncccc1)c1c(c(cc(c1)F)F)c1ncccc1,54
+127,SMILES,P(c1ccccc1)(c1ccccc1)CCP(c1ccccc1)c1ccccc1,51
+128,SMILES,P(c1ccccc1)(c1ccccc1)CCCCCP(c1ccccc1)c1ccccc1,50
+129,SMILES,[P+](CCCC[P+](C1CCCC1)C1CCCC1)(C1CCCC1)C1CCCC1.F[B-](F)(F)F.F[B-](F)(F)F,50
+130,SMILES,C(CNC)NC,50
+131,SMILES,C(CNC)CNC,49
+132,SMILES,c1(C(N(CC)CC)=O)c(cccc1)O,49
+133,SMILES,P(c1ccccc1)(c1ccccc1)CP(c1ccccc1)c1ccccc1,48
+134,SMILES,c1(c(c(c(c(c1C)C)NC(C(O)=O)=O)C)C)NC(C(O)=O)=O,48
+135,SMILES,c1(c(cccc1C)CC)NC(C(O)=O)=O,48
+136,SMILES,c1(c(cccc1C)C(C)(C)C)NC(C(O)=O)=O,48
+137,SMILES,C(N(C)C)CO,48
+138,SMILES,N(CCN(C)C)(CCN(C)C)C,48
+139,SMILES,C(C(CN)(C)C)N(C)C,48
+140,SMILES,c12c3c(ccc1ccc(n2)C(O)=O)ccc(n3)C(O)=O,48
+141,SMILES,c1(/C=C/C(/C=C/c2ccccc2)=O)ccccc1,48
+142,SMILES,c1(ccccn1)N,48
+143,SMILES,N1([C@H](C(O)=O)CCC1)C,48
+144,SMILES,c12c3c(ccc1cccn2)cccn3.[Pd](Cl)Cl,48
+145,NAME,Neocuproine.0.5H2O,48
+146,NAME,[Rh(cod)2]BF4 /(S)-Phanephos,48
+147,NAME,"Ir[COD(Cl)]2/(R,R)-DIPAMP",48
+148,NAME,Ir[COD(Cl)]2,48
+149,SMILES,c12ccc3n1[Cu]n1c(c(c4nc(C=C4)c3c3c(cccc3Cl)Cl)c3c(cccc3Cl)Cl)ccc1c(c1C=Cc(n1)c2c1c(cccc1Cl)Cl)c1c(cccc1Cl)Cl,48
+150,SMILES,c12ccc3n1[Pd]n1c(c(c4nc(C=C4)c3c3c(cccc3Cl)Cl)c3c(cccc3Cl)Cl)ccc1c(c1C=Cc(n1)c2c1c(cccc1Cl)Cl)c1c(cccc1Cl)Cl,48
+151,SMILES,c12ccc3n1[Co]n1c(c(c4nc(C=C4)c3c3c(cccc3Cl)Cl)c3c(cccc3Cl)Cl)ccc1c(c1C=Cc(n1)c2c1c(cccc1Cl)Cl)c1c(cccc1Cl)Cl,48
+152,SMILES,c12ccc3n1[Mn](n1c(c(c4nc(C=C4)c3c3c(cccc3Cl)Cl)c3c(cccc3Cl)Cl)ccc1c(c1C=Cc(n1)c2c1c(cccc1Cl)Cl)c1c(cccc1Cl)Cl)Cl,48
+153,SMILES,c12ccc3n2[Co]n2c(c(c4nc(C=C4)c3c3c(c(c(c(c3F)F)F)F)F)c3c(c(c(c(c3F)F)F)F)F)ccc2c(c2C=Cc(n2)c1c1c(c(c(c(c1F)F)F)F)F)c1c(c(c(c(c1F)F)F)F)F,48
+154,SMILES,N(C(C(NNC(C)C)=O)=O)NC(C)C,47
+155,SMILES,[Pd](Cl)Cl.P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1,47
+156,SMILES,P(c1ccco1)(c1ccco1)c1ccco1,45
+157,SMILES,c1cnc(cc1)C(N)=NC#N,44
+158,SMILES,c12c([nH]c([nH]1)=O)cc(cc2)C,44
+159,SMILES,[N+]1(=CN(c2c(C(C)C)cccc2C(C)C)CC1)c1c(C(C)C)cccc1C(C)C.[Cl-],44
+160,SMILES,[P+](CC[P+](C1CCCCC1)C1CCCCC1)(C1CCCCC1)C1CCCCC1.F[B-](F)(F)F.F[B-](F)(F)F,43
+161,SMILES,[Ni],42
+162,SMILES,c1(cc(cc(c1c1c(c(ccc1OC)OC)P(C(C)(C)C)C(C)(C)C)C(C)C)C(C)C)C(C)C,41
+163,SMILES,[P+](CCCC[P+](C1CCCCC1)C1CCCCC1)(C1CCCCC1)C1CCCCC1.F[B-](F)(F)F.F[B-](F)(F)F,40
+164,NAME,MnBr(CO)5,40
+165,SMILES,C(/C1=N[C@H](CO1)c1ccccc1)(=C\1N[C@H](CO1)c1ccccc1)C#N,39
+166,SMILES,CC(P(C(C)(C)C)C)(C)C,39
+167,SMILES,P(C1CCCCC1)(C1CCCCC1)CCCP(C1CCCCC1)C1CCCCC1,38
+168,SMILES,c1(C(=NC#N)N)ccccn1,38
+169,SMILES,c1(cc(ccn1)OC)C(N)=N,38
+170,NAME,Naud SL-N011-2,38
+171,SMILES,c12c([Pd-](N(CC1)C)[P+](c1c(c3c(cc(cc3C(C)C)C(C)C)C(C)C)cccc1)(C1CCCCC1)C1CCCCC1)cccc2,37
+172,SMILES,c1(c2c(P(C3CCCCC3)C3CCCCC3)c(ccc2OC)OC)c(cc(cc1C(C)C)C(C)C)C(C)C,37
+173,SMILES,c12c(CCCC1=NO)cccn2,36
+174,SMILES,c12c(ccc(n2)O)cccc1O,36
+175,SMILES,c12c3c(ccc1c(ccn2)O)c(ccn3)O,36
+176,SMILES,I1(c2c(C(O1)=O)cccc2)(OC(C)=O)(OC(C)=O)OC(C)=O,35
+177,NAME,(S)-Phanephos,35
+178,SMILES,c1c(nc(cc1OC)C(=N)N)C(=N)N,34
+179,SMILES,C1(C(CCCC1)=O)C(C)=O,33
+180,NAME,(crotyl)chloro(PtBu3)palladium(II),33
+181,SMILES,C(N(Cc1nnn(c1)CCCO)Cc1nnn(c1)CCCO)c1nnn(c1)CCCO,32
+182,SMILES,c1(c(cc(c(c1)Cl)OC)OC)NC(Nc1c(cc(c(c1)Cl)OC)OC)=O,32
+183,NAME,Pd(OAc)2/Only,32
+184,SMILES,C/1(=C(/C2=N[C@@H](c3ccc(C(C)(C)C)cc3)CO2)C#N)N[C@H](CO1)c1ccc(C(C)(C)C)cc1,31
+185,SMILES,c1(c(ccc(c1)OC)OC)NC(Nc1c(cc(cc1)[N+](=O)[O-])OC)=O,30
+186,SMILES,c1(CNCCNCc2ccccc2)ccccc1,30
+187,SMILES,c1(C(CC(c2ccccn2)=O)=O)ccccn1,29
+188,NAME,"(R,R)-DIPAMP",29
+189,SMILES,c1c(c(ccc1)[Pd]Cl)c1ccccc1N.P(C(C)(C)C)(C(C)(C)C)c1ccc(cc1)N(C)C,29
+190,SMILES,c1cccc(n1)C1=NCCN1,28
+191,NAME,(R)-(+)-XylBINAP,28
+192,NAME,Taniaphos SL-T002-1,28
+193,SMILES,c1(ccc(cc1)C)C(C)C.c1(ccc(cc1)C)C(C)C.[Ru](Cl)Cl.[Ru](Cl)Cl,28
+194,NAME,RuPhos Pd G4,28
+195,NAME,[Ir(dtbbpy)(ppy)2]PF6,28
+196,SMILES,c12ccccc1C1(OC2=O)c2c(Oc3c1ccc(c3)O)cc(cc2)O,28
+197,NAME,Ru(BPY)3,28
+198,SMILES,[Ru+2].[P-](F)(F)(F)(F)(F)F.[P-](F)(F)(F)(F)(F)F.c1cccc(n1)c1ncccc1.c1cccc(n1)c1ncccc1.c1cccc(n1)c1ncccc1,28
+199,SMILES,[Ir](c1c(c2c3c(ccn2)cccc3)cccc1)(c1c(c2c3c(ccn2)cccc3)cccc1)c1c(c2c3c(ccn2)cccc3)cccc1,28
+200,SMILES,C1CCCC1.[Fe].C[C@@H](C1CCCC1P(c1cc(c(c(c1)C)OC)C)c1cc(c(c(c1)C)OC)C)P(c1c(cccc1)C)c1c(cccc1)C,27
+201,NAME,CTH-(R)-BINAM,27
+202,SMILES,c1ccc(c(c1)c1c(cccc1)N)[Pd]Cl.c1(ccccc1c1c(cccc1OC(C)C)OC(C)C)P(C1CCCCC1)C1CCCCC1,27
+203,SMILES,c1(cccc(n1)C(N)=NC#N)C(N)=NC#N,26
+204,SMILES,c1(cccc(n1)C(=N)N)C(=N)N,26
+205,NAME,Mandyphos SL-M002-1,26
+206,NAME,"(R,R)-Me-BPE",26
+207,SMILES,[Ru]1(I[Ru](I1)I)I.C1(CCC(CC1)C)C(C)C.C1(CCC(CC1)C)C(C)C,26
+208,SMILES,C1(C(C(C(C1C)C)C)C)C.C1(C(C(C(C1C)C)C)C)C.[Ir](Cl)Cl.[Ir](Cl)Cl,26
+209,NAME,[Ir{dF(CF3)ppy}2(dtbpy)]PF6,26
+210,SMILES,P(C1C([C@H](P(c2ccccc2)c2ccccc2)C)CCC1)(C1CCCCC1)C1CCCCC1.C1CCCC1.[Fe],25
+211,NAME,"(R,R)-Me-DuPhos",25
+212,NAME,"(S,S,R,R)-TangPhos",25
+213,NAME,Ru(Cp*)4,25
+214,SMILES,C(C(O)=O)(O)=O,25
+215,SMILES,c1(NC(C(NCc2ccc(cc2)C)=O)=O)c(cc(cc1)C)C,24
+216,SMILES,C(c1ccccc1)(c1ccccc1)NC(C(Nc1c(cccc1C(C)C)C(C)C)=O)=O,24
+217,SMILES,c1(cc(c(c(c1)C(C)(C)C)NC(=O)C(N[C@H](C(=O)N[C@@H]1C(OC(C1)=O)O)C)=O)C(C)(C)C)C(C)(C)C,24
+218,SMILES,c1c(ccc(c1C(O)=O)NC(=O)C(=O)NCc1ccccc1)C#N,24
+219,NAME,10% Pd/C E101,24
+220,NAME,"(Ra,S)-Ph-Bn-SIPHOX",24
+221,NAME,"(Ra,S)-DTB-Bn-SIPHOX",24
+222,SMILES,P(C)(C)C,24
+223,SMILES,c1ccccc1N,24
+224,SMILES,CN,24
+225,SMILES,C(C(O)=O)(C)(Cl)Cl,24
+226,SMILES,c1(P(C2CCCCC2)C2CCCCC2)c(c2ccccc2)cccc1,24
+227,SMILES,[Sb-](F)(F)(F)(F)(F)F.[Sb-](F)(F)(F)(F)(F)F.C1(C(C(C(C1C)C)C)C)C.C(C)#N.C(C)#N.C(C)#N.[Rh+2],24
+228,SMILES,P1(C2CCCC2)[C@H](CC[C@@H]1C)C.P1(C2CCCC2)[C@H](CC[C@@H]1C)C.[Fe],23
+229,SMILES,C1(C([C@H](P(C2CCCCC2)C2CCCCC2)C)CCC1)P(C1CCCCC1)C1CCCCC1.[Fe].C1CCCC1,23
+230,NAME,dtbpb.BF4,23
+231,NAME,(R)-DM-SEGPHOS,23
+232,NAME,R-Josiphos SL-J011-1,23
+233,NAME,RuPhos Pd G3,23
+234,NAME,(R)-(+)-Cl-MeO-BIPHEP,22
+235,SMILES,c12n(c3c(c(c1c(nn2C)C)=O)ccc(c3)Cl)CCN(CC)CC,22
+236,NAME,(IPr)Pd(Allyl)Cl,22
+237,SMILES,c1cccc(c1CCN)[Pd]Cl.C(C)(C)(P(C(C)(C)C)c1ccccc1c1c(cc(cc1C(C)C)C(C)C)C(C)C)C,22
+238,NAME,(NHC)Pd(Imd)Cl,22
+239,SMILES,C1=CN(C(N1c1c(cccc1C(C)C)C(C)C)[Pd]Cl)c1c(cccc1C(C)C)C(C)C.CCC,22
+240,SMILES,C1C[C@@H]([C@H](CC1)N=Cc1ccccn1)N=Cc1ccccn1,21
+241,NAME,C1-300,21
+242,NAME,C1-310,21
+243,NAME,C1-360,21
+244,NAME,C1-350,21
+245,NAME,C1-361,21
+246,NAME,C1-351,21
+247,NAME,C1-311,21
+248,NAME,C1-368,21
+249,NAME,C1-308,21
+250,NAME,C1-318,21
+251,NAME,C1-304,21
+252,NAME,C1-314,21
+253,NAME,Ru-721,21
+254,NAME,"(R)-(+)-MeO-BIPHEP, SL-A101-1",21
+255,SMILES,c1c(cc(c(c1C(C)C)c1c(P(C2CCCCC2)C2CCCCC2)cccc1)C(C)C)C(C)C.c1cc(c(cc1)CCN)[Pd]Cl.CC(OC)(C)C,21
+256,NAME,cataCXium A Pd G3,21
+257,NAME,Pd-PEPPS-IPent,20
+258,SMILES,C1(C(C(C(C1c1ccccc1)c1ccccc1)c1ccccc1)c1ccccc1)c1ccccc1.P(C1CCCC1)(C(C)(C)C)C(C)(C)C.[Fe],20
+259,SMILES,c1(P(CC)CC)ccc(cc1)N(C)C,20
+260,NAME,dtbpb.BF4 / Pd(OAc)2,19
+261,SMILES,P(C1C([C@H](P(C(C)(C)C)C(C)(C)C)C)CCC1)(c1ccccc1)c1ccccc1.C1CCCC1.[Fe],19
+262,SMILES,c1(cc(P(c2cc(cc(c2)C(F)(F)F)C(F)(F)F)C2CCCC2[C@@H](C)P(C2CCCCC2)C2CCCCC2)cc(c1)C(F)(F)F)C(F)(F)F.C1CCCC1.[Fe],19
+263,SMILES,c1(c2cc(ccn2)OC)cc(ccn1)OC,19
+264,NAME,SPhos Palladacycle,19
+265,NAME,(QPhos)Pd(crotyl)Cl,19
+266,NAME,dcyppe.BF4 / Pd(OAc)2,18
+267,SMILES,c1(c2c(cccc2)N(C)C)c(cccc1)[Pd]Cl.C1([C@H]2C[C@@H](C1)CC2)PC1[C@@H]2C[C@H](C1)CC2,18
+268,NAME,(QPhos)Pd(allyl)Cl,18
+269,NAME,(DTBNpP)Pd(allyl)Cl,18
+270,SMILES,n1(c(n(c2c(C(C)C)cccc2C(C)C)cc1)=[Pd])c1c(C(C)C)cccc1C(C)C.n1(c(n(c2c(C(C)C)cccc2C(C)C)cc1)=[Pd])c1c(C(C)C)cccc1C(C)C.c12c(C(CCC1=O)=O)cccc2.c12c(C(CCC1=O)=O)cccc2,18
+271,SMILES,c1(n(ccn1c1c(cc(cc1C)C)C)c1c(cc(cc1C)C)C)=[Pd].c1(n(ccn1c1c(cc(cc1C)C)C)c1c(cc(cc1C)C)C)=[Pd].C1(C=CC(c2c1cccc2)=O)=O.C1(C=CC(c2c1cccc2)=O)=O,18
+272,SMILES,C1(C(C(C(C1C)C)C)C)C.[Ir](c1c(C(=Nc2ccc(cc2)OC)C)ccc(c1)C#N)Cl,18
+273,SMILES,[Pd].c1(/C=C/C(/C=C/c2ccccc2)=O)ccccc1.c1(/C=C/C(/C=C/c2ccccc2)=O)ccccc1,18
+274,NAME,(S)-Xylyl-P-Phos,17
+275,NAME,(crotyl)chloro(Amphos)palladium (II),17
+276,SMILES,P(C(C)(C)C)(C(C)(C)C)C(C)(C)C.c1(c2c(N)cccc2)c([Pd]Cl)cccc1,17
+277,SMILES,c1cccc(c1[Pd]Cl)c1ccccc1N.c1cc(c(cc1)c1ccccc1)P(C1CCCCC1)C1CCCCC1,17
+278,NAME,(AmPhos)Pd(allyl)Cl,17
+279,SMILES,c1(cccc(c1c1ccccc1P(C1CCCCC1)C1CCCCC1)OC(C)C)OC(C)C.c1(c(cccc1)[Pd]Cl)CCN.C(C)(C)(OC)C,17
+280,NAME,Pd(crotyl)(dtbNpP)Cl,17
+281,SMILES,c1ccc(c(c1)c1c(cccc1)N)[Pd]Cl.c1(ccccc1c1c(cccc1OC)OC)P(C1CCCCC1)C1CCCCC1,17
+282,SMILES,[Ni](Br)Br.P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1,17
+283,SMILES,c1(n(c2c(cc(cc2C)C)C)ccn1c1c(cc(cc1C)C)C)=[Pd](Cl)CC=C,17
+284,SMILES,[O-]S(=O)(C)=O.[Pd+]c1ccccc1c1c(N)cccc1.C12(CC3CC(C1)CC(C2)C3)P(CCCC)C12CC3CC(C1)CC(C2)C3,17
+285,NAME,3G OMs P(PCy)3,17
+286,SMILES,c1(c2c(c(c3ccccc3)n(n2)c2ccccc2)n2c(ccn2)P(C(C)C)C(C)C)ccccc1,17
+287,NAME,(S)-Methyl BoPhoz,16
+288,SMILES,c1([P@@](c2ccccc2)CC[P@@](c2c(cccc2)OC)c2ccccc2)c(cccc1)OC,16
+289,SMILES,P1([C@H]([C@H]2P(Cc3c(c4c2ccc2c4cccc2)c2c(cc3)cccc2)C(C)(C)C)c2c(c3c(C1)ccc1c3cccc1)c1c(cc2)cccc1)C(C)(C)C,16
+290,NAME,dcyppe.BF4,16
+291,SMILES,c1c(nc(cc1)CNC)CNC,16
+292,SMILES,c1ccc2c(c1)c(ccc2)[Ni](P(c1ccccc1)(c1ccccc1)c1ccccc1)(P(c1ccccc1)(c1ccccc1)c1ccccc1)Cl,16
+293,SMILES,Cl[Ni]Cl.C1(P(C2CCCCC2)C2CCCCC2)CCCCC1.C1(P(C2CCCCC2)C2CCCCC2)CCCCC1,16
+294,SMILES,P(c1c(C[Pd]OC(C)=O)cccc1)(c1c(cccc1)C)c1c(cccc1)C.P(c1c(C[Pd]OC(C)=O)cccc1)(c1c(cccc1)C)c1c(cccc1)C,16
+295,NAME,(Ir[dF(CF3)ppy]2(dtbpy))PF6,16
+296,SMILES,C1CCCC1P(C1CCCCC1)C1CCCCC1.C1CCCC1.C1CCC(C1)P(c1ccccc1)C1C(CCC1)[C@H](C)N(C)C.[Fe].[Fe],15
+297,NAME,Naud SL-N012-2,15
+298,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2cccc3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1cccc2,15
+299,SMILES,[Fe].C1CCCC1.C1CCCC1.C1C(C(CC1)C1C(CCC1)C=1OC[C@@H](N1)C(C)C)C=1OC[C@@H](N1)C(C)C.[Fe],15
+300,SMILES,c1(c2c(P(c3ccc(cc3)C)c3ccc(cc3)C)ccc3c2cccc3)c(P(c2ccc(cc2)C)c2ccc(cc2)C)ccc2c1cccc2,15
+301,NAME,SL-J015-1,15
+302,SMILES,c1(c2c3c(ccc2NP(c2ccccc2)c2ccccc2)cccc3)c2c(ccc1NP(c1ccccc1)c1ccccc1)cccc2,15
+303,SMILES,C1CCCC1.[Fe].C[C@@H](C1CCCC1P(c1ccco1)c1occc1)P(c1c(cccc1)C)c1c(cccc1)C,15
+304,SMILES,C1CCCC1.[Fe].C[C@@H](C1CCCC1P(c1cccc2c1cccc2)c1cccc2c1cccc2)P(c1cc(cc(c1)C)C)c1cc(cc(c1)C)C,15
+305,SMILES,c1(P(c2ccccc2)c2ccccc2)c(c2c(cc1)cccc2)C(N[C@H]1[C@H](NC(c2c(P(c3ccccc3)c3ccccc3)ccc3c2cccc3)=O)CCCC1)=O,15
+306,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)cc(nc2OC)OC)c(P(c2ccccc2)c2ccccc2)cc(nc1OC)OC,15
+307,SMILES,P([C@H]1C[C@H](NC1)CP(c1ccccc1)c1ccccc1)(c1ccccc1)c1ccccc1,15
+308,SMILES,P(c1ccccc1)(c1ccccc1)[C@@H]([C@H](P(c1ccccc1)c1ccccc1)C)C,15
+309,SMILES,C1(=N[C@@H](C(C)(C)C)CO1)c1c(P(c2ccccc2)c2ccccc2)cccc1,15
+310,SMILES,c1([C@@H]([C@H](c2ccccc2)N)NS(c2ccc(cc2)C)(=O)=O)ccccc1,15
+311,NAME,"(R,R)-QuinoxP*",15
+312,SMILES,C1CCCC1.[Fe].C(P(C(C)(C)C)C1CCCC1[C@@H](C)P(c1ccccc1C)c1ccccc1C)(C)(C)C,15
+313,SMILES,C1CCCC1.[Fe].C[C@@H](C1CCCC1P(c1cccc2c1cccc2)c1cccc2c1cccc2)P(C(C)(C)C)C(C)(C)C,15
+314,SMILES,P(c1ccccc1)(c1ccccc1)C=1[C@H]2CC[C@@](C1c1c(c(sc1C)C)P(c1ccccc1)c1ccccc1)(C2(C)C)C,15
+315,SMILES,C1(=N[C@@H](CO1)C(C)C)C1C(P(c2ccccc2)c2ccccc2)CCC1.[Fe].C1CCCC1,15
+316,SMILES,P(c1cc(cc(c1)C(F)(F)F)C(F)(F)F)(c1cc(cc(c1)C(F)(F)F)C(F)(F)F)C1CCCC1.P(c1cc(cc(c1)C)C)(c1cc(cc(c1)C)C)[C@@H](C1CCCC1)C.[Fe],15
+317,SMILES,c12c(cc(cc1)CNC(C(Nc1c(cc(cc1C)C)C)=O)=O)OCO2,15
+318,SMILES,c12c(cc(cc1)CNC(C(Nc1c(cc(cc1)C)C)=O)=O)OCO2,15
+319,NAME,[RuCl2(PPh3)3],15
+320,SMILES,P(C1CCCC1)(C(C)C)C(C)C.P(C1CCCC1)(C(C)C)C(C)C.[Fe],15
+321,SMILES,P(C1CCCCC1)(C1CCCCC1)C(C)(C)C,15
+322,NAME,3G OMs RuPhos,15
+323,SMILES,P(c1ccccc1)(c1ccccc1)CCCP(c1ccccc1)c1ccccc1.[Ni](Cl)Cl,15
+324,NAME,[Rh(nbd)2]+BF4-,15
+325,NAME,(R)-Xyl-SDP,14
+326,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2OCO3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1OCO2,14
+327,SMILES,P1([C@H]([C@@H]2[C@H]([C@@H]1C)OC(O2)(C)C)C)C1CCCC1.P1([C@H]([C@@H]2[C@H]([C@@H]1C)OC(O2)(C)C)C)C1CCCC1.[Fe],14
+328,SMILES,C1CCCC1.[Fe].c1(cc(P([C@@H](C)C2CCCC2c2c(P(c3cc(c(c(c3)C)OC)C)c3cc(c(c(c3)C)OC)C)cccc2)c2cc(cc(c2)C(F)(F)F)C(F)(F)F)cc(c1)C(F)(F)F)C(F)(F)F,14
+329,SMILES,P(c1ccccc1)(c1ccccc1)C[C@@H]1[C@@H](CP(c2ccccc2)c2ccccc2)OC(O1)(C)C,14
+330,SMILES,[Fe].C1(CCCC1P(c1ccccc1)C1CCCC1)[C@@H](N(C)C)C.[Fe].C1CCCC1.C1CCCC1P(c1ccccc1)C1CCCC1[C@@H](N(C)C)C.[Fe].C1CCCC1,14
+331,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)cc(nc2OC)OC)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)cc(nc1OC)OC,14
+332,SMILES,Cc1cc(cc(C)c1OC)P(c1cc(C)c(c(C)c1)OC)C1CCCC1[C@@H](C)P(C1CCCCC1)C1CCCCC1.C1CCCC1.[Fe],14
+333,SMILES,[Fe].c1(cc(cc(P(c2cc(cc(c2)C(F)(F)F)C(F)(F)F)C2CCCC2[C@H](c2ccccc2)N(C)C)c1)C(F)(F)F)C(F)(F)F.c1(cc(cc(c1)P(C1CCCC1[C@@H](N(C)C)c1ccccc1)c1cc(cc(c1)C(F)(F)F)C(F)(F)F)C(F)(F)F)C(F)(F)F,14
+334,SMILES,P1([C@@H]([C@@H]2P(Cc3c2cccc3)C(C)(C)C)c2c(C1)cccc2)C(C)(C)C,14
+335,SMILES,P(c1c(c(c(c(c1F)F)F)F)F)(c1c(c(c(c(c1F)F)F)F)F)CCP(c1c(c(c(c(c1F)F)F)F)F)c1c(c(c(c(c1F)F)F)F)F,14
+336,SMILES,P(c1c(C2=N[C@H](CO2)C(C)C)cccc1)(c1ccccc1)c1ccccc1,14
+337,SMILES,c1(c2c(NP(c3ccccc3)c3ccccc3)ccc3c2CCCC3)c(NP(c2ccccc2)c2ccccc2)ccc2c1CCCC2,14
+338,SMILES,c12c3c(P(c4ccccc4)c4ccccc4)cccc3OCCCOc2cccc1P(c1ccccc1)c1ccccc1,14
+339,SMILES,c1(P(c2ccccc2)c2ccccc2)c2CCc3cc(c(CCc(c1)cc2)cc3)P(c1ccccc1)c1ccccc1,14
+340,SMILES,C1[C@@H](P([C@H](C1)C(C)C)CCP1[C@H](CC[C@@H]1C(C)C)C(C)C)C(C)C,14
+341,SMILES,P(c1ccccc1)(c1ccccc1)[C@H](C[C@@H](P(c1ccccc1)c1ccccc1)C)C,14
+342,SMILES,c12c3c4c(ccc3op(oc2ccc2c1cccc2)N(C)C)cccc4,14
+343,SMILES,c1(c(P2[C@@H](CC[C@H]2C)C)cccc1)P1[C@@H](CC[C@H]1C)C,14
+344,SMILES,c1([C@@H]([C@H](c2ccccc2)N)NS(C)(=O)=O)ccccc1,14
+345,SMILES,P1([C@@H]([C@@H]2P(C(C)(C)C)CCC2)CCC1)C(C)(C)C,14
+346,SMILES,P1([C@@H](CC[C@H]1C)C)CCP1[C@@H](CC[C@H]1C)C,14
+347,SMILES,P1(c2c(P3[C@H](CC[C@@H]3C(C)C)C(C)C)cccc2)[C@H](CC[C@@H]1C(C)C)C(C)C,14
+348,SMILES,C1(P(c2ccccc2)c2ccccc2)C(C2=N[C@@H](CO2)C(C)(C)C)CCC1.C1CCCC1.[Fe],14
+349,SMILES,P1(c2c(P3[C@@H](CC[C@H]3CC)CC)cccc2)[C@@H](CC[C@H]1CC)CC,14
+350,SMILES,c1(P(c2occc2)C2CCCC2[C@@H](C)P(C(C)(C)C)C(C)(C)C)ccco1.C1CCCC1.[Fe],14
+351,SMILES,CCc1cc2ccccc2c2c1O[PH](=O)Oc1c-2cc2ccccc2c1CC,14
+352,SMILES,c1(c2c3OC(Oc3ccc2P(c2ccccc2)c2ccccc2)(F)F)c2OC(Oc2ccc1P(c1ccccc1)c1ccccc1)(F)F,14
+353,SMILES,P([C@H]1[C@H](P(c2ccccc2)c2ccccc2)[C@@H]2C[C@H]1C=C2)(c1ccccc1)c1ccccc1,14
+354,NAME,(R)-Nauds Catalys -Ru,14
+355,SMILES,P(CC(C)C)(CC(C)C)CC(C)C,14
+356,SMILES,c1(c(cccc1)P(C1CCCCC1)C1CCCCC1)c1c(cccc1N(C)C)N(C)C.c1(ccccc1c1ccccc1N)[Pd]Cl,14
+357,SMILES,CC(P(C(C)(C)C)c1ccccc1c1c(cc(cc1C(C)C)C(C)C)C(C)C)(C)C.c1ccc(c(c1)c1c(N)cccc1)[Pd+].[O-]S(C)(=O)=O,14
+358,NAME,SPhos Pd G3,14
+359,NAME,BrettPhos Pd 2G,14
+360,NAME,XPhos Pd 2G,14
+361,SMILES,c1c(c(c(cc1)C(C)C)N1CN(C=C1)c1c(cccc1C(C)C)C(C)C)C(C)C.n1cccc(c1)Cl.[Pd](Cl)Cl,14
+362,SMILES,c1(ccccc1c1ccccc1N)[Pd+].[O-]S(C)(=O)=O.FC(c1cc(C(F)(F)F)cc(P(c2c(c(ccc2OC)OC)c2c(cc(cc2C(C)C)C(C)C)C(C)C)c2cc(C(F)(F)F)cc(C(F)(F)F)c2)c1)(F)F,14
+363,SMILES,c1c(c(ccc1)[Pd+])c1ccccc1N.S(=O)([O-])(=O)C.c1(c2c(cc(cc2C(C)C)C(C)C)C(C)C)c(cccc1)P(C1CCCCC1)C1CCCCC1,14
+364,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2OCCO3)c(P(c2ccccc2)c2ccccc2)ccc2c1OCCO2,13
+365,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)cccc2OC)c(P(c2ccccc2)c2ccccc2)cccc1OC,13
+366,SMILES,C1CCCC1.[Fe].c1ccc(cc1)P(c1ccccc1)C1CCCC1[C@H](C)P(c1cc(C)cc(C)c1)c1cc(C)cc(C)c1,13
+367,NAME,(R)-Tol-SDP,13
+368,SMILES,C1(C(P(C2CCCCC2)C2CCCCC2)CCC1)[C@H](c1c(P(C2CCCCC2)C2CCCCC2)cccc1)N(C)C.C1CCCC1.[Fe],13
+369,NAME,(R)-SDP,13
+370,SMILES,c12c3c(CP(Cc1ccc1c2cccc1)C1CCCC1)ccc1c3cccc1.c12c3c(CP(Cc1ccc1c2cccc1)C1CCCC1)ccc1c3cccc1.[Fe],13
+371,SMILES,[Fe].C1CCCC1.[Fe].C1CCCC1.C1CC(C(C1)P(c1ccccc1)c1ccccc1)C1CCCC1P(c1ccccc1)c1ccccc1,13
+372,SMILES,c1(c2c(P(c3cc(c(c(c3)C(C)(C)C)OC)C(C)(C)C)c3cc(c(c(c3)C(C)(C)C)OC)C(C)(C)C)ccc3c2OCO3)c(P(c2cc(c(c(c2)C(C)(C)C)OC)C(C)(C)C)c2cc(c(c(c2)C(C)(C)C)OC)C(C)(C)C)ccc2c1OCO2,13
+373,SMILES,C1CCCC1.[Fe].c1ccc(cc1)P(c1ccccc1)c1ccccc1C1CCCC1[C@H](C)P(C1[C@H]2CC[C@@H](C1)C2)C1[C@@H]2CC[C@H](C1)C2,13
+374,SMILES,c12c3c(CP(Cc1ccc1c2cccc1)CCNCCP1Cc2c(c4c(C1)ccc1c4cccc1)c1c(cc2)cccc1)ccc1c3cccc1,13
+375,SMILES,p1(N([C@H](c2ccccc2)C)[C@H](c2ccccc2)C)oc2c(c3c(o1)ccc1c3cccc1)c1c(cc2)cccc1,13
+376,SMILES,C1CCCC1.[Fe].C1CC(P([C@@H](C)C2CCCC2c2c(P(c3ccccc3)c3ccccc3)cccc2)C2CCCCC2)CCC1,13
+377,SMILES,c1(c(c(C=N[C@@H]2[C@@H](N=Cc3c(c(cc(c3)C(C)(C)C)CN3CCOCC3)O)CCCC2)cc(c1)C(C)(C)C)O)CN1CCOCC1,13
+378,SMILES,N([C@@H]1[C@@H](NS(c2ccc(cc2)C)(=O)=O)CCCC1)S(c1ccc(cc1)C)(=O)=O,13
+379,SMILES,c12c([C@@H]([C@@H](C1)O)N)cccc2,13
+380,SMILES,c1(C(C)(C)C)cc(C(C)(C)C)cc(P(c2cccc3c2C2(CC3)c3c(C4=N[C@H](CO4)Cc4ccccc4)cccc3CC2)c2cc(C(C)(C)C)cc(C(C)(C)C)c2)c1,13
+381,NAME,Naud SL-N008-2,13
+382,SMILES,c1(OC)c(cc(P(c2cc(c(OC)c(c2)C)C)C2CCCC2[C@H](C)P(C(C)(C)C)C(C)(C)C)cc1C)C.C1CCCC1.[Fe],13
+383,SMILES,C(c1cc(C(F)(F)F)cc(N2C(C(=C(C2=O)P2[C@@H](CC[C@H]2C)C)P2[C@@H](CC[C@H]2C)C)=O)c1)(F)(F)F,13
+384,SMILES,C1(C(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)CCC1)[C@H](N(C)C)c1ccccc1.C1(C(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)CCC1)[C@H](N(C)C)c1ccccc1.[Fe],13
+385,NAME,Xantphos Pd G2,13
+386,SMILES,c1(ccccn1)C=NO,13
+387,SMILES,c1(c(C(C)C)cccc1C(C)C)n1c[n+](cc1)c1c(C(C)C)cccc1C(C)C.[Cl-],13
+388,SMILES,p1(oc2c(c3c(o1)ccc1c3cccc1)c1c(cc2)cccc1)N(CC)CC,13
+389,SMILES,P(C(C)(C)C)(C(C)(C)C)C(C)(C)C.P(C(C)(C)C)(C(C)(C)C)C(C)(C)C.[Pd]Br.[Pd]Br,13
+390,SMILES,P(C(C)(C)C)(C(C)(C)C)CCCC,13
+391,SMILES,c1(c(P(C(C)(C)C)C(C)(C)C)cccc1)c1c(cccc1)N(C)C,13
+392,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)ccc(c2OC)Cl)c(P(c2ccccc2)c2ccccc2)ccc(c1OC)Cl,12
+393,NAME,Naud SL-N013-1,12
+394,SMILES,c1(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)c2CCc3cc(c(CCc(c1)cc2)cc3)P(c1cc(cc(c1)C)C)c1cc(cc(c1)C)C,12
+395,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2OCO3)c(P(c2ccccc2)c2ccccc2)ccc2c1OCO2,12
+396,SMILES,C1(C(P(C2CCCCC2)C2CCCCC2)CCC1)[C@H](N(C)C)c1ccccc1.C1(C(P(C2CCCCC2)C2CCCCC2)CCC1)[C@H](N(C)C)c1ccccc1.[Fe],12
+397,SMILES,P(C1C([C@H](P(C(C)(C)C)C(C)(C)C)C)CCC1)(c1ccc(cc1)C(F)(F)F)c1ccc(cc1)C(F)(F)F.C1CCCC1.[Fe],12
+398,SMILES,C1CCCC1.[Fe].C[C@H](C1CCCC1P(c1cc(c(c(c1)C)OC)C)c1cc(c(c(c1)C)OC)C)P(c1cc(cc(c1)C)C)c1cc(cc(c1)C)C,12
+399,SMILES,c1cccc(P(c2cccc3c2C2(CC3)c3c(C4=N[C@H](CO4)Cc4ccccc4)cccc3CC2)c2ccccc2)c1,12
+400,SMILES,C(P(C(C)(C)C)C1CCCC1[C@@H](C)P(c1ccccc1)c1ccccc1)(C)(C)C.C1CCCC1.[Fe],12
+401,SMILES,OC(=O)CNC(=O)c1ccccn1,12
+402,SMILES,C(NCC(=O)O)(c1ncccc1)=O,12
+403,NAME,5% Pt/C,12
+404,NAME,5% Ru/C,12
+405,NAME,(R)-Xylyl-P-Phos,12
+406,SMILES,c1(c2c(cc3c1cccc3)cccc2)C(O)=O,12
+407,SMILES,F[B-](F)(F)F,12
+408,SMILES,C(C)N,12
+409,SMILES,C(C(O)=O)OC,12
+410,SMILES,C1(NC2CCCCC2)CCCCC1,12
+411,SMILES,P(c1ccccc1)(C1CCCCC1)C1CCCCC1,12
+412,SMILES,N1(CN(c2c(cc(cc2C)C)C)C=C1)c1c(cc(cc1C)C)C,12
+413,SMILES,c1cn(c[n+]1C(C)C)C(C)C.[B-](F)(F)(F)F,12
+414,SMILES,N1(c2c(cc(cc2C)C)C)C=[N+](CC1)c1c(cc(cc1C)C)C.[Cl-],12
+415,SMILES,[n+]1(cn(cc1)C1CCCCC1)C1CCCCC1.[B-](F)(F)(F)F,12
+416,SMILES,P(C1CCCCC1)(C1CCCCC1)CC,12
+417,SMILES,n1(c[n+](cc1)C(C)C)C(C)C.[Cl-],12
+418,SMILES,[n+]1([C@]23C[C@H]4C[C@@H](C3)C[C@H](C2)C4)cn([C@@]23C[C@H]4C[C@H](C3)C[C@H](C2)C4)cc1.[B-](F)(F)(F)F,12
+419,NAME,P(t-Bu)3 Pd G4,12
+420,SMILES,c1ccc(c(c1)N)c1ccccc1[Pd+].[O-]S(C)(=O)=O.CC(CP(C(C)(C)C)C(C)(C)C)(C)C,12
+421,SMILES,[Pd](Cl)Cl.P(C1CCCCC1)(C1CCCCC1)N1CCCCC1.P(C1CCCCC1)(C1CCCCC1)N1CCCCC1,12
+422,NAME,PCy3 Pd G4,12
+423,NAME,XPhos Pd G4,12
+424,NAME,BrettPhos Pd G4,12
+425,NAME,t-BuXphos Pd G4,12
+426,SMILES,c1cccc(c1[Pd+])c1ccccc1N.[O-]S(=O)(C)=O.CC(C)(P(C(C)(C)C)c1c(ccc(c1c1c(cc(cc1C(C)C)C(C)C)C(C)C)C)OC)C,12
+427,SMILES,c12Oc3c(P(C(C)(C)C)C(C)(C)C)cccc3C(c2cccc1P(C(C)(C)C)C(C)(C)C)(C)C,12
+428,SMILES,[Ru](Cl)Cl.c12c3c(c(c4ccccc4)ccn3)ccc1c(c1ccccc1)ccn2.c12c3c(c(c4ccccc4)ccn3)ccc1c(c1ccccc1)ccn2.c12c3c(c(c4ccccc4)ccn3)ccc1c(c1ccccc1)ccn2,12
+429,NAME,(Ir[dF(3CF3)ppy]2(dtbpy))PF6,12
+430,NAME,Fe(Phen)3,12
+431,NAME,[Ru(phen)3]Cl2,12
+432,SMILES,[Ir](c1c(sc2c1cccc2)c1ncccc1)(c1c(sc2c1cccc2)c1ncccc1)c1c(sc2c1cccc2)c1ncccc1,12
+433,NAME,(Ir[dF(4CF3)ppy]2(dtbpy))PF6 - Dark,12
+434,NAME,Acridine Catalyst,12
+435,SMILES,C1CCCC1.[Fe].c1cc(P([C@@H](C)C2CCCC2c2c(P(c3ccccc3)c3ccccc3)cccc2)c2ccccc2)ccc1,11
+436,SMILES,P(C1C([C@H](P(C2CCCCC2)C2CCCCC2)C)CCC1)(c1ccccc1)c1ccccc1.C1CCCC1.[Fe],11
+437,SMILES,N([C@@H]1[C@@H](NC(c2ccccn2)=O)CCCC1)C(c1ccccn1)=O,11
+438,SMILES,C1CCCC1.CC(P(C(C)(C)C)[C@H](C1CCCC1P(=O)c1ccccc1)C)(C)C.[Fe],11
+439,SMILES,C1CCCC1.[Fe].c1(cc(P([C@@H](C)C2CCCC2c2c(P(C3CCCCC3)C3CCCCC3)cccc2)c2cc(cc(c2)C(F)(F)F)C(F)(F)F)cc(c1)C(F)(F)F)C(F)(F)F,11
+440,SMILES,c12c(N(C)C)cccc2cccc1N(C)C,11
+441,SMILES,N1(CCN(CCN(CC1)C)C)C,11
+442,SMILES,C1CNCCNCCN1,11
+443,SMILES,c1(c2cc(ccn2)C(C)(C)C)nc(c2cc(ccn2)C(C)(C)C)cc(c1)C(C)(C)C,11
+444,SMILES,Cl[Ir].[O+]#[C-].P(c1ccccc1)(c2ccccc2)c3ccccc3.P(c4ccccc4)(c5ccccc5)c6ccccc6,11
+445,NAME,SL-J014-1,10
+446,NAME,JoSPOphos 2,10
+447,NAME,Rh(COD)2OTf,10
+448,SMILES,[Ru](Cl)Cl.P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1,10
+449,SMILES,[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[Ru].[Ru].[Ru],10
+450,SMILES,c1(c2ccccn2)nc(c2ccccn2)ccc1,9
+451,SMILES,c12c3c(c(ccn3)OC)ccc1c(ccn2)OC,9
+452,NAME,"N,N-DTsCHN",9
+453,NAME,C1-301,9
+454,SMILES,C1(C(C(C(C1C)C)C)C)C.C1=CCCC=CCC1.[Ru]Cl,9
+455,SMILES,C1(C(C(C(C1C)C)C)C)C.P(c1ccccc1)(c1ccccc1)c1ccccc1.P(c1ccccc1)(c1ccccc1)c1ccccc1.[Ru]Cl,9
+456,SMILES,P(c1c(c2c(cccc2)N(C)C)cccc1)(c1ccccc1)c1ccccc1,9
+457,SMILES,[Na],9
+458,SMILES,C1C(=C(C=C1)P(c1ccccc1)c1ccccc1)[Fe]C=1C=CCC1,9
+459,SMILES,c1(c(c2ccccc2)cccc1)P(C(C)(C)C)C(C)(C)C,9
+460,SMILES,c1(n(c2c(cc(cc2C)C)C)ccn1)P(C1CCCCC1)C1CCCCC1,9
+461,NAME,Pd(dppf)Cl2,9
+462,SMILES,c1(c(cc(cc1)C)C)NC(C(NCc1ccccc1)=O)=O,8
+463,SMILES,C(C(NC(c1ccccc1)C)=O)(Nc1c(cc(cc1)C)C)=O,8
+464,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2cccc3)c(P(c2ccccc2)c2ccccc2)ccc2c1cccc2.[Ru](Cl)Cl,8
+465,SMILES,C(C1=N[C@H](CO1)C(C)C)(C1=N[C@H](CO1)C(C)C)(CC)CC,8
+466,SMILES,C(C1=N[C@H](CO1)C(C)(C)C)(C1=N[C@H](CO1)C(C)(C)C)(C)C,8
+467,SMILES,C([C@@H]1N=C(OC1)CC1=N[C@H](CO1)C(C)(C)C)(C)(C)C,8
+468,SMILES,C1(C(C2=N[C@@H](CO2)c2ccccc2)(C)C)=N[C@@H](CO1)c1ccccc1,8
+469,SMILES,C1(C(C2=N[C@H](CO2)c2ccccc2)(C)C)=N[C@H](CO1)c1ccccc1,8
+470,SMILES,C1(C(C2=N[C@@H](CO2)Cc2ccccc2)(C)C)=N[C@@H](CO1)Cc1ccccc1,8
+471,SMILES,C1(c2nc(C3=N[C@H](CO3)C(C)C)ccc2)=N[C@H](CO1)C(C)C,8
+472,SMILES,N1=C(O[C@@H]2[C@H]1c1c(C2)cccc1)CC1=N[C@H]2[C@@H](O1)Cc1c2cccc1,8
+473,SMILES,c12[C@H]3[C@@H](Cc1cccc2)OC(=N3)CC1=N[C@@H]2[C@H](O1)Cc1c2cccc1,8
+474,SMILES,C1(c2nc(C3=N[C@H](CO3)c3ccccc3)ccc2)=N[C@H](CO1)c1ccccc1,8
+475,SMILES,C1[C@H]([C@@H](CCC1)NCc1ccccc1P(c1ccccc1)c1ccccc1)NCc1c(cccc1)P(c1ccccc1)c1ccccc1,8
+476,NAME,"(R,R)-Et-DUPHOS-Rh",8
+477,SMILES,P(c1c(Oc2c(P(C3CCCCC3)C3CCCCC3)cccc2)cccc1)(C1CCCCC1)C1CCCCC1,8
+478,NAME,AdBrettPhos G3,8
+479,SMILES,C(C1(c2ccccc2c2c1cccc2)[P+](C1CCCCC1)C1CCCCC1)CCc1ccccc1.[B-](F)(F)(F)F,8
+480,SMILES,c1cc(n(n1)c1c(n(nc1c1ccccc1)c1ccccc1)c1ccccc1)P(C1CCCCC1)C1CCCCC1,8
+481,SMILES,P(c1c(c2c(cccc2)N(C)C)cccc1)(C1CCCCC1)C1CCCCC1,8
+482,SMILES,COc1ccnc(c1)C(=N)N,8
+483,SMILES,C(=N)(c1ncccc1)N,8
+484,SMILES,C1[C@@H]([C@H](CCC1)NCc1ccccc1P(c1ccccc1)c1ccccc1)NCc1c(cccc1)P(c1ccccc1)c1ccccc1,7
+485,SMILES,c1([C@@H]2N=C(OC2)CC2=N[C@H](CO2)c2ccccc2)ccccc1,7
+486,SMILES,C1(C2=N[C@H](CO2)Cc2ccccc2)=N[C@H](CO1)Cc1ccccc1,7
+487,SMILES,N1=C(O[C@@H]2[C@@H]1c1c(C2)cccc1)c1nc(C2=N[C@H]3[C@@H](O2)Cc2c3cccc2)ccc1,7
+488,SMILES,O=[S@](C(C)(C)C)NC/C=C/c1ccccc1,7
+489,NAME,"SaxS,S-BOBPHOS",7
+490,NAME,R-JosiphosSL-J009-1,7
+491,NAME,PfizerLigand,7
+492,NAME,NaudSL-N011-2,7
+493,NAME,2G XPhos,7
+494,NAME,tBu3P.BF4,6
+495,SMILES,c1([C@@H]2[C@H](c3ccccc3)OC(=N2)CC2=N[C@@H]([C@@H](O2)c2ccccc2)c2ccccc2)ccccc1,6
+496,NAME,R-Josiphos SL-J009-1,6
+497,NAME,ChenPhos,5
+498,NAME,"(R,R)-Et-DUPHOS",5
+499,NAME,"(R,R)-NORPHOS",5
+500,NAME,"(R,R,S,S)-DUANPHOS",5
+501,NAME,CTH-(S)-P-Phos,5
+502,NAME,(R)-BINAP,5
+503,NAME,(S)SEGPHOS,5
+504,SMILES,c1(c(c2c(cccc2)C)cccc1)P(C(C)(C)C)C(C)(C)C,5
+505,SMILES,P(C1CCCCC1)(C1CCCCC1)/C(=C(/c1ccccc1)c1ccccc1)C,5
+506,SMILES,P(c1c2c(Nc3c(O2)c(P(c2ccccc2)c2ccccc2)ccc3)ccc1)(c1ccccc1)c1ccccc1,5
+507,SMILES,c1(n(c2c(c1)cccc2)c1ccccc1)P(C1CCCCC1)C1CCCCC1,5
+508,SMILES,c1(n(ccc1)c1ccccc1)P(C1CCCCC1)C1CCCCC1,5
+509,SMILES,c1(n(c2c(c1)cccc2)c1ccccc1)P(C(C)(C)C)C(C)(C)C,5
+510,NAME,cataCXium A,5
+511,NAME,cataCXium PiCy,5
+512,SMILES,c1ccc(c(c1)C)[Ni]Cl.C1(P(C2CCCCC2)c2ccccc2)CCCCC1.C1(P(C2CCCCC2)c2ccccc2)CCCCC1,5
+513,NAME,(DHQ)2AQN,5
+514,SMILES,C(c1ccccc1)(Nc1ccccn1)Nc1ccccn1,4
+515,NAME,Xant Pd G2,4
+516,NAME,Pd(OAc)2 / dtbpb.BF4,4
+517,NAME,Pd(OAc)2 / dcyppe.BF4,4
+518,NAME,Walphos SL-W002-1,4
+519,NAME,Walphos SL-W003-1,4
+520,NAME,Walphos SL-W022-2,4
+521,NAME,"(R,R)-DACH-naphthyl Trost ligand",4
+522,NAME,Mandyphos SL-M009-1,4
+523,NAME,Nauds-iPr Ligand,4
+524,NAME,Walphos SL-W008-1,4
+525,NAME,Walphos SL-W005-2,4
+526,NAME,"(R,R,S,S)-DUANPHOS-Rh",4
+527,NAME,(R)-TCFP-Rh,4
+528,NAME,"(S,S,R,R)-TANGPHOS-Rh",4
+529,NAME,(R)-C3-TUNEPHOS-Ru,4
+530,NAME,Rh2(R-DOSP)4-Aldrich,4
+531,NAME,(S)-BINAPINE-Rh,4
+532,NAME,"RuCl2[(R)-xylbinap][(R,R)-dpen]-Ru",4
+533,NAME,Rh2(4S-MPPIM)4,4
+534,NAME,RuCl2[(R)-xylbinap][(R)-daipen,4
+535,NAME,Rh2(S-PTAD)4,4
+536,NAME,"(R)-RUCY\""-XylBINAP-Ru",4
+537,NAME,"RuCl2[(S)-xylbinap][(S,S)-dpen]",4
+538,NAME,Rh2(R-DOSP)4-Strem,4
+539,NAME,RuCl2[(S)-xylbinap][(S)-daipen],4
+540,NAME,[NH2Me2][{RuCl((R)-segphos)}2(Ã‚Âµ-Cl)3],4
+541,NAME,[RuCl(p-cymene)((R)-segphos)]Cl,4
+542,NAME,"(R,R)-[COD]Ir[cy2PThrePHOX]",4
+543,NAME,"(S)-RUCY\""-XylBINAP",4
+544,NAME,"RuCl2[(R)-dm-segphosÃ‚Â®][(R,R)-dpen]",4
+545,NAME,Rh2(S-DOSP)4-Aldrich,4
+546,NAME,Rh2(5S-MEPY)4,4
+547,NAME,"RuCl(p-cymene)[(S,S)-Ts-DPEN]",4
+548,NAME,10% Pd/C,4
+549,SMILES,c1(n(c2c(OC)cccc2)ccc1)P(C1CCCCC1)C1CCCCC1,4
+550,SMILES,c1(c2c(P(C(C)(C)C)C(C)(C)C)c(ccc2C)OC)c(cc(cc1C(C)C)C(C)C)C(C)C,4
+551,SMILES,c1(n(ccc1)c1ccccc1)P(C(C)(C)C)C(C)(C)C,4
+552,SMILES,S(c1cc(c(c2c(P(C3CCCCC3)C3CCCCC3)cccc2)c(c1)C(C)C)C(C)C)([O-])(=O)=O.[Na+],4
+553,SMILES,C1(C(P(c2ccccc2)c2ccccc2)CC(C1)C(C)(C)C)P(c1ccccc1)c1ccccc1.P(C1CC(CC1)C(C)(C)C)(c1ccccc1)c1ccccc1.[Fe],4
+554,SMILES,P(c1ccc(cc1)C(F)(F)F)(c1ccc(cc1)C(F)(F)F)c1ccc(cc1)C(F)(F)F,4
+555,SMILES,C1[C@H]2C[C@H]3C[C@@H]1C[C@@](C2)(C3)P([C@]12C[C@H]3C[C@@H](C[C@@H](C3)C2)C1)c1ccccc1N1CCOCC1,4
+556,NAME,cataCXium FSulf,4
+557,SMILES,n1(c2c(cc(cc2C)C)C)c[n+](cc1)c1c(cc(cc1C)C)C.[Cl-],4
+558,SMILES,C1(C(P(c2ccccc2)c2ccccc2)CC(C1)C(C)(C)C)P(c1ccccc1)c1ccccc1.C1(C(P(c2ccccc2)c2ccccc2)CC(C1)C(C)(C)C)P(c1ccccc1)c1ccccc1.[Fe],4
+559,SMILES,C1(C(P(c2ccccc2)c2ccccc2)CC(C1)C(C)(C)C)P(c1ccccc1)c1ccccc1.P(C1CCCC1)(C(C)C)C(C)C.[Fe],4
+560,SMILES,C1(CC(CC1P(c1ccccc1)c1ccccc1)C(C)(C)C)P(c1ccccc1)c1ccccc1.C1CC(CC1P(C(C)C)C(C)C)C(C)(C)C.[Fe],4
+561,SMILES,c1(P(c2oc(cc2)C)C2CCCC2)oc(cc1)C.c1(P(c2oc(cc2)C)C2CCCC2)oc(cc1)C.[Fe],4
+562,SMILES,P(C1CCCCC1)(C1CCCCC1)C1(C(C1)(c1ccccc1)c1ccccc1)C,4
+563,SMILES,S(c1c(c(c2c(P(C3CCCCC3)C3CCCCC3)cccc2)c(cc1)OC)OC)([O-])(=O)=O.[Na+],4
+564,SMILES,c1ccc2c(c1)cc(n2P(C1CCCCC1)C1CCCCC1)c1ccccc1OC,4
+565,SMILES,c1ccc2c(c1)cc(n2P(C1CCCCC1)C1CCCCC1)c1ccccc1C,4
+566,SMILES,c1(P(C2CCCCC2)C2CCCCC2)c(c2c(cccc2)C)cccc1,4
+567,SMILES,C1N(CN(C1)c1c(cc(cc1C)C)C)c1c(cc(cc1C)C)C,4
+568,SMILES,C(C1(c2ccccc2c2c1cccc2)[P+](C1CCCCC1)C1CCCCC1)CCC.[B-](F)(F)(F)F,4
+569,SMILES,P([C@]12C[C@@H]3C[C@H](C2)C[C@@H](C1)C3)([C@]12C[C@@H]3C[C@@H](C2)C[C@@H](C1)C3)Cc1ccccc1,4
+570,SMILES,P(c1c(c2c(cccc2N(C)C)N(C)C)cccc1)(C1CCCCC1)C1CCCCC1,4
+571,SMILES,C1(CCCCC1)P(C1CCCCC1)c1c(cccc1)c1c(OC)cc(C(C)(C)C)cc1C(C)(C)C,4
+572,SMILES,[P+](c1c(cccc1OC(C)C)OC(C)C)(C1CCCCC1)C1CCCCC1.[B-](F)(F)(F)F,4
+573,SMILES,P(c1c(cc(cc1C(C)C)C(C)C)C(C)C)(C1CCCCC1)C1CCCCC1,4
+574,SMILES,P(c1c(cc(cc1C)C)C)(C1CCCCC1)C1CCCCC1,4
+575,SMILES,P(C1CCCCC1)(c1ccccc1C)C1CCCCC1,4
+576,SMILES,c12c(nc[nH]1)cccc2,4
+577,SMILES,c1ccc2c(c1)cc(c1c2c2c(c(cc3c2cccc3)c2cc(cc(c2)C(F)(F)F)C(F)(F)F)OP(O1)(O)=O)c1cc(cc(c1)C(F)(F)F)C(F)(F)F,4
+578,NAME,Zn(OAc)2,4
+579,SMILES,P1([C@@H]([C@H]2P(Cc3c2cccc3)C(C)(C)C)c2c(C1)cccc2)C(C)(C)C.[B-](F)(F)(F)F.C1=CCCC=CCC1.[Rh+],3
+580,NAME,dcyhpe.BF4,3
+581,NAME,dcyppb.BF4,3
+582,NAME,dcyppp.BF4,3
+583,SMILES,C1(C(P(c2ccccc2)c2ccccc2)CCC1)C1=N[C@@H](CO1)C(C)C.P(c1ccccc1)(c1ccccc1)c1ccccc1.[Ru](Cl)Cl.C1CCCC1.[Fe],3
+584,NAME,G3 AdBrettPhos,3
+585,NAME,3G OMs tBuXPhos,3
+586,NAME,2G BrettPhos,3
+587,NAME,CPhos-Pd-G3,3
+588,NAME,2G Cphos,3
+589,NAME,PPh2-Andole-Phos,3
+590,NAME,3G OMs SPhos,3
+591,NAME,3G OMs XPhos,3
+592,NAME,3G OMs JackiePhos,3
+593,NAME,DPcBP,3
+594,NAME,SK-CC02-A,3
+595,NAME,AmPhos,3
+596,SMILES,c12c([C@@H]([C@H]3N4C[C@@H]([C@H](C3)CC4)C=C)O)ccnc1ccc(c2)OC,3
+597,SMILES,N(c1ccc(cc1)C)(C(COc1c(cccc1)N)=O)CCCc1ccccc1,3
+598,SMILES,c1(cc(ccc1)[N+](=O)[O-])N(C(SSC(N(c1cc(ccc1)[N+](=O)[O-])C)=S)=S)C,3
+599,SMILES,c12c3c(ccc1cccn2)cccn3.[Cu+2].[N+](=O)([O-])[O-].[N+](=O)([O-])[O-],2
+600,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2cccc3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1cccc2.C([C@H](N)C(C)C)(c1ccc(cc1)OC)(c1ccc(cc1)OC)N.[Ru](Cl)Cl,2
+601,SMILES,c1ccccc1[C@@H]([C@@H](N)c1ccccc1)N(S(=O)(c1ccc(cc1)C)=O)[Ru]Cl.c1c(ccc(c1)C)C(C)C,2
+602,NAME,R-JosiphosSL-J003-1,2
+603,NAME,Methyl-Butiphane SK-P005-2a,2
+604,NAME,Rh2(S-PTTL)4 2EtOAc,2
+605,NAME,Rh2(S-PTPA)4 EtOAc,2
+606,NAME,RuBINAP-Cl2,2
+607,NAME,[NH2Me2][{RuCl((R)-dm-segphos)}2(Ã‚Âµ-Cl)3],2
+608,NAME,Pfizer Ligand,2
+609,NAME,[NH2Me2][{RuCl((R)-dm-segphos)}2(?-Cl)3],2
+610,NAME,(R)-NaudsCatalys-Ru,2
+611,NAME,Ru(OAc)2[(R)-dtbm-segphosÃ‚Â®],2
+612,NAME,(S)-RuBINAP-Cl2,2
+613,NAME,[NH2Me2][{RuCl((R)-segphosÃ‚Â®)}2(Ã‚Âµ-Cl)3],2
+614,NAME,Methyl-ButiphaneSK-P005-2a,2
+615,NAME,Rh2(S-PTTL)42EtOAc,2
+616,NAME,Rh2(S-PTPA)4EtOAc,2
+617,NAME,RuCl3,2
+618,SMILES,C(C)(=O)O[Ru]=O.[Ru](OC(C)=O)(OC(C)=O)OC(C)=O.[Ru](OC(C)=O)(OC(C)=O)OC(C)=O,2
+619,SMILES,[Ru]1(Cl)(Cl)CC=CCCC=CCCC=CC1,2
+620,SMILES,C1(CCC(CC1)C)C(C)C.C1CCCC1.[Ru+].[P-](F)(F)(F)(F)(F)F,2
+621,SMILES,C1(C(P(c2ccccc2)c2ccccc2)CCC1)C1=N[C@H](CO1)C(C)C.P(c1ccccc1)(c1ccccc1)c1ccccc1.[Ru](Cl)Cl.C1CCCC1.[Fe],2
+622,SMILES,C1CCCCCCC1.[Ru](Cl)Cl,2
+623,NAME,Pd(P(tBu)3)2,2
+624,NAME,[(Ipr)Pd(NQ)]2,2
+625,NAME,WS Sphos,2
+626,NAME,BINAP,2
+627,NAME,BrettPhos Palladacycle,2
+628,NAME,RuPhos Palladacycle,2
+629,NAME,Pd(dtbpf)Cl2,2
+630,NAME,Pd(P(Ph)3)4),2
+631,NAME,"[Rh(OH)(1,5-cod)]2",2
+632,SMILES,C12C(C=CC=C1)CCC2.C1=CCCC=CCC1.[Ir],2
+633,SMILES,C1(C(C(C(C1C)C)C)C)C.[Ir](c1c(C(=Nc2ccc(cc2)OC)C)ccc(c1)[N+]([O-])=O)Cl,2
+634,SMILES,[Ir+].[B-](c1cc(C(F)(F)F)cc(C(F)(F)F)c1)(c1cc(C(F)(F)F)cc(C(F)(F)F)c1)(c1cc(C(F)(F)F)cc(C(F)(F)F)c1)c1cc(C(F)(F)F)cc(C(F)(F)F)c1.C1=CCCC=CCC1.C1=CCCC=CCC1,2
+635,SMILES,[O+]#[C-].P(c1ccccc1)(c2ccccc2)c3ccccc3.P(c4ccccc4)(c5ccccc5)c6ccccc6.P(c7ccccc7)(c8ccccc8)c9ccccc9.[Ir],2
+636,SMILES,C1CCCCCCC1.C1CCCCCCC1.C1CCCCCCC1.C1CCCCCCC1.Cl[Ir].Cl[Ir],2
+637,SMILES,C1(C(C(C(C1C)C)C)C)C.[Ir](c1c(C(=Nc2ccc(cc2)OC)C)ccc2c1cccc2)Cl,2
+638,SMILES,c1(c(cc(cc1)OC)[Ir]Cl)C(=Nc1ccc(cc1)OC)C.C1(C(C(C(C1C)C)C)C)C,2
+639,SMILES,C(=C/C(C(F)(F)F)=O)(C(F)(F)F)\O[Ir].C1=CCCC=CCC1,2
+640,SMILES,C(=C\C(C)=O)(/O[Ir])C.C1CC=CCCC=C1,2
+641,SMILES,C1(CCCC1)C.C1CC=CCCC=C1.[Ir],2
+642,NAME,(3)_Blank,2
+643,SMILES,[Rh]([Rh](N1[C@H](C(OC)=O)CCC1=O)N1[C@H](C(OC)=O)CCC1=O)(N1[C@H](C(OC)=O)CCC1=O)N1[C@H](C(OC)=O)CCC1=O,1
+644,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2cccc3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1cccc2.[Ru](Cl)Cl.c1([C@H]([C@@H](c2ccccc2)N)N)ccccc1,1
+645,SMILES,P1([C@H](CC[C@@H]1C)C)c1sc2ccccc2c1P1[C@H](CC[C@@H]1C)C.[B-](F)(F)(F)F.C1CC=CCCC=C1.[Rh+],1
+646,SMILES,[Ru-]12[Cl+][Ru-]([Cl+]1)[Cl+]2.N(C)C.Cl.[Cl-].c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2OCO3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1OCO2.c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2OCO3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1OCO2,1
+647,SMILES,P(c1c2ccc(c1)CCc1c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)cc(cc1)CC2)(c1cc(cc(c1)C)C)c1cc(cc(c1)C)C.[Ru](Cl)Cl.c1([C@@H]([C@H](c2ccccc2)N)N)ccccc1,1
+648,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2cccc3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1cccc2.[Ru](Cl)Cl.c1([C@@H]([C@H](c2ccccc2)N)N)ccccc1,1
+649,SMILES,[Ru-]12[Cl+][Ru-]([Cl+]1)[Cl+]2.N(C)C.Cl.[Cl-].c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2OCO3)c(P(c2ccccc2)c2ccccc2)ccc2c1OCO2.c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2OCO3)c(P(c2ccccc2)c2ccccc2)ccc2c1OCO2,1
+650,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2cccc3)c(P(c2ccccc2)c2ccccc2)ccc2c1cccc2.c1([C@H]([C@@H](c2ccccc2)N)N)ccccc1.[Ru](Cl)Cl,1
+651,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)cc(nc2OC)OC)c(P(c2ccccc2)c2ccccc2)cc(nc1OC)OC.[Ru](Cl)Cl.c1([C@H]([C@@H](c2ccccc2)N)N)ccccc1,1
+652,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2OCO3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1OCO2.[Ru](Cl)Cl.c1([C@H]([C@@H](c2ccccc2)N)N)ccccc1,1
+653,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)cc(nc2OC)OC)c(P(c2cc(cc(c2)C)C)c2c(cc(cc2)C)C)cc(nc1OC)OC.[Ru](Cl)Cl.c1([C@H]([C@@H](c2ccccc2)N)N)ccccc1,1
+654,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2cccc3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1cccc2.C(c1c(cc(cc1)OC)[Ru]Cl)([C@H](N)C(C)C)(c1ccc(cc1)OC)N,1
+655,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2cccc3)c(P(c2ccccc2)c2ccccc2)ccc2c1cccc2.c1(ccc(cc1)C)C(C)C.[Ru](Cl)Cl,1
+656,SMILES,c1(c2c(P(c3cc(cc(c3)C)C)c3cc(cc(c3)C)C)ccc3c2cccc3)c(P(c2cc(cc(c2)C)C)c2cc(cc(c2)C)C)ccc2c1cccc2.C([C@@H](N)C(C)C)(c1ccc(cc1)OC)(c1ccc(cc1)OC)N.[Ru](Cl)Cl,1
+657,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2OCO3)c(P(c2ccccc2)c2ccccc2)ccc2c1OCO2.[Ru](Cl)Cl.c1(ccc(cc1)C)C(C)C,1
+658,SMILES,[Rh](N1C(N(C[C@H]1C(=O)OC)C(CCc1ccccc1)=O)=O)N1C(N(C[C@H]1C(=O)OC)C(=O)CCc1ccccc1)=O.C1(N(C[C@H](N1[Rh]N1C(N(C[C@H]1C(=O)OC)C(=O)CCc1ccccc1)=O)C(=O)OC)C(=O)CCc1ccccc1)=O.CC#N.CC#N,1
+659,SMILES,c12c3c(P(c4ccccc4)c4ccccc4)cccc3OCCCOc2cccc1P(c1ccccc1)c1ccccc1.C1(CCC(CC1)C)C(C)C.Cl[Ru]Cl,1
+660,SMILES,c1(c2c(P(c3ccccc3)c3ccccc3)ccc3c2cccc3)c(P(c2ccccc2)c2ccccc2)ccc2c1cccc2.C(c1ccc(cc1)OC)(c1ccc(cc1)OC)([C@@H](C(C)C)N)N.[Ru](Cl)Cl,1
+661,SMILES,c1(c2c(P(c3ccc(cc3)C)c3ccc(cc3)C)ccc3c2cccc3)c(P(c2ccc(cc2)C)c2ccc(cc2)C)ccc2c1cccc2.[Ru](Cl)Cl.c1(ccc(cc1)C)C(C)C,1
+662,SMILES,C([C@H]1NC(OC1)=O)(OC)=O.C([C@H]1NC(OC1)=O)(OC)=O.C([C@H]1NC(OC1)=O)(OC)=O.C([C@H]1NC(OC1)=O)(OC)=O.[Rh][Rh],1
+663,SMILES,N1([C@H](C(O[Rh]([Rh](OC([C@@H](N2C(c3c(C2=O)cccc3)=O)Cc2ccccc2)=O)OC([C@@H](N2C(c3c(C2=O)cccc3)=O)Cc2ccccc2)=O)OC([C@@H](N2C(c3c(C2=O)cccc3)=O)Cc2ccccc2)=O)=O)Cc2ccccc2)C(c2c(C1=O)cccc2)=O,1
+664,SMILES,P1([C@H]([C@H]2P(Cc3c(c4c2ccc2c4cccc2)c2c(cc3)cccc2)C(C)(C)C)c2c(c3c(C1)ccc1c3cccc1)c1c(cc2)cccc1)C(C)(C)C.[B-](F)(F)(F)F.C1=CCCC=CCC1.[Rh+],1
+665,SMILES,C1CC=CCCC=C1.[B-](F)(F)(F)F.[Rh+].C(C)([P@](CP(C(C)(C)C)C(C)(C)C)C)(C)C,1
+666,SMILES,S(N1[C@@H](C(O[Rh]OC([C@@H]2N(S(c3ccc(cc3)CCCCCCCCCCCC)(=O)=O)CCC2)=O)=O)CCC1)(c1ccc(cc1)CCCCCCCCCCCC)(=O)=O.S(N1[C@@H](C(O[Rh]OC([C@@H]2N(S(c3ccc(cc3)CCCCCCCCCCCC)(=O)=O)CCC2)=O)=O)CCC1)(c1ccc(cc1)CCCCCCCCCCCC)(=O)=O,1
+667,SMILES,N1(C(c2c(C1=O)cccc2)=O)[C@H](C(O[Rh]([Rh](OC([C@@H](N1C(c2c(C1=O)cccc2)=O)C12C[C@@H]3C[C@H](C1)C[C@@H](C2)C3)=O)OC([C@@H](N1C(c2c(C1=O)cccc2)=O)C12C[C@@H]3C[C@H](C2)C[C@@H](C1)C3)=O)OC([C@@H](N1C(c2c(C1=O)cccc2)=O)C12C[C@H]3C[C@@H](C2)C[C@H](C1)C3)=O)=O)C12C[C@H]3C[C@H](C1)C[C@H](C2)C3,1
+668,SMILES,c1(c2c(P(c3ccc(cc3)C)c3ccc(cc3)C)ccc3c2cccc3)c(P(c2ccc(cc2)C)c2ccc(cc2)C)ccc2c1cccc2.c1(ccccn1)CN.[Ru](Cl)Cl,1
+669,SMILES,N(S(c1ccc(cc1)C)(=O)=O)([C@@H]([C@@H](c1ccccc1)NCCCc1ccccc1)c1ccccc1)[Ru]Cl,1
+670,SMILES,c1cc(ccc1S(N([Ru]Cl)[C@@H]([C@@H](c1ccccc1)N)c1ccccc1)(=O)=O)C.c1c(ccc(c1)C)C(C)C,1
+671,SMILES,c1(c2c(P(c3cc(c(c(c3)C(C)(C)C)OC)C(C)(C)C)c3cc(c(c(c3)C(C)(C)C)OC)C(C)(C)C)ccc3c2OCO3)c(P(c2cc(c(c(c2)C(C)(C)C)OC)C(C)(C)C)c2cc(c(c(c2)C(C)(C)C)OC)C(C)(C)C)ccc2c1OCO2.C(O[Ru]OC(=O)C)(=O)C,1
+672,SMILES,P(c1c2CCc3cc(P(c4cc(cc(c4)C)C)c4cc(cc(c4)C)C)c(cc3)CCc(c1)cc2)(c1cc(cc(c1)C)C)c1cc(cc(c1)C)C.[B-](F)(F)(F)F.C1=CCCC=CCC1.[Rh+],1
+673,SMILES,P1([C@@H]([C@H]2P(C(C)(C)C)CCC2)CCC1)C(C)(C)C.[B-](F)(F)(F)F.C1=CCCC=CCC1.[Rh+],1
+674,SMILES,N1=C(O[C@@H]([C@H]1C(OP(=O)(C1CCCCC1)C1CCCCC1)(Cc1ccccc1)Cc1ccccc1)C)c1ccccc1.[B-](c1cc(C(F)(F)F)cc(C(F)(F)F)c1)(c1cc(C(F)(F)F)cc(C(F)(F)F)c1)(c1cc(C(F)(F)F)cc(C(F)(F)F)c1)c1cc(C(F)(F)F)cc(C(F)(F)F)c1.C1=CCCC=CCC1.[Ir+],1
+675,NAME,PPM,1
+676,NAME,SL-J505-1,1
+677,NAME,WalphosSL-W003-1,1
+678,NAME,WalphosSL-W022-2,1
+679,NAME,SL-J216-2,1
+680,NAME,MandyphosSL-M002-1,1
+681,NAME,Nauds-iPrLigand,1
+682,NAME,(S)-MethylBoPhoz,1
+683,NAME,TaniaphosSL-T002-1,1
+684,NAME,Trifer,1
+685,NAME,WalphosSL-W008-1,1
+686,NAME,WalphosSL-W002-1,1
+687,NAME,NaudSL-N008-2,1
+688,NAME,"(S,S)-Me-BPF",1
+689,NAME,MandyphosSL-M009-1,1
+690,NAME,R-JosiphosSL-J001-1,1
+691,NAME,NaudSL-N004-1,1
+692,NAME,"2,2BNDMDiE",1
+693,NAME,JoSPOphos2,1
+694,NAME,JoSPOphos1,1
+695,NAME,catASiumT1,1
+696,NAME,TCI2,1
+697,NAME,GrotonBINOLLigand,1
+698,NAME,SL-J502-1,1
+699,NAME,(R)-DIFLUORPHOS,1
+700,NAME,SL-J452-2,1
+701,NAME,SL-J212-1,1
+702,NAME,TCI1,1
+703,NAME,(R)-Binaphane,1
+704,NAME,"(R,R)-i-Pr-DUPHOS",1
+705,NAME,(S)-BINAPINE,1
+706,NAME,(R)-DTBM-SEGPHOS,1
+707,NAME,SL-J005-2,1
+708,NAME,SL-J418-1,1
+709,NAME,SL-J007-1,1
+710,NAME,SL-M003-2,1
+711,NAME,SL-J425-2,1
+712,NAME,SL-J013-2,1
+713,NAME,(R)-Binam-P,1
+714,NAME,(R)-(+)-TolBINAP,1
+715,NAME,R-JosiphosSL-J004-1,1
+716,NAME,(R)-(+)-MeO-BIPHEP,1
+717,NAME,R-JosiphosSL-J002-1,1
+718,NAME,"(S,S)-DIOP",1
+719,NAME,(2R)-iPr-BPE,1
+720,NAME,"(S,S)-BDPP",1
+721,NAME,"(R,R)-Chiraphos",1
+722,NAME,t-BuDPPPO,1
+723,NAME,"(S,S)-TsDPEN",1
+724,NAME,R-Monophos,1
+725,NAME,"(S,S)-DACH-pyridylTROST",1
+726,NAME,"(S,S)-N-Ms-1,2-DPEN",1
+727,NAME,(S)-BINOL,1
+728,NAME,(+)-TsCYDN,1
+729,NAME,cis-Aindanol,1
+730,NAME,SL-J008-1,1
+731,NAME,catASiumMNXylF(R),1
+732,NAME,(S)-Me-f-KetalPhos,1
+733,NAME,"(S,S)-f-Binaphane",1
+734,NAME,WalphosSL-W005-2,1
+735,NAME,R-JosiphosSL-J006-1,1
+736,NAME,"(R,R)-DACH-naphthylTrostligand",1
+737,NAME,JosiphosSL-J404-2,1
+738,NAME,R-JosiphosSL-J011-1,1
+739,NAME,Salen,1
+740,NAME,(R)-C3-Tunephos,1
+741,SMILES,C(C(=C\C(C(C)(C)C)=O)/O[Mn](O/C(C(C)(C)C)=C\C(C(C)(C)C)=O)O/C(C(C)(C)C)=C\C(C(C)(C)C)=O)(C)(C)C,1
+742,NAME,NHC3,1
+743,NAME,cataCXium Fbu,1
+744,NAME,MePhos,1
+745,NAME,SK-CC01-A,1
+746,NAME,Xphos,1
+747,NAME,cataCXiumÃ‚Â® PIntB,1
+748,NAME,NHC1,1
+749,NAME,XPhos Palladacycle,1
+750,NAME,Xanthphos,1
+751,NAME,Pd-132,1
+752,NAME,WS RuPhos,1
+753,NAME,RuPhos,1
+754,NAME,dppb,1
+755,NAME,dppp,1
+756,NAME,DPEPhos,1
+757,NAME,dppm,1
+758,NAME,dpppent,1
+759,NAME,dppe,1
+760,NAME,dppf,1
+761,SMILES,C1[C@H]([C@@H](C1)CP(c1cc(cc(c1)C)C)c1cc(cc(c1)C)C)CP(c1cc(cc(c1)C)C)c1cc(cc(c1)C)C,1
+762,SMILES,c1(c(c2c(cccc2)OC)n(c2c1cccc2)C)P(c1ccccc1)c1ccccc1,1
+763,NAME,(crotyl)chloro(PtBu3)palladium(II) - Duplicate,1
+764,SMILES,P(C(C)(C)C)(C(C)(C)C)CC(C)(C)C,1
+765,SMILES,c1ccc(c(c1)[Pd+])c1ccccc1NC.[O-]S(C)(=O)=O.P(c1c(cccc1)c1c(cccc1OC)OC)(C1CCCCC1)C1CCCCC1.ClCCl,1
+766,SMILES,C12CC3CC(C1)CC(C2)(C3)P(C12CC3CC(C1)CC(C2)C3)C12CC3CC(C1)CC(C2)C3,1
+767,NAME,EtCPhos Palladacycle G3,1
+768,NAME,Nickamine,1
+769,SMILES,P12N(CCN(CCN1CC(C)C)CCN2CC(C)C)CC(C)C,1
+770,NAME,HandaPhos,1
+771,NAME,Cy*Phine,1
+772,NAME,Pd(Cy*Phine)2Cl2,1
+773,SMILES,C(C1(c2ccccc2c2c1cccc2)[P+](C1CCCCC1)C1CCCCC1)c1ccccc1.[B-](F)(F)(F)F,1
+774,NAME,MorDalphos Pd G4,1
+775,SMILES,C1[C@H]2CC[C@H]1C=C2,1
+776,SMILES,c1ccc(c(c1)N)c1ccccc1[Pd+].[O-]S(C)(=O)=O.C1CCCC1.P(C1C([C@@H](P(C(C)(C)C)C(C)(C)C)C)CCC1)(C1CCCCC1)C1CCCCC1.[Fe],1
+777,SMILES,c1cc(c2c(c1)C(c1c(O2)c(ccc1)P(c1ccccc1)c1ccccc1)(C)C)P(c1ccccc1)c1ccccc1.c1(c(cccc1)c1c(cccc1)N)[Pd]Cl,1
+778,SMILES,c12c([C@H]([C@@H]3N4C[C@@H]([C@H](C3)CC4)C=C)O)ccnc1ccc(c2)OC,1
+779,SMILES,N12[C@@H]([C@H](c3c4c(ncc3)cccc4)O)C[C@@H]([C@H](C1)C=C)CC2,1
+780,SMILES,c1(c(c(cc(c1)C(C)C)C(C)C)c1c2OP(=O)(O)Oc3c(c4c(cc(cc4C(C)C)C(C)C)C(C)C)cc4c(c3c2c2c(c1)cccc2)cccc4)C(C)C,1
+781,SMILES,C(C(C(O)=O)Br)(C(O)=O)Br,1
+782,SMILES,[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[O+]#[C-].[Mo],1
