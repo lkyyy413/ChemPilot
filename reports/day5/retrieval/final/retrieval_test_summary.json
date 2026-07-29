@@ -1,0 +1,201 @@
+{
+  "created_at_utc": "2026-07-29T10:41:34.135491+00:00",
+  "selection_source": "reports/day5/retrieval/retrieval_validation.json",
+  "selected_pooling": "cls",
+  "test_labels_used_for_selection": false,
+  "test_evaluations_per_protocol": 1,
+  "results": [
+    {
+      "protocol": "transformation",
+      "pooling": "cls",
+      "index_splits": [
+        "train",
+        "valid"
+      ],
+      "query_split": "test",
+      "test_evaluations": 1,
+      "test_labels_used_for_selection": false,
+      "index_reactions": 323,
+      "test_queries": 58,
+      "nearest_similarity": {
+        "minimum": 0.825657069683075,
+        "mean": 0.9490039944648743,
+        "median": 0.948421835899353,
+        "maximum": 0.9999822378158569
+      },
+      "reaction_type": {
+        "mrr_at_10": 0.7714080459770114,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "hit_rate": 0.7241379310344828
+          },
+          "5": {
+            "k": 5,
+            "hit_rate": 0.8620689655172413
+          },
+          "10": {
+            "k": 10,
+            "hit_rate": 0.9137931034482759
+          }
+        }
+      },
+      "reaction_center": {
+        "eligible_queries": 3,
+        "total_queries": 58,
+        "1": {
+          "k": 1,
+          "hit_rate": 0.6666666666666666
+        },
+        "5": {
+          "k": 5,
+          "hit_rate": 1.0
+        },
+        "10": {
+          "k": 10,
+          "hit_rate": 1.0
+        }
+      },
+      "condition_retrieval": {
+        "solvent": {
+          "1": {
+            "k": 1,
+            "evaluated_queries": 51,
+            "hit_rate": 0.7254901960784313,
+            "mean_recall": 0.50359477124183
+          },
+          "5": {
+            "k": 5,
+            "evaluated_queries": 51,
+            "hit_rate": 0.9215686274509803,
+            "mean_recall": 0.8601307189542484
+          },
+          "10": {
+            "k": 10,
+            "evaluated_queries": 51,
+            "hit_rate": 0.9803921568627451,
+            "mean_recall": 0.9490196078431372
+          }
+        },
+        "catalyst": {
+          "1": {
+            "k": 1,
+            "evaluated_queries": 36,
+            "hit_rate": 0.6111111111111112,
+            "mean_recall": 0.347151151317818
+          },
+          "5": {
+            "k": 5,
+            "evaluated_queries": 36,
+            "hit_rate": 0.9722222222222222,
+            "mean_recall": 0.7694520290463274
+          },
+          "10": {
+            "k": 10,
+            "evaluated_queries": 36,
+            "hit_rate": 0.9722222222222222,
+            "mean_recall": 0.8649818849928498
+          }
+        }
+      },
+      "index_path": "data/processed/reactions/retrieval/day5/transformation/cls_index.npz",
+      "index_metadata_path": "data/processed/reactions/retrieval/day5/transformation/cls_metadata.parquet"
+    },
+    {
+      "protocol": "reaction_center",
+      "pooling": "cls",
+      "index_splits": [
+        "train",
+        "valid"
+      ],
+      "query_split": "test",
+      "test_evaluations": 1,
+      "test_labels_used_for_selection": false,
+      "index_reactions": 316,
+      "test_queries": 65,
+      "nearest_similarity": {
+        "minimum": 0.8650869131088257,
+        "mean": 0.9454648494720459,
+        "median": 0.9483212232589722,
+        "maximum": 0.9986075162887573
+      },
+      "reaction_type": {
+        "mrr_at_10": 0.7344200244200244,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "hit_rate": 0.676923076923077
+          },
+          "5": {
+            "k": 5,
+            "hit_rate": 0.8153846153846154
+          },
+          "10": {
+            "k": 10,
+            "hit_rate": 0.8769230769230769
+          }
+        }
+      },
+      "reaction_center": {
+        "eligible_queries": 0,
+        "total_queries": 65,
+        "1": {
+          "k": 1,
+          "hit_rate": null
+        },
+        "5": {
+          "k": 5,
+          "hit_rate": null
+        },
+        "10": {
+          "k": 10,
+          "hit_rate": null
+        }
+      },
+      "condition_retrieval": {
+        "solvent": {
+          "1": {
+            "k": 1,
+            "evaluated_queries": 56,
+            "hit_rate": 0.7142857142857143,
+            "mean_recall": 0.48437499999999994
+          },
+          "5": {
+            "k": 5,
+            "evaluated_queries": 56,
+            "hit_rate": 0.8928571428571429,
+            "mean_recall": 0.7336309523809524
+          },
+          "10": {
+            "k": 10,
+            "evaluated_queries": 56,
+            "hit_rate": 0.9464285714285714,
+            "mean_recall": 0.8556547619047619
+          }
+        },
+        "catalyst": {
+          "1": {
+            "k": 1,
+            "evaluated_queries": 49,
+            "hit_rate": 0.6530612244897959,
+            "mean_recall": 0.4019628579826343
+          },
+          "5": {
+            "k": 5,
+            "evaluated_queries": 49,
+            "hit_rate": 0.8571428571428571,
+            "mean_recall": 0.6537373340068101
+          },
+          "10": {
+            "k": 10,
+            "evaluated_queries": 49,
+            "hit_rate": 0.8775510204081632,
+            "mean_recall": 0.7154738946597795
+          }
+        }
+      },
+      "index_path": "data/processed/reactions/retrieval/day5/reaction_center/cls_index.npz",
+      "index_metadata_path": "data/processed/reactions/retrieval/day5/reaction_center/cls_metadata.parquet"
+    }
+  ]
+}

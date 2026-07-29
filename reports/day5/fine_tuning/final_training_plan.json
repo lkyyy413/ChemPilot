@@ -1,0 +1,95 @@
+{
+  "created_at_utc": "2026-07-29T09:49:52.976638+00:00",
+  "status": "locked_before final test evaluation",
+  "development_summary": {
+    "path": "reports/day5/fine_tuning/development_summary.json",
+    "sha256": "8fcb205ad0be55854ac9c8f98b491a81dd4a861f4dd8f9d91e213a782501d001"
+  },
+  "final_protocol": {
+    "model_initialization": "fresh RXNFP pretrained checkpoint for every task",
+    "training_splits": [
+      "train",
+      "valid"
+    ],
+    "evaluation_split": "test",
+    "early_stopping": false,
+    "test_evaluations_per_task": 1,
+    "label_vocabulary": "fixed from the original training split",
+    "unknown_test_labels": "not represented in the fixed vocabulary and reported through coverage statistics",
+    "test_labels_used_for_selection": false
+  },
+  "tasks": [
+    {
+      "protocol": "reaction_center",
+      "target": "catalyst",
+      "selected_epoch": 80,
+      "selection_metric": "validation micro_average_precision",
+      "validation_micro_ap": 0.23908976391229042,
+      "selected_at_epoch_limit": true,
+      "pooling": "masked_mean",
+      "unfreeze_last_n_layers": 2,
+      "batch_size": 16,
+      "max_length": 256,
+      "encoder_learning_rate": 1e-05,
+      "head_learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "maximum_positive_weight": 20.0,
+      "gradient_clip": 1.0,
+      "seed": 42
+    },
+    {
+      "protocol": "reaction_center",
+      "target": "solvent",
+      "selected_epoch": 80,
+      "selection_metric": "validation micro_average_precision",
+      "validation_micro_ap": 0.4901164261887339,
+      "selected_at_epoch_limit": true,
+      "pooling": "masked_mean",
+      "unfreeze_last_n_layers": 2,
+      "batch_size": 16,
+      "max_length": 256,
+      "encoder_learning_rate": 1e-05,
+      "head_learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "maximum_positive_weight": 20.0,
+      "gradient_clip": 1.0,
+      "seed": 42
+    },
+    {
+      "protocol": "transformation",
+      "target": "catalyst",
+      "selected_epoch": 21,
+      "selection_metric": "validation micro_average_precision",
+      "validation_micro_ap": 0.28347322758587734,
+      "selected_at_epoch_limit": false,
+      "pooling": "masked_mean",
+      "unfreeze_last_n_layers": 2,
+      "batch_size": 16,
+      "max_length": 256,
+      "encoder_learning_rate": 1e-05,
+      "head_learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "maximum_positive_weight": 20.0,
+      "gradient_clip": 1.0,
+      "seed": 42
+    },
+    {
+      "protocol": "transformation",
+      "target": "solvent",
+      "selected_epoch": 43,
+      "selection_metric": "validation micro_average_precision",
+      "validation_micro_ap": 0.4918640312639212,
+      "selected_at_epoch_limit": false,
+      "pooling": "masked_mean",
+      "unfreeze_last_n_layers": 2,
+      "batch_size": 16,
+      "max_length": 256,
+      "encoder_learning_rate": 1e-05,
+      "head_learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "maximum_positive_weight": 20.0,
+      "gradient_clip": 1.0,
+      "seed": 42
+    }
+  ]
+}

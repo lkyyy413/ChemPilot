@@ -1,0 +1,116 @@
+{
+  "created_at_utc": "2026-07-29T09:43:12.307989+00:00",
+  "protocol": "reaction_center",
+  "target": "solvent",
+  "stage": "development",
+  "training_splits": [
+    "train"
+  ],
+  "evaluation_split": "valid",
+  "test_labels_used": false,
+  "model": "partially_fine_tuned_rxnfp_bert",
+  "pooling": "masked_mean",
+  "classes": 20,
+  "train_samples": 219,
+  "valid_samples": 48,
+  "best_epoch": 80,
+  "epochs_completed": 80,
+  "best_valid_loss": 1.6148776213328044,
+  "best_validation_metrics": {
+    "samples": 48,
+    "classes": 20,
+    "classes_with_positive_examples": 19,
+    "micro_average_precision": 0.4901164261887339,
+    "macro_average_precision_observed": 0.48725754628426665,
+    "mean_reciprocal_rank": 0.7490410052910051,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 48,
+        "hit_rate": 0.625,
+        "precision": 0.625,
+        "recall": 0.30422453703703706
+      },
+      "3": {
+        "k": 3,
+        "samples": 48,
+        "hit_rate": 0.8333333333333334,
+        "precision": 0.47222222222222215,
+        "recall": 0.6310185185185185
+      },
+      "5": {
+        "k": 5,
+        "samples": 48,
+        "hit_rate": 0.9375,
+        "precision": 0.35833333333333334,
+        "recall": 0.781712962962963
+      }
+    }
+  },
+  "frequency_baseline_metrics": {
+    "samples": 48,
+    "classes": 20,
+    "classes_with_positive_examples": 19,
+    "micro_average_precision": 0.26002562143116564,
+    "macro_average_precision_observed": 0.13377192982456143,
+    "mean_reciprocal_rank": 0.5039723875661376,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 48,
+        "hit_rate": 0.3333333333333333,
+        "precision": 0.3333333333333333,
+        "recall": 0.14930555555555555
+      },
+      "3": {
+        "k": 3,
+        "samples": 48,
+        "hit_rate": 0.5625,
+        "precision": 0.2916666666666667,
+        "recall": 0.33449074074074076
+      },
+      "5": {
+        "k": 5,
+        "samples": 48,
+        "hit_rate": 0.75,
+        "precision": 0.28750000000000003,
+        "recall": 0.5629050925925926
+      }
+    }
+  },
+  "configuration": {
+    "max_length": 256,
+    "batch_size": 16,
+    "maximum_epochs": 80,
+    "patience": 8,
+    "encoder_learning_rate": 1e-05,
+    "head_learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "maximum_positive_weight": 20.0,
+    "gradient_clip": 1.0,
+    "seed": 42,
+    "unfreeze_last_n_layers": 2
+  },
+  "positive_weight_statistics": {
+    "raw_maximum": 42.8,
+    "clipped_maximum": 20.0,
+    "classes_clipped": 6
+  },
+  "parameter_summary": {
+    "encoder_total": 6674432,
+    "encoder_trainable": 1054208,
+    "classifier_trainable": 5140,
+    "total_trainable": 1059348,
+    "trainable_encoder_rate": 0.15794722307456274,
+    "trainable_encoder_layers": [
+      10,
+      11
+    ]
+  },
+  "training_seconds": 23.26275742519647,
+  "source_metadata_sha256": "d50a4a482587a4bd65b3e9432570469536fe28f7b954ce3a0f9f546bd68f95f0",
+  "model_path": "artifacts/models/day5/fine_tuned/reaction_center/solvent_development.pt",
+  "model_sha256": "aaa1b524ece153f968f3f2bf17d91692aa994f0971cb7b17589a30371a552ba2",
+  "history_path": "reports/day5/fine_tuning/reaction_center/solvent_development_history.csv",
+  "prediction_path": "reports/day5/fine_tuning/reaction_center/solvent_development_valid_top5.csv"
+}

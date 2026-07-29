@@ -1,0 +1,52 @@
+{
+  "created_at_utc": "2026-07-29T08:57:59.979347+00:00",
+  "input": {
+    "condition_pair_path": "data/processed/reactions/d9297630_condition_pairs.parquet",
+    "condition_pair_sha256": "2dc3457de3a640bcc01e3d6c7349ad88647f068fa21b2b57cb77129f22ba6f1b",
+    "modeling_transformations": 381,
+    "sequence_definition": "sorted canonical reactants>>sorted canonical products"
+  },
+  "checkpoint": {
+    "directory": "artifacts/pretrained/day5/rxnfp_bert_pretrained",
+    "config_sha256": "024d89cb6056e146e066ebbcd9d565d6968d53e82953570a8b110b26495d7d4b",
+    "weights_sha256": "50a6ed263d33ae759affa82c1e85554cc5ea9f56145f5c7fb39b6c25d4356437",
+    "vocabulary_sha256": "399868a653e85549ce150af4a1f6cd2776240c6a3d951ced2120565f00f027fd"
+  },
+  "encoder": {
+    "model": "RXNFP BERT pretrained",
+    "hidden_size": 256,
+    "max_length": 256,
+    "batch_size": 32,
+    "device": "cuda",
+    "fine_tuned": false,
+    "pooling_methods": [
+      "cls",
+      "masked_mean"
+    ],
+    "normalized_on_disk": false
+  },
+  "outputs": {
+    "embedding_path": "data/processed/reactions/features/day5/rxnfp_reaction_embeddings.npz",
+    "embedding_sha256": "1292fe0b419f24b2ed28f19f55f81a9d5e641ccbfd06464da09f062626940f08",
+    "metadata_path": "data/processed/reactions/features/day5/rxnfp_reaction_metadata.parquet",
+    "metadata_sha256": "d50a4a482587a4bd65b3e9432570469536fe28f7b954ce3a0f9f546bd68f95f0",
+    "shape": [
+      381,
+      256
+    ],
+    "dtype": "float32",
+    "cls_norm_statistics": {
+      "minimum": 15.425372123718262,
+      "mean": 15.556509971618652,
+      "median": 15.556856155395508,
+      "maximum": 15.68920612335205
+    },
+    "masked_mean_norm_statistics": {
+      "minimum": 5.779911994934082,
+      "mean": 7.583222389221191,
+      "median": 7.512478828430176,
+      "maximum": 9.616415977478027
+    }
+  },
+  "elapsed_seconds": 1.1392892310395837
+}

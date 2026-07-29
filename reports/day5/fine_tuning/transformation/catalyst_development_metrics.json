@@ -1,0 +1,116 @@
+{
+  "created_at_utc": "2026-07-29T09:42:48.773711+00:00",
+  "protocol": "transformation",
+  "target": "catalyst",
+  "stage": "development",
+  "training_splits": [
+    "train"
+  ],
+  "evaluation_split": "valid",
+  "test_labels_used": false,
+  "model": "partially_fine_tuned_rxnfp_bert",
+  "pooling": "masked_mean",
+  "classes": 248,
+  "train_samples": 185,
+  "valid_samples": 35,
+  "best_epoch": 21,
+  "epochs_completed": 29,
+  "best_valid_loss": 0.7267251355307442,
+  "best_validation_metrics": {
+    "samples": 35,
+    "classes": 248,
+    "classes_with_positive_examples": 129,
+    "micro_average_precision": 0.28347322758587734,
+    "macro_average_precision_observed": 0.4891883154238198,
+    "mean_reciprocal_rank": 0.6294132308793964,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 35,
+        "hit_rate": 0.45714285714285713,
+        "precision": 0.45714285714285713,
+        "recall": 0.12367481724624585
+      },
+      "3": {
+        "k": 3,
+        "samples": 35,
+        "hit_rate": 0.7428571428571429,
+        "precision": 0.4476190476190476,
+        "recall": 0.25574536574536577
+      },
+      "5": {
+        "k": 5,
+        "samples": 35,
+        "hit_rate": 0.8285714285714286,
+        "precision": 0.3771428571428571,
+        "recall": 0.3501792651792652
+      }
+    }
+  },
+  "frequency_baseline_metrics": {
+    "samples": 35,
+    "classes": 248,
+    "classes_with_positive_examples": 129,
+    "micro_average_precision": 0.15895538843533033,
+    "macro_average_precision_observed": 0.0602436323366556,
+    "mean_reciprocal_rank": 0.5382940607527823,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 35,
+        "hit_rate": 0.4857142857142857,
+        "precision": 0.4857142857142857,
+        "recall": 0.09556721056721056
+      },
+      "3": {
+        "k": 3,
+        "samples": 35,
+        "hit_rate": 0.5428571428571428,
+        "precision": 0.34285714285714286,
+        "recall": 0.18702186702186702
+      },
+      "5": {
+        "k": 5,
+        "samples": 35,
+        "hit_rate": 0.5714285714285714,
+        "precision": 0.3028571428571428,
+        "recall": 0.27002775002775004
+      }
+    }
+  },
+  "configuration": {
+    "max_length": 256,
+    "batch_size": 16,
+    "maximum_epochs": 80,
+    "patience": 8,
+    "encoder_learning_rate": 1e-05,
+    "head_learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "maximum_positive_weight": 20.0,
+    "gradient_clip": 1.0,
+    "seed": 42,
+    "unfreeze_last_n_layers": 2
+  },
+  "positive_weight_statistics": {
+    "raw_maximum": 91.5,
+    "clipped_maximum": 20.0,
+    "classes_clipped": 222
+  },
+  "parameter_summary": {
+    "encoder_total": 6674432,
+    "encoder_trainable": 1054208,
+    "classifier_trainable": 63736,
+    "total_trainable": 1117944,
+    "trainable_encoder_rate": 0.15794722307456274,
+    "trainable_encoder_layers": [
+      10,
+      11
+    ]
+  },
+  "training_seconds": 9.916764750145376,
+  "source_metadata_sha256": "d50a4a482587a4bd65b3e9432570469536fe28f7b954ce3a0f9f546bd68f95f0",
+  "model_path": "artifacts/models/day5/fine_tuned/transformation/catalyst_development.pt",
+  "model_sha256": "64370225096baaa7f667754dfdcbe9edcd3b4ef5307edd47fac5a0c8a67858d8",
+  "history_path": "reports/day5/fine_tuning/transformation/catalyst_development_history.csv",
+  "prediction_path": "reports/day5/fine_tuning/transformation/catalyst_development_valid_top5.csv"
+}

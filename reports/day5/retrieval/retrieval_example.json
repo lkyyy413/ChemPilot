@@ -1,0 +1,167 @@
+{
+  "protocol": "transformation",
+  "embedding": "RXNFP bert_pretrained CLS",
+  "input": {
+    "reactant_smiles": [
+      "Brc1ccc2ncccc2c1",
+      "O=S([O-])C1CC1.[Na+]"
+    ],
+    "product_smiles": [
+      "c1cnc2ccc(C3CC3)cc2c1"
+    ],
+    "canonical_reaction": "Brc1ccc2ncccc2c1.O=S([O-])C1CC1.[Na+]>>c1cnc2ccc(C3CC3)cc2c1"
+  },
+  "index": {
+    "splits": [
+      "train",
+      "valid"
+    ],
+    "reactions": 323
+  },
+  "neighbors": [
+    {
+      "rank": 1,
+      "similarity": 1.0,
+      "transformation_signature": "SMILES:Brc1ccc2ncccc2c1.SMILES:O=S([O-])C1CC1.[Na+]>>SMILES:c1cnc2ccc(C3CC3)cc2c1",
+      "canonical_reaction": "Brc1ccc2ncccc2c1.O=S([O-])C1CC1.[Na+]>>c1cnc2ccc(C3CC3)cc2c1",
+      "reaction_type": "NI COUPLING",
+      "reaction_center_signature": "03a6514f84489c73",
+      "condition_evidence": {
+        "condition_pairs": 564,
+        "represented_experiments": 576,
+        "best_historical_condition": {
+          "solvents": [
+            "SMILES:CS(C)=O"
+          ],
+          "catalysts": [
+            "SMILES:CC(=O)[O][Pd][O]C(C)=O",
+            "SMILES:CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21"
+          ],
+          "reagents": [
+            "SMILES:O=C([O-])[O-].[K+].[K+]"
+          ],
+          "temperature_celsius": 150.0,
+          "reaction_time_hours": 18.0,
+          "lc_area_percent": 12.0,
+          "replicate_count": 1,
+          "representative_reaction_id": "ord-04d9cbb07f4e4b769247825247ac295b"
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "similarity": 0.9616739153862,
+      "transformation_signature": "SMILES:Brc1ccc2ncccc2c1.SMILES:O=S([O-])c1ccccn1.[Na+]>>SMILES:c1ccc(-c2ccc3ncccc3c2)nc1",
+      "canonical_reaction": "Brc1ccc2ncccc2c1.O=S([O-])c1ccccn1.[Na+]>>c1ccc(-c2ccc3ncccc3c2)nc1",
+      "reaction_type": "NI COUPLING",
+      "reaction_center_signature": "4bd8250f86ff7286",
+      "condition_evidence": {
+        "condition_pairs": 280,
+        "represented_experiments": 288,
+        "best_historical_condition": {
+          "solvents": [
+            "SMILES:CC#N"
+          ],
+          "catalysts": [
+            "SMILES:C1CCC([P+](CCC[P+](C2CCCC2)C2CCCC2)C2CCCC2)C1.F[B-](F)(F)F.F[B-](F)(F)F",
+            "SMILES:CN(C)CCN(C)C.Cc1cccc[c]1[Ni][Cl]"
+          ],
+          "reagents": [
+            "SMILES:O=P([O-])([O-])[O-].[K+].[K+].[K+]"
+          ],
+          "temperature_celsius": 120.0,
+          "reaction_time_hours": 18.0,
+          "lc_area_percent": 12.0,
+          "replicate_count": 1,
+          "representative_reaction_id": "ord-82a12360fda342009374795e9b742444"
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "similarity": 0.9054783582687378,
+      "transformation_signature": "SMILES:CC1(C)OB(c2ccc3cn[nH]c3c2)OC1(C)C.SMILES:OCc1ccc(I)cc1>>SMILES:OCc1ccc(-c2ccc3cn[nH]c3c2)cc1",
+      "canonical_reaction": "CC1(C)OB(c2ccc3cn[nH]c3c2)OC1(C)C.OCc1ccc(I)cc1>>OCc1ccc(-c2ccc3cn[nH]c3c2)cc1",
+      "reaction_type": "SUZUKI",
+      "reaction_center_signature": "7a9fb35f9e5680a5",
+      "condition_evidence": {
+        "condition_pairs": 5,
+        "represented_experiments": 5,
+        "best_historical_condition": {
+          "solvents": [
+            "SMILES:CO"
+          ],
+          "catalysts": [
+            "SMILES:CN(C)c1ccc(P(C(C)(C)C)C(C)(C)C)cc1.CN(C)c1ccc(P(C(C)(C)C)C(C)(C)C)cc1.[Cl][Pd][Cl]"
+          ],
+          "reagents": [
+            "SMILES:O=C([O-])O.[Na+]"
+          ],
+          "temperature_celsius": 80.0,
+          "reaction_time_hours": null,
+          "lc_area_percent": 89.0,
+          "replicate_count": 1,
+          "representative_reaction_id": "ord-c4cc2d1931f1488c93aea998db0a5027"
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "similarity": 0.9003979563713074,
+      "transformation_signature": "SMILES:Cc1ccnc2ccccc12.SMILES:IC1CCCCC1.SMILES:O=C(O)C(F)(F)F>>SMILES:Cc1cc(C2CCCCC2)nc2ccccc12",
+      "canonical_reaction": "Cc1ccnc2ccccc12.IC1CCCCC1.O=C(O)C(F)(F)F>>Cc1cc(C2CCCCC2)nc2ccccc12",
+      "reaction_type": "PHOTOCHEMISTRY",
+      "reaction_center_signature": "02cca3e753038d30",
+      "condition_evidence": {
+        "condition_pairs": 96,
+        "represented_experiments": 96,
+        "best_historical_condition": {
+          "solvents": [
+            "SMILES:CO"
+          ],
+          "catalysts": [
+            "NAME:mnbr(co)5"
+          ],
+          "reagents": [],
+          "temperature_celsius": 25.0,
+          "reaction_time_hours": 18.0,
+          "lc_area_percent": 30.0,
+          "replicate_count": 1,
+          "representative_reaction_id": "ord-81dfc0b726354fe18c909f996da6417f"
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "similarity": 0.8893786668777466,
+      "transformation_signature": "SMILES:CCO.SMILES:CS(=O)(=O)O.SMILES:c1ccc2cnccc2c1>>SMILES:CCc1nccc2ccccc12",
+      "canonical_reaction": "CCO.CS(=O)(=O)O.c1ccc2cnccc2c1>>CCc1nccc2ccccc12",
+      "reaction_type": "PHOTOCHEMISTRY",
+      "reaction_center_signature": "fec81f44fdb8cfa7",
+      "condition_evidence": {
+        "condition_pairs": 6,
+        "represented_experiments": 12,
+        "best_historical_condition": {
+          "solvents": [
+            "SMILES:CS(C)=O"
+          ],
+          "catalysts": [
+            "NAME:(ir[df(5cf3)ppy]2(dtbpy))pf6"
+          ],
+          "reagents": [
+            "SMILES:CCOC(=O)C(C)S"
+          ],
+          "temperature_celsius": 25.0,
+          "reaction_time_hours": 18.0,
+          "lc_area_percent": 15.5,
+          "replicate_count": 2,
+          "representative_reaction_id": "ord-2585a0d4209c4c06a1c1323588c4c40b"
+        }
+      }
+    }
+  ],
+  "interpretation": {
+    "similarity": "Cosine similarity in the RXNFP embedding space; it is not a calibrated probability.",
+    "score": "lc_area_percent is a semi-quantitative LC area response at 280 nm, not isolated yield."
+  }
+}

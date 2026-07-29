@@ -1,0 +1,96 @@
+{
+  "created_at_utc": "2026-07-29T08:33:33.443989+00:00",
+  "source": {
+    "package": "rxnfp",
+    "version": "0.1.0",
+    "project_repository": "https://github.com/rxn4chemistry/rxnfp",
+    "distribution": "rxnfp-0.1.0-py3-none-any.whl",
+    "wheel_size_bytes": 74671752,
+    "wheel_sha256": "c5c1e818add6f34539a6b29bc680c47c9e7311e9383d1b34ce901481e34b58cf",
+    "license": "MIT",
+    "license_note": "The checkpoint is bundled inside the MIT-licensed rxnfp wheel; no separate model license file was present."
+  },
+  "checkpoint": {
+    "name": "bert_pretrained",
+    "selection_reason": "Reaction-SMILES masked-language-model pretraining without the source reaction-classification fine-tuning.",
+    "output_directory": "artifacts/pretrained/day5/rxnfp_bert_pretrained",
+    "files": {
+      "config.json": {
+        "path": "artifacts/pretrained/day5/rxnfp_bert_pretrained/config.json",
+        "size_bytes": 493,
+        "sha256": "024d89cb6056e146e066ebbcd9d565d6968d53e82953570a8b110b26495d7d4b",
+        "wheel_member": "rxnfp/models/transformers/bert_pretrained/config.json"
+      },
+      "pytorch_model.bin": {
+        "path": "artifacts/pretrained/day5/rxnfp_bert_pretrained/pytorch_model.bin",
+        "size_bytes": 27016467,
+        "sha256": "50a6ed263d33ae759affa82c1e85554cc5ea9f56145f5c7fb39b6c25d4356437",
+        "wheel_member": "rxnfp/models/transformers/bert_pretrained/pytorch_model.bin"
+      },
+      "vocab.txt": {
+        "path": "artifacts/pretrained/day5/rxnfp_bert_pretrained/vocab.txt",
+        "size_bytes": 3525,
+        "sha256": "399868a653e85549ce150af4a1f6cd2776240c6a3d951ced2120565f00f027fd",
+        "wheel_member": "rxnfp/models/transformers/bert_pretrained/vocab.txt"
+      },
+      "LICENSE": {
+        "path": "artifacts/pretrained/day5/rxnfp_bert_pretrained/LICENSE",
+        "size_bytes": 1078,
+        "sha256": "4cd19ee3f984c4cf21234b36d941f80fe7cbac61b4a104a558813cd3948857ce",
+        "wheel_member": "rxnfp-0.1.0.dist-info/LICENSE"
+      }
+    }
+  },
+  "model_config": {
+    "attention_probs_dropout_prob": 0.1,
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.1,
+    "hidden_size": 256,
+    "initializer_range": 0.02,
+    "intermediate_size": 512,
+    "layer_norm_eps": 1e-12,
+    "max_position_embeddings": 512,
+    "num_attention_heads": 4,
+    "num_hidden_layers": 12,
+    "output_attentions": false,
+    "output_hidden_states": false,
+    "output_past": true,
+    "pruned_heads": {},
+    "torchscript": false,
+    "type_vocab_size": 2,
+    "use_bfloat16": false,
+    "vocab_size": 591
+  },
+  "vocabulary": {
+    "size": 591,
+    "first_tokens": [
+      "[PAD]",
+      "[unused1]",
+      "[unused2]",
+      "[unused3]",
+      "[unused4]",
+      "[unused5]",
+      "[unused6]",
+      "[unused7]",
+      "[unused8]",
+      "[unused9]",
+      "[unused10]",
+      "[UNK]",
+      "[CLS]",
+      "[SEP]",
+      "[MASK]",
+      "c",
+      "C",
+      "(",
+      ")",
+      "O"
+    ],
+    "special_tokens_present": {
+      "[PAD]": true,
+      "[UNK]": true,
+      "[CLS]": true,
+      "[SEP]": true,
+      "[MASK]": true
+    }
+  }
+}

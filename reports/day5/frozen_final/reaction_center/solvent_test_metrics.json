@@ -1,0 +1,86 @@
+{
+  "created_at_utc": "2026-07-29T10:20:12.447820+00:00",
+  "protocol": "reaction_center",
+  "target": "solvent",
+  "stage": "final",
+  "model": "frozen_rxnfp_plus_one_vs_rest_logistic",
+  "pooling": "masked_mean",
+  "regularization_c": 10.0,
+  "selection_source": "reports/day5/classification/transformer_pooling_c_search.json",
+  "test_labels_used_for_selection": false,
+  "test_evaluations": 1,
+  "classes": 20,
+  "train_valid_samples": 267,
+  "complete_test_samples": 65,
+  "test_evaluated_samples": 56,
+  "all_targets_known": 53,
+  "contains_unknown_targets": 3,
+  "test_metrics": {
+    "samples": 56,
+    "classes": 20,
+    "classes_with_positive_examples": 19,
+    "micro_average_precision": 0.3621327020011457,
+    "macro_average_precision_observed": 0.4386454981255213,
+    "mean_reciprocal_rank": 0.6459254535147393,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 56,
+        "hit_rate": 0.4642857142857143,
+        "precision": 0.4642857142857143,
+        "recall": 0.2401785714285714
+      },
+      "3": {
+        "k": 3,
+        "samples": 56,
+        "hit_rate": 0.7678571428571429,
+        "precision": 0.375,
+        "recall": 0.5129464285714286
+      },
+      "5": {
+        "k": 5,
+        "samples": 56,
+        "hit_rate": 0.8928571428571429,
+        "precision": 0.31071428571428567,
+        "recall": 0.6943452380952381
+      }
+    }
+  },
+  "frequency_baseline_metrics": {
+    "samples": 56,
+    "classes": 20,
+    "classes_with_positive_examples": 19,
+    "micro_average_precision": 0.23671061015890216,
+    "macro_average_precision_observed": 0.13721804511278193,
+    "mean_reciprocal_rank": 0.5014816532673676,
+    "top_k": {
+      "1": {
+        "k": 1,
+        "samples": 56,
+        "hit_rate": 0.32142857142857145,
+        "precision": 0.32142857142857145,
+        "recall": 0.16741071428571427
+      },
+      "3": {
+        "k": 3,
+        "samples": 56,
+        "hit_rate": 0.5714285714285714,
+        "precision": 0.2857142857142857,
+        "recall": 0.365327380952381
+      },
+      "5": {
+        "k": 5,
+        "samples": 56,
+        "hit_rate": 0.75,
+        "precision": 0.2571428571428572,
+        "recall": 0.5392857142857143
+      }
+    }
+  },
+  "training_seconds": 0.05245972238481045,
+  "maximum_iterations": 1000,
+  "maximum_iterations_used": 9,
+  "converged": true,
+  "model_path": "artifacts/models/day5/frozen_final/reaction_center/solvent_final.joblib",
+  "prediction_path": "reports/day5/frozen_final/reaction_center/solvent_test_top5.csv"
+}

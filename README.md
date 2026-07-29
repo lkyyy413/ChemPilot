@@ -601,6 +601,244 @@ caches, and model binaries are excluded from Git. They can be
 reconstructed from the pinned ORD revision and the commands
 above.
 
+## Day 5: reaction Transformer and similar-reaction retrieval
+
+Day 5 evaluates a pretrained RXNFP reaction-SMILES Transformer
+for solvent and catalyst recommendation and for similar-reaction
+retrieval.
+
+Each Transformer input is represented as sorted canonical
+reactants followed by `>>` and sorted canonical products.
+Reagents, solvents, catalysts, atom mappings, scores, and split
+identities are excluded from the model input.
+
+The 381 modeling transformations contain no invalid reaction
+sequences and no RXNFP unknown tokens. A maximum length of 256
+covers every modeling sequence without truncation.
+
+The RXNFP `bert_pretrained` checkpoint contains 12 Transformer
+layers, a hidden size of 256, four attention heads, and a
+591-token reaction-SMILES vocabulary. The checkpoint is loaded
+from the RXNFP 0.1.0 wheel with its source hashes and license
+recorded in the Day 5 manifest.
+
+### Frozen and partially fine-tuned RXNFP models
+
+Frozen RXNFP representations were evaluated using both the CLS
+embedding and masked-mean pooling. Pooling and logistic
+regularization were selected using validation data only.
+
+Partial fine-tuning keeps the embedding layer and Transformer
+layers 0–9 frozen. Layers 10–11 and the multi-label classifier
+head are trained using weighted BCE-with-logits loss. Positive
+class weights are clipped at 20 to limit instability from rare
+catalyst labels.
+
+The following table compares untouched-test performance:
+
+| Protocol | Target | Model | Micro AP | MRR | HitRate@5 |
+|---|---|---|---:|---:|---:|
+| Transformation | Solvent | Morgan + logistic | **0.6229** | **0.6656** | **0.8824** |
+| Transformation | Solvent | Frozen RXNFP | 0.4200 | 0.6490 | 0.8627 |
+| Transformation | Solvent | Fine-tuned RXNFP | 0.3954 | 0.5936 | 0.7647 |
+| Transformation | Catalyst | Morgan + logistic | **0.3268** | **0.6406** | **0.8611** |
+| Transformation | Catalyst | Frozen RXNFP | 0.2745 | 0.5307 | 0.6944 |
+| Transformation | Catalyst | Fine-tuned RXNFP | 0.2413 | 0.5504 | 0.6944 |
+| Reaction center | Solvent | Morgan + logistic | **0.5276** | **0.6848** | **0.9464** |
+| Reaction center | Solvent | Frozen RXNFP | 0.3621 | 0.6459 | 0.8929 |
+| Reaction center | Solvent | Fine-tuned RXNFP | 0.4107 | 0.6374 | 0.9286 |
+| Reaction center | Catalyst | Morgan + logistic | **0.2655** | **0.6727** | **0.7143** |
+| Reaction center | Catalyst | Frozen RXNFP | 0.1836 | 0.5068 | 0.6327 |
+| Reaction center | Catalyst | Fine-tuned RXNFP | 0.2222 | 0.5256 | 0.6939 |
+
+Morgan fingerprints remain the preferred representation for
+direct condition classification. The Transformer models do not
+improve test micro AP on this small, sparse multi-label dataset.
+The validation-to-test decline and diverging training and
+validation losses indicate limited-data overfitting during
+partial fine-tuning.
+
+This is retained as an informative negative result rather than
+selecting a model using test performance.
+
+### Similar-reaction retrieval
+
+Frozen RXNFP embeddings are also used for exact cosine-similarity
+retrieval. CLS pooling was selected on validation data and the
+final index was constructed from train plus validation reactions.
+
+| Protocol | Index reactions | Test queries | Reaction-type Hit@5 | MRR@10 | Solvent recall@5 | Catalyst recall@5 |
+|---|---:|---:|---:|---:|---:|---:|
+| Transformation | 323 | 58 | 0.8621 | 0.7714 | 0.8601 | 0.7695 |
+| Reaction center | 316 | 65 | 0.8154 | 0.7344 | 0.7336 | 0.6537 |
+
+The retrieval interface returns neighboring historical reactions
+together with their best observed condition records. Retrieved
+conditions are experimental precedents, not guaranteed optimal
+conditions. Cosine similarity is a representation-space
+similarity score and must not be interpreted as a probability of
+reaction success.
+
+The ORD analytical response remains LC area percent at 280 nm
+and is not treated or reported as isolated reaction yield.
+
+See the
+[complete Day 5 report](reports/day5/day5_reaction_transformer_report.md).
+
+![Day 5 model comparison](reports/day5/figures/day5_model_comparison.png)
+
+![Day 5 fine-tuning curves](reports/day5/figures/day5_fine_tuning_curves.png)
+
+![Day 5 retrieval metrics](reports/day5/figures/day5_retrieval_metrics.png)
+
+## Reproduce Day 5
+
+Activate the dedicated reaction environment:
+
+```bash
+conda activate chempilot-ord
+python -m pip install -e . --no-deps
+```
+
+### Audit reaction sequences
+
+```bash
+python scripts/audit_reaction_sequences.py
+```
+
+### Prepare the pinned RXNFP checkpoint
+
+Download the RXNFP 0.1.0 wheel without installing its historical
+dependency set:
+
+```bash
+mkdir -p /tmp/rxnfp-wheel
+
+python -m pip download \
+  --no-deps \
+  --only-binary=:all: \
+  --dest /tmp/rxnfp-wheel \
+  rxnfp==0.1.0
+```
+
+Extract and verify the pretrained checkpoint:
+
+```bash
+python scripts/prepare_rxnfp_pretrained.py \
+  --wheel \
+  /tmp/rxnfp-wheel/rxnfp-0.1.0-py3-none-any.whl
+```
+
+The expected wheel SHA256 is:
+
+```text
+c5c1e818add6f34539a6b29bc680c47c9e7311e9383d1b34ce901481e34b58cf
+```
+
+Audit the exact RXNFP tokenizer against all modeling reactions:
+
+```bash
+python scripts/audit_rxnfp_tokenization.py
+```
+
+### Build frozen RXNFP features
+
+```bash
+CUDA_VISIBLE_DEVICES=0 \
+python scripts/build_reaction_transformer_features.py \
+  --device cuda \
+  --batch-size 32 \
+  --max-length 256
+```
+
+### Select frozen classifiers
+
+Search pooling and logistic regularization using validation data
+only:
+
+```bash
+python scripts/search_reaction_transformer_classifiers.py \
+  --n-jobs 8 \
+  --max-iterations 1000
+```
+
+Evaluate the locked frozen configurations once on test:
+
+```bash
+python scripts/evaluate_frozen_rxnfp_final.py \
+  --n-jobs 8 \
+  --max-iterations 1000
+```
+
+### Partially fine-tune RXNFP
+
+Run validation-based development training separately for each
+protocol and target. For example:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 \
+python scripts/train_reaction_transformer_development.py \
+  --protocol transformation \
+  --target solvent \
+  --device cuda \
+  --batch-size 16 \
+  --max-epochs 80 \
+  --patience 8
+```
+
+Repeat for transformation/catalyst,
+reaction_center/solvent, and reaction_center/catalyst. The fixed
+epoch plan recorded in
+`reports/day5/fine_tuning/final_training_plan.json` is selected
+from these validation runs.
+
+Fit train-plus-validation models for the fixed epoch counts and
+evaluate each untouched test task once:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 \
+python scripts/train_reaction_transformer_final.py \
+  --device cuda
+```
+
+### Build and evaluate similar-reaction retrieval
+
+Select pooling using train-to-validation retrieval:
+
+```bash
+python scripts/evaluate_reaction_retrieval_validation.py
+```
+
+Build the final train-plus-validation indices and evaluate test
+queries once:
+
+```bash
+python scripts/build_reaction_retrieval_final.py
+```
+
+Run an end-to-end query:
+
+```bash
+python scripts/retrieve_similar_reactions.py \
+  --reactant "Brc1ccc2ncccc2c1" \
+  --reactant "O=S([O-])C1CC1.[Na+]" \
+  --product "c1cnc2ccc(C3CC3)cc2c1" \
+  --protocol transformation \
+  --top-k 5
+```
+
+### Generate Day 5 outputs
+
+```bash
+python scripts/plot_day5.py
+python scripts/summarize_day5.py
+```
+
+Generated pretrained weights, embedding caches, fine-tuned model
+binaries, and retrieval indices are excluded from Git. Their
+provenance and hashes are recorded in tracked reports.
+
+
 ## Reproducibility controls
 
 ChemPilot records dataset hashes, feature parameters, software versions, fixed sample IDs, validation searches, sample-level failure cases, and training times. Feature scaling is fitted only on training data. Test labels are not used for hyperparameter selection.
@@ -612,9 +850,8 @@ Generated datasets, feature caches, model binaries, and full sample-level predic
 - [x] Graph neural network property prediction
 - [x] Reaction-condition dataset and classical multi-label baseline
 - [x] Reaction-condition Top-K inference and applicability warning
+- [x] Transformer-based condition recommendation benchmark
+- [x] RXNFP similar-reaction retrieval
 - [ ] Joint solvent-catalyst condition ranking
 - [ ] Reagent and temperature prediction
-- [ ] Transformer-based condition recommendation
-- [ ] General-purpose similar-reaction retrieval
-- [ ] Synthesis-feasibility scoring
-- [ ] Unified cross-task inference API and demonstration interface
+- [ ] Unified inference API and lightweight synthesizability scoring

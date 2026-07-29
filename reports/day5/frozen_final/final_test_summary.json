@@ -1,0 +1,352 @@
+{
+  "created_at_utc": "2026-07-29T10:20:12.946481+00:00",
+  "selection_source": "reports/day5/classification/transformer_pooling_c_search.json",
+  "test_labels_used_for_selection": false,
+  "test_evaluations_per_task": 1,
+  "results": [
+    {
+      "created_at_utc": "2026-07-29T10:20:11.831117+00:00",
+      "protocol": "transformation",
+      "target": "solvent",
+      "stage": "final",
+      "model": "frozen_rxnfp_plus_one_vs_rest_logistic",
+      "pooling": "masked_mean",
+      "regularization_c": 1.0,
+      "selection_source": "reports/day5/classification/transformer_pooling_c_search.json",
+      "test_labels_used_for_selection": false,
+      "test_evaluations": 1,
+      "classes": 20,
+      "train_valid_samples": 272,
+      "complete_test_samples": 58,
+      "test_evaluated_samples": 51,
+      "all_targets_known": 48,
+      "contains_unknown_targets": 3,
+      "test_metrics": {
+        "samples": 51,
+        "classes": 20,
+        "classes_with_positive_examples": 19,
+        "micro_average_precision": 0.42002799718681183,
+        "macro_average_precision_observed": 0.5170554290550203,
+        "mean_reciprocal_rank": 0.6490429505135389,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "samples": 51,
+            "hit_rate": 0.49019607843137253,
+            "precision": 0.49019607843137253,
+            "recall": 0.2290849673202614
+          },
+          "3": {
+            "k": 3,
+            "samples": 51,
+            "hit_rate": 0.7254901960784313,
+            "precision": 0.4248366013071896,
+            "recall": 0.5454715219421102
+          },
+          "5": {
+            "k": 5,
+            "samples": 51,
+            "hit_rate": 0.8627450980392157,
+            "precision": 0.3529411764705883,
+            "recall": 0.7618580765639589
+          }
+        }
+      },
+      "frequency_baseline_metrics": {
+        "samples": 51,
+        "classes": 20,
+        "classes_with_positive_examples": 19,
+        "micro_average_precision": 0.32055423120051607,
+        "macro_average_precision_observed": 0.12383900928792568,
+        "mean_reciprocal_rank": 0.6082944288826642,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "samples": 51,
+            "hit_rate": 0.45098039215686275,
+            "precision": 0.45098039215686275,
+            "recall": 0.22208216619981325
+          },
+          "3": {
+            "k": 3,
+            "samples": 51,
+            "hit_rate": 0.6862745098039216,
+            "precision": 0.37254901960784315,
+            "recall": 0.4789915966386554
+          },
+          "5": {
+            "k": 5,
+            "samples": 51,
+            "hit_rate": 0.8627450980392157,
+            "precision": 0.30980392156862746,
+            "recall": 0.6739495798319328
+          }
+        }
+      },
+      "training_seconds": 1.135977717116475,
+      "maximum_iterations": 1000,
+      "maximum_iterations_used": 8,
+      "converged": true,
+      "model_path": "artifacts/models/day5/frozen_final/transformation/solvent_final.joblib",
+      "prediction_path": "reports/day5/frozen_final/transformation/solvent_test_top5.csv"
+    },
+    {
+      "created_at_utc": "2026-07-29T10:20:12.352523+00:00",
+      "protocol": "transformation",
+      "target": "catalyst",
+      "stage": "final",
+      "model": "frozen_rxnfp_plus_one_vs_rest_logistic",
+      "pooling": "masked_mean",
+      "regularization_c": 1.0,
+      "selection_source": "reports/day5/classification/transformer_pooling_c_search.json",
+      "test_labels_used_for_selection": false,
+      "test_evaluations": 1,
+      "classes": 248,
+      "train_valid_samples": 220,
+      "complete_test_samples": 58,
+      "test_evaluated_samples": 36,
+      "all_targets_known": 26,
+      "contains_unknown_targets": 10,
+      "test_metrics": {
+        "samples": 36,
+        "classes": 248,
+        "classes_with_positive_examples": 125,
+        "micro_average_precision": 0.27454732901140183,
+        "macro_average_precision_observed": 0.49771526158169693,
+        "mean_reciprocal_rank": 0.530726911976912,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "samples": 36,
+            "hit_rate": 0.3888888888888889,
+            "precision": 0.3888888888888889,
+            "recall": 0.08455448872115538
+          },
+          "3": {
+            "k": 3,
+            "samples": 36,
+            "hit_rate": 0.5555555555555556,
+            "precision": 0.37962962962962965,
+            "recall": 0.22643883893883895
+          },
+          "5": {
+            "k": 5,
+            "samples": 36,
+            "hit_rate": 0.6944444444444444,
+            "precision": 0.35,
+            "recall": 0.3278289084210137
+          }
+        }
+      },
+      "frequency_baseline_metrics": {
+        "samples": 36,
+        "classes": 248,
+        "classes_with_positive_examples": 125,
+        "micro_average_precision": 0.18559547143011768,
+        "macro_average_precision_observed": 0.05533333333333333,
+        "mean_reciprocal_rank": 0.5934206151339754,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "samples": 36,
+            "hit_rate": 0.5277777777777778,
+            "precision": 0.5277777777777778,
+            "recall": 0.10764470868637535
+          },
+          "3": {
+            "k": 3,
+            "samples": 36,
+            "hit_rate": 0.6388888888888888,
+            "precision": 0.3888888888888889,
+            "recall": 0.2666510572760573
+          },
+          "5": {
+            "k": 5,
+            "samples": 36,
+            "hit_rate": 0.6944444444444444,
+            "precision": 0.33888888888888885,
+            "recall": 0.3692200160950161
+          }
+        }
+      },
+      "training_seconds": 0.21568407770246267,
+      "maximum_iterations": 1000,
+      "maximum_iterations_used": 9,
+      "converged": true,
+      "model_path": "artifacts/models/day5/frozen_final/transformation/catalyst_final.joblib",
+      "prediction_path": "reports/day5/frozen_final/transformation/catalyst_test_top5.csv"
+    },
+    {
+      "created_at_utc": "2026-07-29T10:20:12.447820+00:00",
+      "protocol": "reaction_center",
+      "target": "solvent",
+      "stage": "final",
+      "model": "frozen_rxnfp_plus_one_vs_rest_logistic",
+      "pooling": "masked_mean",
+      "regularization_c": 10.0,
+      "selection_source": "reports/day5/classification/transformer_pooling_c_search.json",
+      "test_labels_used_for_selection": false,
+      "test_evaluations": 1,
+      "classes": 20,
+      "train_valid_samples": 267,
+      "complete_test_samples": 65,
+      "test_evaluated_samples": 56,
+      "all_targets_known": 53,
+      "contains_unknown_targets": 3,
+      "test_metrics": {
+        "samples": 56,
+        "classes": 20,
+        "classes_with_positive_examples": 19,
+        "micro_average_precision": 0.3621327020011457,
+        "macro_average_precision_observed": 0.4386454981255213,
+        "mean_reciprocal_rank": 0.6459254535147393,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "samples": 56,
+            "hit_rate": 0.4642857142857143,
+            "precision": 0.4642857142857143,
+            "recall": 0.2401785714285714
+          },
+          "3": {
+            "k": 3,
+            "samples": 56,
+            "hit_rate": 0.7678571428571429,
+            "precision": 0.375,
+            "recall": 0.5129464285714286
+          },
+          "5": {
+            "k": 5,
+            "samples": 56,
+            "hit_rate": 0.8928571428571429,
+            "precision": 0.31071428571428567,
+            "recall": 0.6943452380952381
+          }
+        }
+      },
+      "frequency_baseline_metrics": {
+        "samples": 56,
+        "classes": 20,
+        "classes_with_positive_examples": 19,
+        "micro_average_precision": 0.23671061015890216,
+        "macro_average_precision_observed": 0.13721804511278193,
+        "mean_reciprocal_rank": 0.5014816532673676,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "samples": 56,
+            "hit_rate": 0.32142857142857145,
+            "precision": 0.32142857142857145,
+            "recall": 0.16741071428571427
+          },
+          "3": {
+            "k": 3,
+            "samples": 56,
+            "hit_rate": 0.5714285714285714,
+            "precision": 0.2857142857142857,
+            "recall": 0.365327380952381
+          },
+          "5": {
+            "k": 5,
+            "samples": 56,
+            "hit_rate": 0.75,
+            "precision": 0.2571428571428572,
+            "recall": 0.5392857142857143
+          }
+        }
+      },
+      "training_seconds": 0.05245972238481045,
+      "maximum_iterations": 1000,
+      "maximum_iterations_used": 9,
+      "converged": true,
+      "model_path": "artifacts/models/day5/frozen_final/reaction_center/solvent_final.joblib",
+      "prediction_path": "reports/day5/frozen_final/reaction_center/solvent_test_top5.csv"
+    },
+    {
+      "created_at_utc": "2026-07-29T10:20:12.945613+00:00",
+      "protocol": "reaction_center",
+      "target": "catalyst",
+      "stage": "final",
+      "model": "frozen_rxnfp_plus_one_vs_rest_logistic",
+      "pooling": "masked_mean",
+      "regularization_c": 10.0,
+      "selection_source": "reports/day5/classification/transformer_pooling_c_search.json",
+      "test_labels_used_for_selection": false,
+      "test_evaluations": 1,
+      "classes": 241,
+      "train_valid_samples": 209,
+      "complete_test_samples": 65,
+      "test_evaluated_samples": 49,
+      "all_targets_known": 29,
+      "contains_unknown_targets": 20,
+      "test_metrics": {
+        "samples": 49,
+        "classes": 241,
+        "classes_with_positive_examples": 131,
+        "micro_average_precision": 0.18359581525381793,
+        "macro_average_precision_observed": 0.36626303701680957,
+        "mean_reciprocal_rank": 0.5068141884186949,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "samples": 49,
+            "hit_rate": 0.3877551020408163,
+            "precision": 0.3877551020408163,
+            "recall": 0.1381941088123561
+          },
+          "3": {
+            "k": 3,
+            "samples": 49,
+            "hit_rate": 0.5510204081632653,
+            "precision": 0.2789115646258503,
+            "recall": 0.2584260210910871
+          },
+          "5": {
+            "k": 5,
+            "samples": 49,
+            "hit_rate": 0.6326530612244898,
+            "precision": 0.23673469387755097,
+            "recall": 0.33110506852372024
+          }
+        }
+      },
+      "frequency_baseline_metrics": {
+        "samples": 49,
+        "classes": 241,
+        "classes_with_positive_examples": 131,
+        "micro_average_precision": 0.13683158852021082,
+        "macro_average_precision_observed": 0.044711014176663025,
+        "mean_reciprocal_rank": 0.46395401790413754,
+        "top_k": {
+          "1": {
+            "k": 1,
+            "samples": 49,
+            "hit_rate": 0.42857142857142855,
+            "precision": 0.42857142857142855,
+            "recall": 0.09477592358428903
+          },
+          "3": {
+            "k": 3,
+            "samples": 49,
+            "hit_rate": 0.42857142857142855,
+            "precision": 0.2925170068027211,
+            "recall": 0.1732034463363837
+          },
+          "5": {
+            "k": 5,
+            "samples": 49,
+            "hit_rate": 0.5102040816326531,
+            "precision": 0.2653061224489796,
+            "recall": 0.27819695889292145
+          }
+        }
+      },
+      "training_seconds": 0.28984286449849606,
+      "maximum_iterations": 1000,
+      "maximum_iterations_used": 11,
+      "converged": true,
+      "model_path": "artifacts/models/day5/frozen_final/reaction_center/catalyst_final.joblib",
+      "prediction_path": "reports/day5/frozen_final/reaction_center/catalyst_test_top5.csv"
+    }
+  ]
+}

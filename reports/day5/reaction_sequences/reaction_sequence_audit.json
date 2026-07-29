@@ -1,0 +1,140 @@
+{
+  "created_at_utc": "2026-07-29T08:07:36.935697+00:00",
+  "input": {
+    "path": "data/processed/reactions/d9297630_condition_pairs.parquet",
+    "sha256": "2dc3457de3a640bcc01e3d6c7349ad88647f068fa21b2b57cb77129f22ba6f1b"
+  },
+  "sequence_definition": {
+    "format": "sorted canonical reactants>>sorted canonical products",
+    "includes_reagents": false,
+    "includes_solvents": false,
+    "includes_catalysts": false,
+    "atom_mapping_used": false,
+    "lexical_tokenizer": "(\\[[^\\]]+\\]|Br?|Cl?|N|O|S|P|F|I|b|c|n|o|s|p|\\(|\\)|\\.|=|#|-|\\+|\\\\|/|:|~|@|\\?|>|\\*|\\$|%[0-9]{2}|[0-9])",
+    "lexical_tokenizer_note": "Length proxy only; the selected pretrained tokenizer must be audited separately."
+  },
+  "all_transformations": {
+    "rows": 602,
+    "unique_sequences": 602,
+    "rdkit_invalid": 0,
+    "lexically_unmatched": 0,
+    "mapped_sequence_conflicts": 332,
+    "character_lengths": {
+      "count": 602,
+      "minimum": 26,
+      "p25": 72.0,
+      "median": 98.0,
+      "p75": 137.0,
+      "p90": 159.89999999999998,
+      "p95": 177.94999999999993,
+      "p99": 203.0,
+      "maximum": 227,
+      "threshold_exceedance": {
+        "128": {
+          "count": 186,
+          "rate": 0.3089700996677741
+        },
+        "256": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "512": {
+          "count": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "token_lengths": {
+      "count": 602,
+      "minimum": 25,
+      "p25": 64.0,
+      "median": 84.0,
+      "p75": 116.0,
+      "p90": 137.89999999999998,
+      "p95": 150.94999999999993,
+      "p99": 173.99,
+      "maximum": 192,
+      "threshold_exceedance": {
+        "128": {
+          "count": 94,
+          "rate": 0.15614617940199335
+        },
+        "256": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "512": {
+          "count": 0,
+          "rate": 0.0
+        }
+      }
+    }
+  },
+  "modeling_transformations": {
+    "rows": 381,
+    "unique_sequences": 381,
+    "rdkit_invalid": 0,
+    "lexically_unmatched": 0,
+    "mapped_sequence_conflicts": 255,
+    "character_lengths": {
+      "count": 381,
+      "minimum": 26,
+      "p25": 69.0,
+      "median": 94.0,
+      "p75": 131.0,
+      "p90": 151.0,
+      "p95": 165.0,
+      "p99": 211.39999999999992,
+      "maximum": 227,
+      "threshold_exceedance": {
+        "128": {
+          "count": 99,
+          "rate": 0.25984251968503935
+        },
+        "256": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "512": {
+          "count": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "token_lengths": {
+      "count": 381,
+      "minimum": 25,
+      "p25": 62.0,
+      "median": 82.0,
+      "p75": 113.0,
+      "p90": 133.0,
+      "p95": 148.0,
+      "p99": 179.19999999999993,
+      "maximum": 192,
+      "threshold_exceedance": {
+        "128": {
+          "count": 52,
+          "rate": 0.13648293963254593
+        },
+        "256": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "512": {
+          "count": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "transformation_split_counts": {
+      "train": 271,
+      "test": 58,
+      "valid": 52
+    },
+    "reaction_center_split_counts": {
+      "train": 263,
+      "test": 65,
+      "valid": 53
+    }
+  }
+}
