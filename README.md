@@ -107,8 +107,9 @@ conda activate chempilot
 python -m pip install -e . --no-deps
 ```
 
-Day 4 uses a separate Python 3.11 environment for the Open
-Reaction Database schema and reaction-condition pipeline:
+Days 4–6 use a separate Python 3.11 environment for the Open
+Reaction Database pipeline, reaction Transformer,
+similar-reaction retrieval, and unified FastAPI service:
 
 ```bash
 conda env create -f environment-ord.yml
@@ -117,9 +118,10 @@ python -m pip install -e . --no-deps
 ```
 
 The environments intentionally remain separate. The
-`chempilot-ord` environment does not include the PyTorch
-dependencies needed by the Day 3 GINE model, while the
-`chempilot` environment does not include `ord-schema`.
+`chempilot-ord` environment includes PyTorch and Transformers
+for RXNFP but does not include the PyTorch Geometric stack used
+by the Day 3 GINE model. The `chempilot` environment does not
+include `ord-schema`.
 
 
 ## Reproduce Day 1
@@ -838,6 +840,198 @@ Generated pretrained weights, embedding caches, fine-tuned model
 binaries, and retrieval indices are excluded from Git. Their
 provenance and hashes are recorded in tracked reports.
 
+## Day 6: unified inference service
+
+Day 6 combines the molecular-property and reaction models from
+Days 1–5 behind one configuration-driven inference interface.
+
+A molecule SMILES request returns canonical SMILES, interpretable
+RDKit descriptors, aqueous-solubility prediction, Lipinski
+drug-likeness, SA score, rare-fragment count, molecular
+complexity, and a lightweight synthesizability-risk assessment.
+
+When reactants and target products are supplied, the service also
+returns Top-K solvent and catalyst rankings from the preferred
+Day 4 Morgan models, applicability-domain information, similar
+historical reactions from the Day 5 RXNFP index, qualitative
+confidence, and context-aware synthesis risk.
+
+### Composition and configuration
+
+The service uses four main composition interfaces:
+
+- `BaseFeaturizer` defines and validates feature dimensions,
+  names, row alignment, and finite values.
+- `BasePredictor` defines a reusable prediction contract.
+- `ModelRegistry` resolves YAML configuration and lazily loads
+  and caches model components.
+- `PredictionService` coordinates molecule and reaction
+  inference and returns strict Pydantic response schemas.
+
+Model paths, supported protocols, device selection, molecular
+scope, and synthesis-risk thresholds are controlled through
+`configs/inference.yaml`. Large models and feature caches are
+loaded only when their associated functionality is requested.
+
+The production components are:
+
+- Day 2 scaffold-split XGBoost for aqueous LogS prediction;
+- Day 4 Morgan logistic models for direct condition ranking;
+- Day 5 frozen RXNFP CLS embeddings for historical-reaction
+  retrieval.
+
+### Molecular inference
+
+The solubility predictor reproduces the selected Day 2 model
+contract exactly: ten global RDKit descriptors followed by 2,048
+ECFP4/Morgan bits, giving 2,058 `float32` input features.
+
+The tracked aspirin example predicts LogS approximately -1.9036
+log10(mol/L), passes all four Lipinski criteria, has an SA score
+of approximately 1.58, and receives a low structural
+synthesis-risk rating.
+
+The molecular applicability scope reproduces the Day 1 rules:
+valid SMILES, one molecular fragment, at least one carbon atom,
+only configured common elements, and molecular weight from 50 to
+1,000 inclusive. Out-of-scope predictions are returned with an
+explicit reliability warning rather than silently discarded.
+
+### Reaction inference
+
+Reaction requests return independent Top-K solvent and catalyst
+rankings, Day 4 applicability-domain information, and Day 5
+similar historical reactions with their best recorded condition
+evidence.
+
+Condition uncertainty is derived from the Top-1 versus Top-2
+ranking margins for solvent and catalyst. Qualitative confidence
+combines this uncertainty with condition-model applicability and
+nearest historical RXNFP similarity.
+
+The tracked reaction example has nearest historical RXNFP
+similarity of approximately 0.9617. Although both condition
+models are in domain, the condition-ranking uncertainty is high,
+so the overall qualitative confidence is low. This demonstrates
+why similarity, applicability, and ranking separation are
+reported separately.
+
+### Scientific interpretation
+
+The synthesizability output combines SA score, rare fragments,
+Bertz molecular complexity, historical similarity, and condition
+ranking uncertainty. It is a lightweight risk assessment and is
+not a multi-step retrosynthesis plan or a guarantee of
+experimental feasibility.
+
+Solvent and catalyst are predicted independently and are not a
+jointly optimized condition. Condition ranking scores are not
+calibrated probabilities. RXNFP cosine similarity is not a
+probability of reaction success. ORD LC area percent at 280 nm is
+not isolated reaction yield.
+
+### FastAPI interface
+
+FastAPI provides a structured JSON interface:
+
+| Method | Path | Purpose |
+|---|---|---|
+| `GET` | `/health` | Check artifact availability without loading models |
+| `POST` | `/v1/predict` | Run molecule-only, reaction-only, or combined inference |
+| `GET` | `/docs` | Open interactive API documentation |
+| `GET` | `/openapi.json` | Retrieve the machine-readable API schema |
+
+Every HTTP response carries an `X-Request-ID` for logging and
+request tracing. Invalid SMILES and malformed reaction requests
+return HTTP 422. Missing or incompatible model artifacts return
+HTTP 503. Configuration and unexpected internal failures return
+sanitized HTTP 500 responses.
+
+See the
+[complete Day 6 report](reports/day6/day6_unified_inference_report.md).
+
+Tracked molecule and reaction responses are available in
+[`reports/day6/examples`](reports/day6/examples).
+
+## Reproduce Day 6
+
+Activate the reaction and inference environment:
+
+```bash
+conda activate chempilot-ord
+python -m pip install -e . --no-deps
+```
+
+Generate the fixed molecule and reaction examples and report:
+
+```bash
+python scripts/generate_day6_examples.py
+python scripts/summarize_day6.py
+```
+
+Start the local API:
+
+```bash
+python scripts/serve_chempilot.py \
+  --host 127.0.0.1 \
+  --port 8000
+```
+
+Interactive documentation is then available at
+`http://127.0.0.1:8000/docs`.
+
+Run molecule inference over HTTP:
+
+```bash
+curl -X POST \
+  http://127.0.0.1:8000/v1/predict \
+  -H "Content-Type: application/json" \
+  -H "X-Request-ID: readme-molecule-example" \
+  -d '{
+    "molecule_smiles": "CC(=O)Oc1ccccc1C(=O)O"
+  }'
+```
+
+Run reaction inference over HTTP:
+
+```bash
+curl -X POST \
+  http://127.0.0.1:8000/v1/predict \
+  -H "Content-Type: application/json" \
+  -H "X-Request-ID: readme-reaction-example" \
+  -d '{
+    "reactant_smiles": [
+      "Brc1ccc2ncccc2c1",
+      "O=S([O-])C1CC1.[Na+]"
+    ],
+    "product_smiles": [
+      "c1cnc2ccc(C3CC3)cc2c1"
+    ],
+    "reaction_protocol": "reaction_center",
+    "top_k": 5
+  }'
+```
+
+Run the focused Day 6 tests:
+
+```bash
+python -m pytest \
+  tests/test_service_base.py \
+  tests/test_service_schemas.py \
+  tests/test_molecule_service.py \
+  tests/test_solubility_service.py \
+  tests/test_model_registry.py \
+  tests/test_prediction_service.py \
+  tests/test_api.py \
+  tests/test_openapi.py \
+  -q
+```
+
+Generated model binaries, pretrained checkpoints, reaction
+indices, and feature caches remain excluded from Git. The tracked
+configuration, reports, and example responses document their
+expected paths and interpretation.
+
 
 ## Reproducibility controls
 
@@ -854,4 +1048,4 @@ Generated datasets, feature caches, model binaries, and full sample-level predic
 - [x] RXNFP similar-reaction retrieval
 - [ ] Joint solvent-catalyst condition ranking
 - [ ] Reagent and temperature prediction
-- [ ] Unified inference API and lightweight synthesizability scoring
+- [x] Unified inference API and lightweight synthesizability scoring

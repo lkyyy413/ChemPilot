@@ -1,0 +1,43 @@
+{
+  "created_at_utc": "2026-08-01T13:28:57.949761+00:00",
+  "configuration": {
+    "path": "/home/kaiyi/projects/ChemPilot/configs/inference.yaml",
+    "sha256": "77d45696e6052f1b6980f466a1339c9af719ebd78afcc2d9b25a0650119cb48f"
+  },
+  "examples": {
+    "molecule": {
+      "request": {
+        "molecule_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+        "reactant_smiles": null,
+        "product_smiles": null,
+        "reaction_protocol": "reaction_center",
+        "top_k": 5
+      },
+      "response_path": "reports/day6/examples/molecule_prediction.json",
+      "response_sha256": "5fef2c82308d506dcec74599048849d75dee0df22716332b90898411ea341e98"
+    },
+    "reaction": {
+      "request": {
+        "molecule_smiles": null,
+        "reactant_smiles": [
+          "Brc1ccc2ncccc2c1",
+          "O=S([O-])C1CC1.[Na+]"
+        ],
+        "product_smiles": [
+          "c1cnc2ccc(C3CC3)cc2c1"
+        ],
+        "reaction_protocol": "reaction_center",
+        "top_k": 5
+      },
+      "response_path": "reports/day6/examples/reaction_prediction.json",
+      "response_sha256": "5558f332688a82ddce5bcda68902af1df8b48715a3e9292daed8a3f87fbb4e35"
+    }
+  },
+  "interpretation": {
+    "solubility": "Predicted LogS is reported in log10(mol/L).",
+    "condition_scores": "Condition scores are ranking scores, not calibrated probabilities.",
+    "retrieval_similarity": "RXNFP cosine similarity is not a probability of reaction success.",
+    "historical_response": "ORD LC area percent at 280 nm is not isolated reaction yield.",
+    "synthesizability": "The reported synthesis risk is a lightweight assessment, not multi-step retrosynthesis."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "request_id": "day6-example-molecule",
+  "status": "success",
+  "molecule": {
+    "input_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+    "canonical_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+    "descriptors": {
+      "molecular_weight": 180.15899999999996,
+      "log_p": 1.3101,
+      "tpsa": 63.60000000000001,
+      "hydrogen_bond_donors": 1,
+      "hydrogen_bond_acceptors": 3,
+      "rotatable_bonds": 2,
+      "ring_count": 1,
+      "heavy_atom_count": 13,
+      "fraction_csp3": 0.1111111111111111
+    },
+    "solubility": {
+      "predicted_log_s": -1.9035863876342773,
+      "unit": "log10(mol/L)",
+      "model_name": "scaffold_xgboost_combined",
+      "model_protocol": "scaffold_split",
+      "applicability_warning": null
+    },
+    "drug_likeness": {
+      "lipinski_pass": true,
+      "lipinski_violations": 0,
+      "rule_results": {
+        "molecular_weight_le_500": true,
+        "log_p_le_5": true,
+        "hbd_le_5": true,
+        "hba_le_10": true
+      },
+      "interpretation": "Passes the four Lipinski Rule-of-Five criteria."
+    },
+    "synthesizability": {
+      "sa_score": 1.580039750008826,
+      "rare_fragment_count": 0,
+      "molecular_complexity": 343.2228677267164,
+      "historical_similarity": null,
+      "condition_uncertainty": null,
+      "risk_level": "low",
+      "risk_factors": [],
+      "interpretation": "No configured structural or contextual risk threshold was triggered.",
+      "disclaimer": "This is a lightweight risk assessment, not a multi-step retrosynthesis plan or a guarantee of synthetic feasibility."
+    },
+    "warnings": []
+  },
+  "reaction": null,
+  "warnings": [],
+  "model_versions": {
+    "solubility": "Day2 scaffold XGBoost combined",
+    "condition_recommendation": "Day4 Morgan logistic",
+    "reaction_retrieval": "Day5 RXNFP bert_pretrained"
+  }
+}

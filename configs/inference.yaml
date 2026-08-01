@@ -1,0 +1,51 @@
+service:
+  name: ChemPilot
+  version: 0.1.0
+  default_reaction_protocol: reaction_center
+  default_top_k: 5
+  maximum_top_k: 20
+
+molecule:
+  druglike_scope:
+    require_single_fragment: true
+    require_carbon: true
+    require_common_elements_only: true
+    minimum_molecular_weight: 50.0
+    maximum_molecular_weight: 1000.0
+
+  synthesizability:
+    rare_fragment_score_threshold: -2.5
+    moderate_sa_score: 4.0
+    high_sa_score: 6.0
+    moderate_complexity: 500.0
+    high_complexity: 1000.0
+    moderate_rare_fragments: 1
+    high_rare_fragments: 3
+    moderate_history_similarity: 0.5
+    low_history_similarity: 0.3
+    moderate_condition_uncertainty: 0.35
+    high_condition_uncertainty: 0.6
+
+solubility:
+  model_path: artifacts/models/day2/scaffold_xgboost_combined.joblib
+  model_name: scaffold_xgboost_combined
+  model_protocol: scaffold_split
+  feature_dimension: 2058
+
+reaction_conditions:
+  model_root: artifacts/models/day4
+  target_root: data/processed/reactions/targets
+  feature_path: data/processed/reactions/features/reaction_combined.npz
+  applicability_report_path: reports/day4/applicability/applicability_summary.json
+  supported_protocols:
+    - transformation
+    - reaction_center
+
+retrieval:
+  checkpoint_directory: artifacts/pretrained/day5/rxnfp_bert_pretrained
+  index_root: data/processed/reactions/retrieval/day5
+  condition_path: data/processed/reactions/d9297630_condition_pairs.parquet
+  device: null
+  supported_protocols:
+    - transformation
+    - reaction_center

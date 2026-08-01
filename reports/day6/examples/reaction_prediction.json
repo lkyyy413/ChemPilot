@@ -1,0 +1,256 @@
+{
+  "request_id": "day6-example-reaction",
+  "status": "success",
+  "molecule": null,
+  "reaction": {
+    "canonical_reactants": [
+      "Brc1ccc2ncccc2c1",
+      "O=S([O-])C1CC1.[Na+]"
+    ],
+    "canonical_products": [
+      "c1cnc2ccc(C3CC3)cc2c1"
+    ],
+    "conditions": {
+      "protocol": "reaction_center",
+      "solvent": {
+        "target": "solvent",
+        "top_k": [
+          {
+            "rank": 1,
+            "label": "SMILES:CCC(C)(C)O",
+            "ranking_score": 0.8547998522561148,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          },
+          {
+            "rank": 2,
+            "label": "SMILES:Cc1ccccc1",
+            "ranking_score": 0.5132065270646876,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          },
+          {
+            "rank": 3,
+            "label": "SMILES:CC#N",
+            "ranking_score": 0.5064579657942625,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          },
+          {
+            "rank": 4,
+            "label": "SMILES:C1COCCO1",
+            "ranking_score": 0.5034145977243932,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          },
+          {
+            "rank": 5,
+            "label": "SMILES:C1CCOC1",
+            "ranking_score": 0.28325600334210144,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          }
+        ],
+        "applicability": {
+          "in_domain": true,
+          "nearest_similarity": 0.5609756112098694,
+          "threshold": 0.2212880551815033,
+          "nearest_reference": "SMILES:Brc1ccc2ncccc2c1.SMILES:O=S([O-])c1ccccn1.[Na+]>>SMILES:c1ccc(-c2ccc3ncccc3c2)nc1 | 4bd8250f86ff7286 | NI COUPLING",
+          "interpretation": "5th percentile of final training-set leave-one-out nearest-neighbor Tanimoto similarity. Structural coverage does not guarantee prediction correctness."
+        }
+      },
+      "catalyst": {
+        "target": "catalyst",
+        "top_k": [
+          {
+            "rank": 1,
+            "label": "SMILES:C1CCC(P(C2CCCCC2)C2CCCC2)CC1.C1CCC(P(C2CCCCC2)C2CCCC2)CC1.[Fe]",
+            "ranking_score": 0.7897079005436763,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          },
+          {
+            "rank": 2,
+            "label": "SMILES:CC(C)(C)c1ccnc(-c2cc(C(C)(C)C)ccn2)c1",
+            "ranking_score": 0.6323820379693069,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          },
+          {
+            "rank": 3,
+            "label": "SMILES:C1CCC([P+](CC[P+](C2CCCC2)C2CCCC2)C2CCCC2)C1.F[B-](F)(F)F.F[B-](F)(F)F",
+            "ranking_score": 0.5463585815394721,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          },
+          {
+            "rank": 4,
+            "label": "SMILES:CC(C)(C)P(C1CCCC1)C(C)(C)C.CC(C)(C)P(C1CCCC1)C(C)(C)C.[Fe]",
+            "ranking_score": 0.4470738533658619,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          },
+          {
+            "rank": 5,
+            "label": "SMILES:CN(C)c1ccc(P(C(C)(C)C)C(C)(C)C)cc1",
+            "ranking_score": 0.4470738533658619,
+            "score_interpretation": "Uncalibrated ranking score; not a calibrated probability."
+          }
+        ],
+        "applicability": {
+          "in_domain": true,
+          "nearest_similarity": 0.5609756112098694,
+          "threshold": 0.2159789353609085,
+          "nearest_reference": "SMILES:Brc1ccc2ncccc2c1.SMILES:O=S([O-])c1ccccn1.[Na+]>>SMILES:c1ccc(-c2ccc3ncccc3c2)nc1 | 4bd8250f86ff7286 | NI COUPLING",
+          "interpretation": "5th percentile of final training-set leave-one-out nearest-neighbor Tanimoto similarity. Structural coverage does not guarantee prediction correctness."
+        }
+      },
+      "independent_targets": true,
+      "interpretation": "Solvent and catalyst are predicted independently and do not constitute a jointly optimized condition."
+    },
+    "retrieval": {
+      "pooling": "cls",
+      "neighbors": [
+        {
+          "rank": 1,
+          "similarity": 0.9616739153862,
+          "transformation_signature": "SMILES:Brc1ccc2ncccc2c1.SMILES:O=S([O-])c1ccccn1.[Na+]>>SMILES:c1ccc(-c2ccc3ncccc3c2)nc1",
+          "reaction_center_signature": "4bd8250f86ff7286",
+          "reaction_type": "NI COUPLING",
+          "condition_evidence": {
+            "solvent_labels": [
+              "SMILES:CC#N"
+            ],
+            "catalyst_labels": [
+              "SMILES:C1CCC([P+](CCC[P+](C2CCCC2)C2CCCC2)C2CCCC2)C1.F[B-](F)(F)F.F[B-](F)(F)F",
+              "SMILES:CN(C)CCN(C)C.Cc1cccc[c]1[Ni][Cl]"
+            ],
+            "reagent_labels": [
+              "SMILES:O=P([O-])([O-])[O-].[K+].[K+].[K+]"
+            ],
+            "temperature_celsius": 120.0,
+            "reaction_time_hours": 18.0,
+            "analytical_response": 12.0,
+            "response_interpretation": "ORD LC area percent at 280 nm; not isolated reaction yield."
+          }
+        },
+        {
+          "rank": 2,
+          "similarity": 0.9054783582687378,
+          "transformation_signature": "SMILES:CC1(C)OB(c2ccc3cn[nH]c3c2)OC1(C)C.SMILES:OCc1ccc(I)cc1>>SMILES:OCc1ccc(-c2ccc3cn[nH]c3c2)cc1",
+          "reaction_center_signature": "7a9fb35f9e5680a5",
+          "reaction_type": "SUZUKI",
+          "condition_evidence": {
+            "solvent_labels": [
+              "SMILES:CO"
+            ],
+            "catalyst_labels": [
+              "SMILES:CN(C)c1ccc(P(C(C)(C)C)C(C)(C)C)cc1.CN(C)c1ccc(P(C(C)(C)C)C(C)(C)C)cc1.[Cl][Pd][Cl]"
+            ],
+            "reagent_labels": [
+              "SMILES:O=C([O-])O.[Na+]"
+            ],
+            "temperature_celsius": 80.0,
+            "reaction_time_hours": null,
+            "analytical_response": 89.0,
+            "response_interpretation": "ORD LC area percent at 280 nm; not isolated reaction yield."
+          }
+        },
+        {
+          "rank": 3,
+          "similarity": 0.9003979563713074,
+          "transformation_signature": "SMILES:Cc1ccnc2ccccc12.SMILES:IC1CCCCC1.SMILES:O=C(O)C(F)(F)F>>SMILES:Cc1cc(C2CCCCC2)nc2ccccc12",
+          "reaction_center_signature": "02cca3e753038d30",
+          "reaction_type": "PHOTOCHEMISTRY",
+          "condition_evidence": {
+            "solvent_labels": [
+              "SMILES:CO"
+            ],
+            "catalyst_labels": [
+              "NAME:mnbr(co)5"
+            ],
+            "reagent_labels": [],
+            "temperature_celsius": 25.0,
+            "reaction_time_hours": 18.0,
+            "analytical_response": 30.0,
+            "response_interpretation": "ORD LC area percent at 280 nm; not isolated reaction yield."
+          }
+        },
+        {
+          "rank": 4,
+          "similarity": 0.8893786668777466,
+          "transformation_signature": "SMILES:CCO.SMILES:CS(=O)(=O)O.SMILES:c1ccc2cnccc2c1>>SMILES:CCc1nccc2ccccc12",
+          "reaction_center_signature": "fec81f44fdb8cfa7",
+          "reaction_type": "PHOTOCHEMISTRY",
+          "condition_evidence": {
+            "solvent_labels": [
+              "SMILES:CS(C)=O"
+            ],
+            "catalyst_labels": [
+              "NAME:(ir[df(5cf3)ppy]2(dtbpy))pf6"
+            ],
+            "reagent_labels": [
+              "SMILES:CCOC(=O)C(C)S"
+            ],
+            "temperature_celsius": 25.0,
+            "reaction_time_hours": 18.0,
+            "analytical_response": 15.5,
+            "response_interpretation": "ORD LC area percent at 280 nm; not isolated reaction yield."
+          }
+        },
+        {
+          "rank": 5,
+          "similarity": 0.8888962268829346,
+          "transformation_signature": "SMILES:CCO.SMILES:O=S(=O)(O)O.SMILES:c1ccc2cnccc2c1>>SMILES:CCc1nccc2ccccc12",
+          "reaction_center_signature": "572d0df92583a84a",
+          "reaction_type": "PHOTOCHEMISTRY",
+          "condition_evidence": {
+            "solvent_labels": [
+              "SMILES:CS(C)=O"
+            ],
+            "catalyst_labels": [
+              "NAME:(ir[df(5cf3)ppy]2(dtbpy))pf6"
+            ],
+            "reagent_labels": [
+              "SMILES:CCOC(=O)C(C)S"
+            ],
+            "temperature_celsius": 25.0,
+            "reaction_time_hours": 18.0,
+            "analytical_response": 10.5,
+            "response_interpretation": "ORD LC area percent at 280 nm; not isolated reaction yield."
+          }
+        }
+      ],
+      "similarity_interpretation": "Cosine similarity in RXNFP embedding space; not a probability of reaction success."
+    },
+    "confidence": {
+      "level": "low",
+      "calibrated_probability": false,
+      "basis": [
+        "Both solvent and catalyst applicability checks in domain: True.",
+        "Nearest RXNFP historical similarity: 0.9617.",
+        "Condition ranking uncertainty heuristic: 0.7505."
+      ],
+      "warnings": [
+        "Confidence is a qualitative assessment, not a calibrated reaction-success probability.",
+        "The leading condition candidates have limited ranking separation."
+      ]
+    },
+    "synthesizability": {
+      "sa_score": 1.769083474705182,
+      "rare_fragment_count": 0,
+      "molecular_complexity": 443.57368245090146,
+      "historical_similarity": 0.9616739153862,
+      "condition_uncertainty": 0.7505404061171017,
+      "risk_level": "high",
+      "risk_factors": [
+        "Condition-model uncertainty is high."
+      ],
+      "interpretation": "One or more configured high-risk indicators were triggered.",
+      "disclaimer": "This is a lightweight risk assessment, not a multi-step retrosynthesis plan or a guarantee of synthetic feasibility."
+    },
+    "warnings": [
+      "Solvent and catalyst predictions are independent rankings, not a jointly optimized condition.",
+      "Historical LC area responses are not isolated reaction yields.",
+      "Confidence is a qualitative assessment, not a calibrated reaction-success probability.",
+      "The leading condition candidates have limited ranking separation."
+    ]
+  },
+  "warnings": [],
+  "model_versions": {
+    "solubility": "Day2 scaffold XGBoost combined",
+    "condition_recommendation": "Day4 Morgan logistic",
+    "reaction_retrieval": "Day5 RXNFP bert_pretrained"
+  }
+}
