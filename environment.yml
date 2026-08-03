@@ -6,7 +6,6 @@ channels:
 dependencies:
   - python=3.10
   - pip
-  - rdkit
   - pip:
       - PyTDC
       - matplotlib
@@ -21,5 +20,6 @@ dependencies:
       - joblib
       - pytest
       - xgboost
+      - rdkit
       - torch==2.6.0
       - torch_geometric==2.8.0.post1

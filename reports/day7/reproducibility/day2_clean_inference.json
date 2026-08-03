@@ -1,0 +1,16 @@
+{
+  "smiles": [
+    "CC(=O)Oc1ccccc1C(=O)O",
+    "CCO"
+  ],
+  "feature_shape": [
+    2,
+    2058
+  ],
+  "predicted_log_s": [
+    -1.9661883115768433,
+    1.2054200172424316
+  ],
+  "unit": "log10(mol/L)",
+  "model": "scaffold_xgboost_combined"
+}

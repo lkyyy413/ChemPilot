@@ -1,100 +1,150 @@
 # ChemPilot
 
-ChemPilot is a reproducible molecular machine-learning project for drug-property prediction, synthesis-feasibility assessment, and reaction-condition recommendation.
+ChemPilot is a reproducible molecular machine-learning system
+that connects aqueous-solubility prediction, lightweight
+synthesis-risk assessment, reaction-condition recommendation,
+and similar-reaction retrieval through one inference API.
 
-The current milestone establishes strong aqueous-solubility baselines on TDC Solubility_AqSolDB. Subsequent milestones will extend the same evaluation framework to graph neural networks, reaction-condition prediction, and retrieval-supported recommendations.
+> ChemPilot supports scientific prioritization. It does not
+> provide a calibrated reaction-success probability, guaranteed
+> synthetic feasibility, or multi-step retrosynthesis planning.
 
-## Current task
+## Six reading anchors
 
-- Input: molecular SMILES
-- Output: aqueous solubility LogS
-- Unit: log10(mol/L)
-- Task type: regression
-- Dataset size: 9,982 compounds
-- Primary metric: mean absolute error
-- Representations: RDKit descriptors, ECFP4, and their concatenation
-- Models: Mean, Ridge, Random Forest, and XGBoost
+1. [Problem](#1-problem)
+2. [Architecture](#2-architecture)
+3. [Data](#3-data)
+4. [Key results](#4-key-results)
+5. [Reproduction](#5-reproduction)
+6. [Demo and documentation](#6-demo-and-documentation)
 
-## Best baseline results
+## 1. Problem
 
-| Split protocol | Model | Features | MAE | RMSE | R² | Spearman |
-|---|---|---|---:|---:|---:|---:|
-| Random | XGBoost | RDKit + ECFP | 0.6742 | 1.0257 | 0.8102 | 0.9032 |
-| Scaffold | XGBoost | RDKit + ECFP | 0.7944 | 1.1066 | 0.7674 | 0.8559 |
+Early molecular design requires both property estimates and
+evidence about how a target transformation might be performed.
+These outputs are often produced by disconnected tools without
+clear applicability warnings. ChemPilot provides one auditable
+workflow that accepts molecular SMILES and, optionally,
+reactants plus target products.
 
-Hyperparameters are selected using validation MAE. The selected configuration is then refitted on the combined training and validation data before evaluation on the held-out test set.
+A molecule request returns LogS, interpretable descriptors,
+Lipinski rules, SA score, rare-fragment and complexity signals,
+and a lightweight synthesis-risk interpretation. A reaction
+request additionally returns independent Top-K solvent and
+catalyst rankings, applicability information, qualitative
+confidence, and similar historical reactions.
 
-Random and scaffold results are reported separately because they do not use the same test samples and therefore should not be interpreted as a controlled one-variable comparison.
+## 2. Architecture
 
-![Baseline comparison](reports/day2/figures/baseline_test_mae.png)
+```mermaid
+flowchart TD
+    A[SMILES request] --> B[Standardization and validation]
+    B --> C[Property and risk models]
+    B --> D[Condition rankers]
+    B --> E[RXNFP retrieval]
+    C --> F[Unified Pydantic response]
+    D --> F
+    E --> F
+    F --> G[FastAPI JSON interface]
+```
 
-## Main findings
-
-Combining global physicochemical descriptors with local ECFP substructure fingerprints consistently produced the strongest results. XGBoost slightly outperformed Random Forest under both protocols.
-
-Descriptor-only tree models remained highly competitive while requiring substantially less training time. ECFP-only models transferred poorly to the scaffold protocol, suggesting that local substructure patterns alone do not provide reliable extrapolation to unfamiliar molecular frameworks.
-
-LogP was the most important descriptor for both Random Forest and XGBoost. This agrees with the exploratory Spearman correlation of −0.7399 between MolLogP and LogS.
-
-![Descriptor importance](reports/day2/figures/xgboost_descriptor_importance.png)
-
-![Predicted versus observed LogS](reports/day2/figures/xgboost_combined_predictions.png)
-
-## Failure and applicability-domain analysis
-
-The best model performed substantially better inside the defined drug-like analysis scope:
-
-| Split | Scope | Samples | MAE | RMSE |
-|---|---|---:|---:|---:|
-| Random | Drug-like | 1,738 | 0.5920 | 0.8664 |
-| Random | Outside scope | 259 | 1.2256 | 1.7536 |
-| Scaffold | Drug-like | 1,815 | 0.7373 | 0.9952 |
-| Scaffold | Outside scope | 182 | 1.3639 | 1.8868 |
-
-Large errors were enriched for uncommon elements, charged dyes, salts, mixtures, highly halogenated compounds, and extreme LogS values. These samples are retained in the official benchmark, but future inference should return an applicability-domain warning.
-
-See the [complete Day 2 report](reports/day2/day2_baseline_report.md).
-
-## Day 1: data pipeline
-
-The data pipeline performs:
-
-1. Dataset download through PyTDC
-2. Immutable raw-data snapshot and SHA-256 provenance
-3. SMILES validity and duplicate auditing
-4. Conservative canonical SMILES standardization
-5. Salt, mixture, charge, and uncommon-element flags
-6. Exploratory analysis with RDKit descriptors
-7. Random and official scaffold split generation
-8. Sample-overlap and scaffold-overlap auditing
-
-No fragments are removed and no charges are neutralized.
-
-Two scopes are retained:
-
-- Official benchmark scope: all 9,982 compounds
-- Drug-like analysis scope: 8,721 compounds
-
-The drug-like flag supports subgroup analysis and does not replace the official benchmark.
-
-See the [EDA report](reports/eda_solubility.md).
-
-## Split protocols
-
-The diagnostic random protocol uses a label-stratified 70/10/20 split with seed 42. It is not comparable with the TDC leaderboard because molecular scaffolds overlap across its subsets.
-
-The official TDC test set contains 1,997 compounds. A split audit identified an important characteristic of the default seed-42 development split: all 2,940 validation molecules have an empty Bemis–Murcko scaffold. The validation labels also have a strong distribution shift. This limitation is retained and documented rather than silently changing the official protocol.
-
-## Project structure
+The implementation combines `BaseFeaturizer`, `BasePredictor`,
+`ModelRegistry`, and `PredictionService`. YAML configuration
+controls artifact paths, protocols, devices, applicability
+thresholds, and synthesis-risk thresholds. Large components are
+loaded lazily only when requested.
 
 ```text
-configs/                  Dataset and experiment configuration
-data/                     Reproducible local data products
-reports/                  Audits, result tables, figures, and analyses
-scripts/                  Download, feature, training, and reporting entry points
-src/chempilot/            Reusable data, feature, and evaluation modules
-tests/                    Unit tests for features, alignment, and metrics
+configs/                  Dataset and inference configuration
+data/                     Reconstructable local data products
+reports/                  Audits, tables, figures, and model documentation
+scripts/                  Data, training, reporting, and serving entry points
+src/chempilot/            Reusable features, models, retrieval, API, and services
+tests/                    Scientific and software contract tests
 ```
+
+## 3. Data
+
+| Dataset | Purpose | Scale | Main safeguards |
+|---|---|---:|---|
+| TDC Solubility_AqSolDB | Aqueous LogS regression | 9,982 molecules | Canonicalization, audit flags, fixed test set, random and scaffold protocols |
+| ORD d9297630 snapshot | Condition ranking and retrieval | 39,347 standardized experiments; 602 transformations | Pinned source hash, group-aware splits, train-only vocabularies, leakage-free reaction inputs |
+
+The AqSolDB drug-like analysis scope contains 8,721 molecules,
+but all 9,982 records remain in the official benchmark. The ORD
+response is LC area percent at 280 nm; it is not treated or
+reported as isolated reaction yield.
+
+See the [data card](reports/day7/DATA_CARD.md) for provenance,
+processing decisions, leakage controls, and known data limits.
+
+## 4. Key results
+
+| Task | Preferred model | Protocol | Test result |
+|---|---|---|---:|
+| Solubility | XGBoost, RDKit + ECFP | Random | MAE 0.6742 |
+| Solubility | XGBoost, RDKit + ECFP | Scaffold | MAE 0.7944 |
+| Solvent recommendation | Morgan logistic | Transformation | Micro AP 0.6229; HitRate@5 0.8824 |
+| Catalyst recommendation | Morgan logistic | Transformation | Micro AP 0.3268; HitRate@5 0.8611 |
+| Similar-reaction retrieval | Frozen RXNFP CLS | Transformation | Reaction-type Hit@5 0.8621 |
+
+Tree models outperformed the GINE ensemble on this approximately
+10,000-molecule property task. Morgan fingerprints also
+outperformed frozen and partially fine-tuned RXNFP for direct
+condition classification, while RXNFP remained useful for
+retrieval. Negative Transformer results are retained rather than
+selecting models using test performance.
+
+![Property baseline comparison](reports/day2/figures/baseline_test_mae.png)
+
+![Reaction model comparison](reports/day5/figures/day5_model_comparison.png)
+
+See the [model card](reports/day7/MODEL_CARD.md) and
+[known limitations](reports/day7/KNOWN_LIMITATIONS.md) for the
+intended use and responsible interpretation.
+
+## 5. Reproduction
+
+ChemPilot uses two environments because the property/GINE stack
+is based on Python 3.10 while `ord-schema==0.6.3` requires
+Python 3.11.
+
+```bash
+# Days 1–3
+conda env create -f environment.yml
+conda activate chempilot
+python -m pip install -e . --no-deps
+
+# Days 4–6
+conda env create -f environment-ord.yml
+conda activate chempilot-ord
+python -m pip install -e . --no-deps
+```
+
+The detailed sections below provide every data, training,
+evaluation, and inference command. Day 7 verified the workflow
+from fresh environments and documents exact matches, numerical
+tolerances, rendering differences, and non-bitwise model
+reproduction in the
+[reproducibility report](reports/day7/day7_reproducibility_report.md).
+
+## 6. Demo and documentation
+
+Start the API and open `http://127.0.0.1:8000/docs`:
+
+```bash
+conda activate chempilot-ord
+python scripts/serve_chempilot.py --host 127.0.0.1 --port 8000
+```
+
+The tracked examples are available in
+[`reports/day6/examples`](reports/day6/examples). Presentation
+materials include a [1–2 minute demo script](reports/day7/DEMO_SCRIPT.md),
+[3-minute introduction](reports/day7/PRESENTATION_3MIN.md), and
+[8-minute introduction](reports/day7/PRESENTATION_8MIN.md).
+
+The full Day 7 documentation also records
+[compute resources](reports/day7/COMPUTE_RESOURCES.md).
 
 ## Installation
 
@@ -1032,6 +1082,27 @@ indices, and feature caches remain excluded from Git. The tracked
 configuration, reports, and example responses document their
 expected paths and interpretation.
 
+
+## Day 7: clean-environment reproduction and handoff
+
+Day 7 rebuilt Days 1–6 in fresh Python 3.10 and Python 3.11
+environments. Stable data tables, split membership, and feature
+arrays reproduced exactly. Random Forest results reproduced to
+floating-point precision, while Ridge and XGBoost showed small,
+documented numerical drift. Plot bytes and wall-clock timings are
+treated as environment-dependent rather than scientific
+contracts.
+
+The final handoff documents are:
+
+- [Reproducibility report](reports/day7/day7_reproducibility_report.md)
+- [Data card](reports/day7/DATA_CARD.md)
+- [Model card](reports/day7/MODEL_CARD.md)
+- [Known limitations and failure cases](reports/day7/KNOWN_LIMITATIONS.md)
+- [Compute resources](reports/day7/COMPUTE_RESOURCES.md)
+- [Demo script](reports/day7/DEMO_SCRIPT.md)
+- [Three-minute introduction](reports/day7/PRESENTATION_3MIN.md)
+- [Eight-minute introduction](reports/day7/PRESENTATION_8MIN.md)
 
 ## Reproducibility controls
 
